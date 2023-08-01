@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8727eed0ab828b14ea99367d86418b39, type: 3}
+  m_Name: Dota
+  m_EditorClassIdentifier: 
+  title: Dota
+  headerImage: {fileID: 21300000, guid: df79a4abe7675b941bab205ff2ced0dc, type: 3}
+  path: do not go 1444\Don't Go 1444.exe
+  description: Every day, millions of players worldwide enter battle as one of over
+    a hundred Dota heroes. And no matter if it's their 10th hour of play or 1,000th,
+    there's always something new to discover. With regular updates that ensure a
+    constant evolution of gameplay, features, and heroes, Dota 2 has taken on a life
+    of its own.
+  screenshot:
+  - {fileID: 21300000, guid: cc36c3841bed618498e7e0504fada614, type: 3}
+  - {fileID: 21300000, guid: cc36c3841bed618498e7e0504fada614, type: 3}
+  about: Every day, millions of players worldwide enter battle as one of over a hundred
+    Dota heroes. And no matter if it's their 10th hour of play or 1,000th, there's
+    always something new to discover. With regular updates that ensure a constant
+    evolution of gameplay, features, and heroes, Dota 2 has taken on a life of its
+    own.
