@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8727eed0ab828b14ea99367d86418b39, type: 3}
   m_Name: Dota
   m_EditorClassIdentifier: 
-  title: Dota
+  title: CSGO
   headerImage: {fileID: 21300000, guid: df79a4abe7675b941bab205ff2ced0dc, type: 3}
   path: do not go 1444\Don't Go 1444.exe
   description: Every day, millions of players worldwide enter battle as one of over

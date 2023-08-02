@@ -19,7 +19,7 @@ public class FolderDeleter : Singleton<FolderDeleter>
         {
             DeleteFolder(fullPath);
             Debug.Log("Folder deleted: " + fullPath);
-            ZipDownloader.Instance.debug.text = "deleted";
+       
         }
         else
         {

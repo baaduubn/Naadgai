@@ -91,6 +91,7 @@ public class ZipDownloader : Singleton<ZipDownloader>
             Debug.Log("Download complete. Saved at: " + zipFilePath);
             downloadingUI.fillAmount = 0;
             downloadSpeedTMP.text = "";
+         
             // Extract the zip file
             if (!File.Exists(zipFilePath))
             {

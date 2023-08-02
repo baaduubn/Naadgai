@@ -15,16 +15,16 @@ public class GameHome : Singleton<GameHome>
     public Image headerImage;
     public Button playButton;
     public Image playBtnIcon;
-    public Sprite playIcon, downloadIcon, installIcon; 
+    public Sprite playIcon, downloadIcon, installIcon;
     private TextMeshProUGUI playBtnString;
     private Process process;
-    private bool versionCorrect=false;
+    private bool versionCorrect = false;
     private void Awake()
     {
-   
+
         playBtnString = playButton.transform.GetComponentInChildren<TextMeshProUGUI>();
     }
-   
+
     public void Set(TheGame game)
     {
         description.text = game.description;
@@ -56,10 +56,12 @@ public class GameHome : Singleton<GameHome>
         {
             playBtnString.text = "Update";
         }
-       
+
     }
     public void DownloadGame(TheGame game)
     {
+        var e = VersionManager.Instance.GetVersionByName(game.title);
+        PlayerPrefs.SetString(game.title + "version", e);
         playBtnString.text = "downloading";
         var zipdowloader = ZipDownloader.Instance;
         zipdowloader.StartDowloadGame(game);
@@ -68,6 +70,8 @@ public class GameHome : Singleton<GameHome>
     public void UpdateGame(TheGame game)
     {
         FolderDeleter.Instance.Delete(game);
+        var e = VersionManager.Instance.GetVersionByName(game.title);
+        PlayerPrefs.SetString(game.title + "version", e);
         DownloadGame(game);
     }
     private void Update()
@@ -82,7 +86,7 @@ public class GameHome : Singleton<GameHome>
 
     public void CheckGame(TheGame game)
     {
-        FolderDeleter.Instance.Delete(game);
+     
         playButton.onClick.RemoveAllListeners();
         if (game == null)
         {
@@ -108,10 +112,10 @@ public class GameHome : Singleton<GameHome>
                 playBtnIcon.type = Image.Type.Simple;
                 playButton.onClick.AddListener(() => UpdateGame(game));
                 playBtnIcon.sprite = installIcon;
-                playBtnString.text = "Install";
+                playBtnString.text = "Update";
             }
-           
-           
+
+
         }
         else
         {
@@ -129,12 +133,24 @@ public class GameHome : Singleton<GameHome>
         this.gameObject.SetActive(false);
         playButton.onClick.RemoveAllListeners();
     }
-   
+
     public void CheckVersion(TheGame game)
     {
-      
+        ZipDownloader.Instance.debug.text = "version checking";
+        var df = PlayerPrefs.GetString(game.title+"version", "0.0");
+        var aa = VersionManager.Instance.GetVersionByName(game.title);
+        if (aa == df)
+        {
+            versionCorrect = true;
+            ZipDownloader.Instance.debug.text = "version ok"+df+" "+aa;
+        }
+        else
+        {
+            versionCorrect = false;
+            ZipDownloader.Instance.debug.text = "version no" + df+ " " + aa;
+        }
     }
 
-  
+
 
 }
