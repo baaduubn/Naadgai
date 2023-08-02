@@ -26,7 +26,7 @@ public class GameManager : Singleton<GameManager>
     public void SceneStart()
     {
         _state = GameState.Playing;
-        ConsoleProDebug.LogToFilter("Үзэгдэл эхэлсэн.","Game manager");
+       
     }
   
 
@@ -41,7 +41,6 @@ public class GameManager : Singleton<GameManager>
         _state = GameState.LevelCompleted;
         CanvasController.Instance.LevelComplete();
         Invoke("NextLevel", time);
-        ConsoleProDebug.LogToFilter("Та хожлоо. "+time+" секундын дараа дараагын үе идэвхжинэ","Game manager");
        
     }
     public void LevelComplete()
@@ -49,7 +48,7 @@ public class GameManager : Singleton<GameManager>
         if (_state == GameState.Playing) return;
         _state = GameState.LevelCompleted;
         CanvasController.Instance.LevelComplete();
-        ConsoleProDebug.LogToFilter("Та хожлоо. ","Game manager");
+     
     }
 
     /// <summary>
@@ -65,14 +64,12 @@ public class GameManager : Singleton<GameManager>
         CanvasController.Instance.Fail();
         Invoke("LoadAgain", time);
       
-        ConsoleProDebug.LogToFilter("Та хожигдлоо. " + time + " секундын дараа дараагын үе идэвхжинэ","Game manager");
     }
     public void Fail()
     {
         if (_state == GameState.Playing) return;
         _state = GameState.Fail;
         CanvasController.Instance.Fail();
-        ConsoleProDebug.LogToFilter("Та хожигдлоо. ","Game manager");
     }
 
     /// <summary>
@@ -82,7 +79,6 @@ public class GameManager : Singleton<GameManager>
     {
         _state = GameState.Fail;
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
-        ConsoleProDebug.LogToFilter("Дахин оролдов","Game manager");
         
     }
     
@@ -90,7 +86,6 @@ public class GameManager : Singleton<GameManager>
     public void NextLevel()
     {
         int sceneIndex =  SceneManager.GetActiveScene().buildIndex + 1;
-        ConsoleProDebug.LogToFilter("Дараагын үе ачааллаж байна","Game manager");
         StartCoroutine(LoadAsynschorounly(sceneIndex));
            
 
@@ -124,7 +119,7 @@ public class GameManager : Singleton<GameManager>
             //Debug.Log(progress);
             if (progress == 1)
             {
-                ConsoleProDebug.LogToFilter("Дараагын үе идэвхчлээ","Game manager");
+                
             }
             yield return null;
         }
