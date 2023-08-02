@@ -4,7 +4,9 @@ using System.Collections.Generic;
 using System.Diagnostics;
 using System.IO;
 using TMPro;
+using UnityEditor;
 using UnityEngine;
+using UnityEngine.Networking;
 using UnityEngine.UI;
 
 public class GameHome : Singleton<GameHome>
@@ -16,13 +18,13 @@ public class GameHome : Singleton<GameHome>
     public Sprite playIcon, downloadIcon, installIcon; 
     private TextMeshProUGUI playBtnString;
     private Process process;
-    
+    private bool versionCorrect=false;
     private void Awake()
     {
    
         playBtnString = playButton.transform.GetComponentInChildren<TextMeshProUGUI>();
     }
-
+   
     public void Set(TheGame game)
     {
         description.text = game.description;
@@ -35,18 +37,26 @@ public class GameHome : Singleton<GameHome>
     public void StartGame(TheGame game)
     {
         string path = Application.dataPath + "/../Builds/" + game.path;
-
-        try
+        CheckVersion(game);
+        if (versionCorrect)
         {
-            process = Process.Start(path);
-            playBtnString.text = "lauching ";
-            // Optionally, you can do something with the process here if needed.
+            try
+            {
+                process = Process.Start(path);
+                playBtnString.text = "lauching ";
+                // Optionally, you can do something with the process here if needed.
+            }
+            catch (Exception ex)
+            {
+                playBtnString.text = "down ";
+                DownloadGame(game);
+            }
         }
-        catch (Exception ex)
+        else
         {
-            playBtnString.text = "down ";
-            DownloadGame(game);
+            playBtnString.text = "Update";
         }
+       
     }
     public void DownloadGame(TheGame game)
     {
@@ -54,6 +64,11 @@ public class GameHome : Singleton<GameHome>
         var zipdowloader = ZipDownloader.Instance;
         zipdowloader.StartDowloadGame(game);
 
+    }
+    public void UpdateGame(TheGame game)
+    {
+        FolderDeleter.Instance.Delete(game);
+        DownloadGame(game);
     }
     private void Update()
     {
@@ -67,23 +82,36 @@ public class GameHome : Singleton<GameHome>
 
     public void CheckGame(TheGame game)
     {
+        FolderDeleter.Instance.Delete(game);
         playButton.onClick.RemoveAllListeners();
         if (game == null)
         {
             print("The game parameter is null.");
             return;
         }
-
+        CheckVersion(game);
         string path = Application.dataPath + "/../Builds/" + game.path;
 
         if (File.Exists(path))
         {
-            // Game executable exists, set the play button text to "Play"
-            playBtnIcon.enabled = true;
-            playBtnIcon.type = Image.Type.Simple;
-            playButton.onClick.AddListener(() => StartGame(game));
-            playBtnIcon.sprite = playIcon;
-            playBtnString.text = "Play";
+            if (versionCorrect)
+            {
+                playBtnIcon.enabled = true;
+                playBtnIcon.type = Image.Type.Simple;
+                playButton.onClick.AddListener(() => StartGame(game));
+                playBtnIcon.sprite = playIcon;
+                playBtnString.text = "Play";
+            }
+            else
+            {
+                playBtnIcon.enabled = true;
+                playBtnIcon.type = Image.Type.Simple;
+                playButton.onClick.AddListener(() => UpdateGame(game));
+                playBtnIcon.sprite = installIcon;
+                playBtnString.text = "Install";
+            }
+           
+           
         }
         else
         {
@@ -101,5 +129,12 @@ public class GameHome : Singleton<GameHome>
         this.gameObject.SetActive(false);
         playButton.onClick.RemoveAllListeners();
     }
+   
+    public void CheckVersion(TheGame game)
+    {
+      
+    }
+
+  
 
 }
