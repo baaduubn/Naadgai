@@ -11,4 +11,5 @@ public class TheGame : ScriptableObject
     public string description;
     public Sprite[] screenshot;
     public string about;
+    public string downloadUrl;
 }

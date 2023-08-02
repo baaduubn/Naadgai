@@ -12,16 +12,17 @@ public class GameHome : Singleton<GameHome>
     public TextMeshProUGUI description, aboutGame;
     public Image headerImage;
     public Button playButton;
-    private Image playBtnIcon;
+    public Image playBtnIcon;
+    public Sprite playIcon, downloadIcon, installIcon; 
     private TextMeshProUGUI playBtnString;
     private Process process;
-
+    
     private void Awake()
     {
-        playBtnIcon = playButton.GetComponentInChildren<Image>();
+   
         playBtnString = playButton.transform.GetComponentInChildren<TextMeshProUGUI>();
     }
-  
+
     public void Set(TheGame game)
     {
         description.text = game.description;
@@ -29,7 +30,7 @@ public class GameHome : Singleton<GameHome>
         headerImage.sprite = game.headerImage;
         CheckGame(game);
         // playButton.onClick.AddListener(AddAndStartProcess);
-        playButton.onClick.AddListener(() => StartGame(game));
+
     }
     public void StartGame(TheGame game)
     {
@@ -37,17 +38,26 @@ public class GameHome : Singleton<GameHome>
 
         try
         {
-             process = Process.Start(path);
+            process = Process.Start(path);
             playBtnString.text = "lauching ";
             // Optionally, you can do something with the process here if needed.
         }
         catch (Exception ex)
         {
-           
+            playBtnString.text = "down ";
+            DownloadGame(game);
         }
+    }
+    public void DownloadGame(TheGame game)
+    {
+        playBtnString.text = "downloading";
+        var zipdowloader = ZipDownloader.Instance;
+        zipdowloader.StartDowloadGame(game);
+
     }
     private void Update()
     {
+        if (process == null) return;
         if (process.HasExited)
         {
             process = null;
@@ -55,8 +65,9 @@ public class GameHome : Singleton<GameHome>
         }
     }
 
-    private void CheckGame(TheGame game)
+    public void CheckGame(TheGame game)
     {
+        playButton.onClick.RemoveAllListeners();
         if (game == null)
         {
             print("The game parameter is null.");
@@ -68,11 +79,19 @@ public class GameHome : Singleton<GameHome>
         if (File.Exists(path))
         {
             // Game executable exists, set the play button text to "Play"
+            playBtnIcon.enabled = true;
+            playBtnIcon.type = Image.Type.Simple;
+            playButton.onClick.AddListener(() => StartGame(game));
+            playBtnIcon.sprite = playIcon;
             playBtnString.text = "Play";
         }
         else
         {
             // Game executable doesn't exist, set the play button text to "Install"
+            playBtnIcon.enabled = true;
+            playBtnIcon.type = Image.Type.Simple;
+            playButton.onClick.AddListener(() => DownloadGame(game));
+            playBtnIcon.sprite = installIcon;
             playBtnString.text = "Install";
         }
     }
@@ -80,7 +99,7 @@ public class GameHome : Singleton<GameHome>
     public void BackButton()
     {
         this.gameObject.SetActive(false);
-       playButton.onClick.RemoveAllListeners();
+        playButton.onClick.RemoveAllListeners();
     }
 
 }
