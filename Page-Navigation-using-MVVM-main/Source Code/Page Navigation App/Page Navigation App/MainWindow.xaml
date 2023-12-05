@@ -187,6 +187,7 @@
         <Button x:Name="CloseApp"
                 Style="{StaticResource ExitApp}"
                 Click="CloseApp_Click" />
+        <Button x:Name="MinimizeApp" Style="{StaticResource MinimizeApp}" Click="CloseApp_Click"/>
 
     </Grid>
 
