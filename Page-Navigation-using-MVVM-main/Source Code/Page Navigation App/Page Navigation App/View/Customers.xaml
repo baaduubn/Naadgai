@@ -22,13 +22,13 @@
             </Border.Background>
         </Border>
 
-        <TextBlock Text="Customer ID  :"
+        <TextBlock
                    Foreground="#DBDBDB"
                    FontSize="12"
                    HorizontalAlignment="Left"
                    VerticalAlignment="Top"
                    FontFamily="/Fonts/#Rubik Medium"
-                   Margin="70,138,0,0" />
+                   Margin="70,138,0,0" ><Run Language="mn-mn" Text="Хэрэглэгчийн"/><Run Text=" ID  :"/></TextBlock>
 
         <TextBlock Text="{Binding CustomerID}"
                    Foreground="#CED565"
@@ -36,7 +36,7 @@
                    HorizontalAlignment="Left"
                    VerticalAlignment="Top"
                    FontFamily="/Fonts/#Rubik Medium"
-                   Margin="160,138,0,0" />
+                   Margin="181,138,0,0" />
      
 
     </Grid>

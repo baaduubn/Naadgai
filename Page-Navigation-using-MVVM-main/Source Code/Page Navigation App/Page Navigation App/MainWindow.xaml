@@ -1,9 +1,4 @@
-﻿<!--/// <Summary>
-    /// Author : R. Arun Mutharasu
-    /// Created :25-08-2022
-    /// YouTube Channel : C# Design Pro 
-    /// </Summary>-->
-
+﻿
 <Window x:Class="Page_Navigation_App.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
@@ -62,8 +57,8 @@
                             <Image Source="Images/img_home.png"
                                    Style="{StaticResource Image_Style}" />
 
-                            <TextBlock Text="Home"
-                                       Style="{StaticResource Text_Style}" />
+                            <TextBlock
+                                       Style="{StaticResource Text_Style}" ><Run Language="mn-mn" Text="Нүүр"/></TextBlock>
 
                         </Grid>
 
@@ -79,8 +74,8 @@
                             <Image Source="Images/img_customer.png"
                                    Style="{StaticResource Image_Style}" />
 
-                            <TextBlock Text="Customer"
-                                       Style="{StaticResource Text_Style}" />
+                            <TextBlock
+                                       Style="{StaticResource Text_Style}" ><Run Language="mn-mn" Text="Профайл"/></TextBlock>
 
                         </Grid>
 
@@ -96,8 +91,8 @@
                             <Image Source="Images/img_product.png"
                                    Style="{StaticResource Image_Style}" />
 
-                            <TextBlock Text="Products"
-                                       Style="{StaticResource Text_Style}" />
+                            <TextBlock
+                                       Style="{StaticResource Text_Style}" ><Run Language="mn-mn" Text="Тоглоом"/></TextBlock>
 
                         </Grid>
 
@@ -130,8 +125,8 @@
                             <Image Source="Images/img_transaction.png"
                                    Style="{StaticResource Image_Style}" />
 
-                            <TextBlock Text="Transactions"
-                                       Style="{StaticResource Text_Style}" />
+                            <TextBlock
+                                       Style="{StaticResource Text_Style}" ><Run Language="mn-mn" Text="Төлбөр"/></TextBlock>
 
                         </Grid>
 
@@ -164,8 +159,8 @@
                             <Image Source="Images/img_setting.png"
                                    Style="{StaticResource Image_Style}" />
 
-                            <TextBlock Text="Settings"
-                                       Style="{StaticResource Text_Style}" />
+                            <TextBlock
+                                       Style="{StaticResource Text_Style}" ><Run Language="mn-mn" Text="Тохиргоо"/></TextBlock>
 
                         </Grid>
 
@@ -184,10 +179,34 @@
 
         </Grid>
 
-        <Button x:Name="CloseApp"
-                Style="{StaticResource ExitApp}"
-                Click="CloseApp_Click" />
-        <Button x:Name="MinimizeApp" Style="{StaticResource MinimizeApp}" Click="CloseApp_Click"/>
+
+
+        <Button x:Name="Close"
+        Click="CloseApp_Click" 
+        Margin="806,12,20,562" 
+        Width="25"
+        Height="25"
+                 Style="{StaticResource CustomButtonStyle}"
+        BorderBrush="#00707070">
+            <Button.Background>
+                <ImageBrush ImageSource="/icons8-close-32.png"/>
+            </Button.Background>
+        </Button>
+
+        <Button x:Name="MinimizeApp"
+        Click="MinimizeApp_Click" 
+        Margin="766,18,59,557" 
+        Width="25"
+        Height="25"
+                 Style="{StaticResource CustomButtonStyle}"
+        BorderBrush="#00707070" Foreground="#00000000">
+            <Button.Background>
+                <ImageBrush ImageSource="/icons8-subtract-32.png"/>
+            </Button.Background>
+        </Button>
+
+
+
 
     </Grid>
 

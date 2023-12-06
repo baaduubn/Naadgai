@@ -1,0 +1,118 @@
+D:\SainGamesBeta\Page-Navigation-using-MVVM-main\Source Code\Page Navigation App\Page Navigation App\bin\Debug\net6.0-windows\Sain games platform.exe
+D:\SainGamesBeta\Page-Navigation-using-MVVM-main\Source Code\Page Navigation App\Page Navigation App\bin\Debug\net6.0-windows\Images\customer_page.png
+D:\SainGamesBeta\Page-Navigation-using-MVVM-main\Source Code\Page Navigation App\Page Navigation App\bin\Debug\net6.0-windows\Images\home_page.png
+D:\SainGamesBeta\Page-Navigation-using-MVVM-main\Source Code\Page Navigation App\Page Navigation App\bin\Debug\net6.0-windows\Images\img_customer.png
+D:\SainGamesBeta\Page-Navigation-using-MVVM-main\Source Code\Page Navigation App\Page Navigation App\bin\Debug\net6.0-windows\Images\img_home.png
+D:\SainGamesBeta\Page-Navigation-using-MVVM-main\Source Code\Page Navigation App\Page Navigation App\bin\Debug\net6.0-windows\Images\img_order.png
+D:\SainGamesBeta\Page-Navigation-using-MVVM-main\Source Code\Page Navigation App\Page Navigation App\bin\Debug\net6.0-windows\Images\img_product.png
+D:\SainGamesBeta\Page-Navigation-using-MVVM-main\Source Code\Page Navigation App\Page Navigation App\bin\Debug\net6.0-windows\Images\img_setting.png
+D:\SainGamesBeta\Page-Navigation-using-MVVM-main\Source Code\Page Navigation App\Page Navigation App\bin\Debug\net6.0-windows\Images\img_shipment.png
+D:\SainGamesBeta\Page-Navigation-using-MVVM-main\Source Code\Page Navigation App\Page Navigation App\bin\Debug\net6.0-windows\Images\img_transaction.png
+D:\SainGamesBeta\Page-Navigation-using-MVVM-main\Source Code\Page Navigation App\Page Navigation App\bin\Debug\net6.0-windows\Images\order_page.png
+D:\SainGamesBeta\Page-Navigation-using-MVVM-main\Source Code\Page Navigation App\Page Navigation App\bin\Debug\net6.0-windows\Images\product_page.png
+D:\SainGamesBeta\Page-Navigation-using-MVVM-main\Source Code\Page Navigation App\Page Navigation App\bin\Debug\net6.0-windows\Images\setting_page.png
+D:\SainGamesBeta\Page-Navigation-using-MVVM-main\Source Code\Page Navigation App\Page Navigation App\bin\Debug\net6.0-windows\Images\shipment_page.png
+D:\SainGamesBeta\Page-Navigation-using-MVVM-main\Source Code\Page Navigation App\Page Navigation App\bin\Debug\net6.0-windows\Images\shutdown_def.png
+D:\SainGamesBeta\Page-Navigation-using-MVVM-main\Source Code\Page Navigation App\Page Navigation App\bin\Debug\net6.0-windows\Images\shutdown_mo.png
+D:\SainGamesBeta\Page-Navigation-using-MVVM-main\Source Code\Page Navigation App\Page Navigation App\bin\Debug\net6.0-windows\Images\transaction_page.png
+D:\SainGamesBeta\Page-Navigation-using-MVVM-main\Source Code\Page Navigation App\Page Navigation App\bin\Debug\net6.0-windows\Sain games platform.deps.json
+D:\SainGamesBeta\Page-Navigation-using-MVVM-main\Source Code\Page Navigation App\Page Navigation App\bin\Debug\net6.0-windows\Sain games platform.runtimeconfig.json
+D:\SainGamesBeta\Page-Navigation-using-MVVM-main\Source Code\Page Navigation App\Page Navigation App\bin\Debug\net6.0-windows\Sain games platform.dll
+D:\SainGamesBeta\Page-Navigation-using-MVVM-main\Source Code\Page Navigation App\Page Navigation App\bin\Debug\net6.0-windows\Sain games platform.pdb
+D:\SainGamesBeta\Page-Navigation-using-MVVM-main\Source Code\Page Navigation App\Page Navigation App\obj\Debug\net6.0-windows\Styles\Button.baml
+D:\SainGamesBeta\Page-Navigation-using-MVVM-main\Source Code\Page Navigation App\Page Navigation App\obj\Debug\net6.0-windows\Styles\Image.baml
+D:\SainGamesBeta\Page-Navigation-using-MVVM-main\Source Code\Page Navigation App\Page Navigation App\obj\Debug\net6.0-windows\Styles\Page.baml
+D:\SainGamesBeta\Page-Navigation-using-MVVM-main\Source Code\Page Navigation App\Page Navigation App\obj\Debug\net6.0-windows\Styles\Text.baml
+D:\SainGamesBeta\Page-Navigation-using-MVVM-main\Source Code\Page Navigation App\Page Navigation App\obj\Debug\net6.0-windows\MainWindow.g.cs
+D:\SainGamesBeta\Page-Navigation-using-MVVM-main\Source Code\Page Navigation App\Page Navigation App\obj\Debug\net6.0-windows\View\Customers.g.cs
+D:\SainGamesBeta\Page-Navigation-using-MVVM-main\Source Code\Page Navigation App\Page Navigation App\obj\Debug\net6.0-windows\View\Home.g.cs
+D:\SainGamesBeta\Page-Navigation-using-MVVM-main\Source Code\Page Navigation App\Page Navigation App\obj\Debug\net6.0-windows\View\Orders.g.cs
+D:\SainGamesBeta\Page-Navigation-using-MVVM-main\Source Code\Page Navigation App\Page Navigation App\obj\Debug\net6.0-windows\View\Products.g.cs
+D:\SainGamesBeta\Page-Navigation-using-MVVM-main\Source Code\Page Navigation App\Page Navigation App\obj\Debug\net6.0-windows\View\Settings.g.cs
+D:\SainGamesBeta\Page-Navigation-using-MVVM-main\Source Code\Page Navigation App\Page Navigation App\obj\Debug\net6.0-windows\View\Shipments.g.cs
+D:\SainGamesBeta\Page-Navigation-using-MVVM-main\Source Code\Page Navigation App\Page Navigation App\obj\Debug\net6.0-windows\View\Transactions.g.cs
+D:\SainGamesBeta\Page-Navigation-using-MVVM-main\Source Code\Page Navigation App\Page Navigation App\obj\Debug\net6.0-windows\App.g.cs
+D:\SainGamesBeta\Page-Navigation-using-MVVM-main\Source Code\Page Navigation App\Page Navigation App\obj\Debug\net6.0-windows\Sain games platform_Content.g.cs
+D:\SainGamesBeta\Page-Navigation-using-MVVM-main\Source Code\Page Navigation App\Page Navigation App\obj\Debug\net6.0-windows\GeneratedInternalTypeHelper.g.cs
+D:\SainGamesBeta\Page-Navigation-using-MVVM-main\Source Code\Page Navigation App\Page Navigation App\obj\Debug\net6.0-windows\Sain games platform_MarkupCompile.cache
+D:\SainGamesBeta\Page-Navigation-using-MVVM-main\Source Code\Page Navigation App\Page Navigation App\obj\Debug\net6.0-windows\Sain games platform_MarkupCompile.lref
+D:\SainGamesBeta\Page-Navigation-using-MVVM-main\Source Code\Page Navigation App\Page Navigation App\obj\Debug\net6.0-windows\App.baml
+D:\SainGamesBeta\Page-Navigation-using-MVVM-main\Source Code\Page Navigation App\Page Navigation App\obj\Debug\net6.0-windows\MainWindow.baml
+D:\SainGamesBeta\Page-Navigation-using-MVVM-main\Source Code\Page Navigation App\Page Navigation App\obj\Debug\net6.0-windows\Utilities\DataTemplate.baml
+D:\SainGamesBeta\Page-Navigation-using-MVVM-main\Source Code\Page Navigation App\Page Navigation App\obj\Debug\net6.0-windows\View\Customers.baml
+D:\SainGamesBeta\Page-Navigation-using-MVVM-main\Source Code\Page Navigation App\Page Navigation App\obj\Debug\net6.0-windows\View\Home.baml
+D:\SainGamesBeta\Page-Navigation-using-MVVM-main\Source Code\Page Navigation App\Page Navigation App\obj\Debug\net6.0-windows\View\Orders.baml
+D:\SainGamesBeta\Page-Navigation-using-MVVM-main\Source Code\Page Navigation App\Page Navigation App\obj\Debug\net6.0-windows\View\Products.baml
+D:\SainGamesBeta\Page-Navigation-using-MVVM-main\Source Code\Page Navigation App\Page Navigation App\obj\Debug\net6.0-windows\View\Settings.baml
+D:\SainGamesBeta\Page-Navigation-using-MVVM-main\Source Code\Page Navigation App\Page Navigation App\obj\Debug\net6.0-windows\View\Shipments.baml
+D:\SainGamesBeta\Page-Navigation-using-MVVM-main\Source Code\Page Navigation App\Page Navigation App\obj\Debug\net6.0-windows\View\Transactions.baml
+D:\SainGamesBeta\Page-Navigation-using-MVVM-main\Source Code\Page Navigation App\Page Navigation App\obj\Debug\net6.0-windows\Sain games platform.g.resources
+D:\SainGamesBeta\Page-Navigation-using-MVVM-main\Source Code\Page Navigation App\Page Navigation App\obj\Debug\net6.0-windows\Sain games platform.GeneratedMSBuildEditorConfig.editorconfig
+D:\SainGamesBeta\Page-Navigation-using-MVVM-main\Source Code\Page Navigation App\Page Navigation App\obj\Debug\net6.0-windows\Sain games platform.AssemblyInfoInputs.cache
+D:\SainGamesBeta\Page-Navigation-using-MVVM-main\Source Code\Page Navigation App\Page Navigation App\obj\Debug\net6.0-windows\Sain games platform.AssemblyInfo.cs
+D:\SainGamesBeta\Page-Navigation-using-MVVM-main\Source Code\Page Navigation App\Page Navigation App\obj\Debug\net6.0-windows\Sain games platform.csproj.CoreCompileInputs.cache
+D:\SainGamesBeta\Page-Navigation-using-MVVM-main\Source Code\Page Navigation App\Page Navigation App\obj\Debug\net6.0-windows\Sain games platform.dll
+D:\SainGamesBeta\Page-Navigation-using-MVVM-main\Source Code\Page Navigation App\Page Navigation App\obj\Debug\net6.0-windows\refint\Sain games platform.dll
+D:\SainGamesBeta\Page-Navigation-using-MVVM-main\Source Code\Page Navigation App\Page Navigation App\obj\Debug\net6.0-windows\Sain games platform.pdb
+D:\SainGamesBeta\Page-Navigation-using-MVVM-main\Source Code\Page Navigation App\Page Navigation App\obj\Debug\net6.0-windows\Sain games platform.genruntimeconfig.cache
+D:\SainGamesBeta\Page-Navigation-using-MVVM-main\Source Code\Page Navigation App\Page Navigation App\obj\Debug\net6.0-windows\ref\Sain games platform.dll
+D:\SainGamesBeta\Page-Navigation-using-MVVM-main\Source Code\Page Navigation App\Page Navigation App\obj\Debug\net6.0-windows\Sain games platform.sourcelink.json
+D:\SainGamesBeta\Page-Navigation-using-MVVM-main\Source Code\Page Navigation App\Page Navigation App\bin\Debug\net6.0-windows\AutoUpdater.NET.dll
+D:\SainGamesBeta\Page-Navigation-using-MVVM-main\Source Code\Page Navigation App\Page Navigation App\bin\Debug\net6.0-windows\DeltaCompressionDotNet.MsDelta.dll
+D:\SainGamesBeta\Page-Navigation-using-MVVM-main\Source Code\Page Navigation App\Page Navigation App\bin\Debug\net6.0-windows\DeltaCompressionDotNet.PatchApi.dll
+D:\SainGamesBeta\Page-Navigation-using-MVVM-main\Source Code\Page Navigation App\Page Navigation App\bin\Debug\net6.0-windows\DeltaCompressionDotNet.dll
+D:\SainGamesBeta\Page-Navigation-using-MVVM-main\Source Code\Page Navigation App\Page Navigation App\bin\Debug\net6.0-windows\Microsoft.Web.WebView2.Core.dll
+D:\SainGamesBeta\Page-Navigation-using-MVVM-main\Source Code\Page Navigation App\Page Navigation App\bin\Debug\net6.0-windows\Microsoft.Web.WebView2.WinForms.dll
+D:\SainGamesBeta\Page-Navigation-using-MVVM-main\Source Code\Page Navigation App\Page Navigation App\bin\Debug\net6.0-windows\Microsoft.Web.WebView2.Wpf.dll
+D:\SainGamesBeta\Page-Navigation-using-MVVM-main\Source Code\Page Navigation App\Page Navigation App\bin\Debug\net6.0-windows\Mono.Cecil.Mdb.dll
+D:\SainGamesBeta\Page-Navigation-using-MVVM-main\Source Code\Page Navigation App\Page Navigation App\bin\Debug\net6.0-windows\Mono.Cecil.Pdb.dll
+D:\SainGamesBeta\Page-Navigation-using-MVVM-main\Source Code\Page Navigation App\Page Navigation App\bin\Debug\net6.0-windows\Mono.Cecil.Rocks.dll
+D:\SainGamesBeta\Page-Navigation-using-MVVM-main\Source Code\Page Navigation App\Page Navigation App\bin\Debug\net6.0-windows\Mono.Cecil.dll
+D:\SainGamesBeta\Page-Navigation-using-MVVM-main\Source Code\Page Navigation App\Page Navigation App\bin\Debug\net6.0-windows\SharpCompress.dll
+D:\SainGamesBeta\Page-Navigation-using-MVVM-main\Source Code\Page Navigation App\Page Navigation App\bin\Debug\net6.0-windows\ar\AutoUpdater.NET.resources.dll
+D:\SainGamesBeta\Page-Navigation-using-MVVM-main\Source Code\Page Navigation App\Page Navigation App\bin\Debug\net6.0-windows\cs\AutoUpdater.NET.resources.dll
+D:\SainGamesBeta\Page-Navigation-using-MVVM-main\Source Code\Page Navigation App\Page Navigation App\bin\Debug\net6.0-windows\da\AutoUpdater.NET.resources.dll
+D:\SainGamesBeta\Page-Navigation-using-MVVM-main\Source Code\Page Navigation App\Page Navigation App\bin\Debug\net6.0-windows\de\AutoUpdater.NET.resources.dll
+D:\SainGamesBeta\Page-Navigation-using-MVVM-main\Source Code\Page Navigation App\Page Navigation App\bin\Debug\net6.0-windows\es\AutoUpdater.NET.resources.dll
+D:\SainGamesBeta\Page-Navigation-using-MVVM-main\Source Code\Page Navigation App\Page Navigation App\bin\Debug\net6.0-windows\fr\AutoUpdater.NET.resources.dll
+D:\SainGamesBeta\Page-Navigation-using-MVVM-main\Source Code\Page Navigation App\Page Navigation App\bin\Debug\net6.0-windows\it\AutoUpdater.NET.resources.dll
+D:\SainGamesBeta\Page-Navigation-using-MVVM-main\Source Code\Page Navigation App\Page Navigation App\bin\Debug\net6.0-windows\ja-JP\AutoUpdater.NET.resources.dll
+D:\SainGamesBeta\Page-Navigation-using-MVVM-main\Source Code\Page Navigation App\Page Navigation App\bin\Debug\net6.0-windows\ko\AutoUpdater.NET.resources.dll
+D:\SainGamesBeta\Page-Navigation-using-MVVM-main\Source Code\Page Navigation App\Page Navigation App\bin\Debug\net6.0-windows\lv\AutoUpdater.NET.resources.dll
+D:\SainGamesBeta\Page-Navigation-using-MVVM-main\Source Code\Page Navigation App\Page Navigation App\bin\Debug\net6.0-windows\nl\AutoUpdater.NET.resources.dll
+D:\SainGamesBeta\Page-Navigation-using-MVVM-main\Source Code\Page Navigation App\Page Navigation App\bin\Debug\net6.0-windows\pl\AutoUpdater.NET.resources.dll
+D:\SainGamesBeta\Page-Navigation-using-MVVM-main\Source Code\Page Navigation App\Page Navigation App\bin\Debug\net6.0-windows\pt-BR\AutoUpdater.NET.resources.dll
+D:\SainGamesBeta\Page-Navigation-using-MVVM-main\Source Code\Page Navigation App\Page Navigation App\bin\Debug\net6.0-windows\pt\AutoUpdater.NET.resources.dll
+D:\SainGamesBeta\Page-Navigation-using-MVVM-main\Source Code\Page Navigation App\Page Navigation App\bin\Debug\net6.0-windows\ru\AutoUpdater.NET.resources.dll
+D:\SainGamesBeta\Page-Navigation-using-MVVM-main\Source Code\Page Navigation App\Page Navigation App\bin\Debug\net6.0-windows\sk\AutoUpdater.NET.resources.dll
+D:\SainGamesBeta\Page-Navigation-using-MVVM-main\Source Code\Page Navigation App\Page Navigation App\bin\Debug\net6.0-windows\sv\AutoUpdater.NET.resources.dll
+D:\SainGamesBeta\Page-Navigation-using-MVVM-main\Source Code\Page Navigation App\Page Navigation App\bin\Debug\net6.0-windows\th\AutoUpdater.NET.resources.dll
+D:\SainGamesBeta\Page-Navigation-using-MVVM-main\Source Code\Page Navigation App\Page Navigation App\bin\Debug\net6.0-windows\tr\AutoUpdater.NET.resources.dll
+D:\SainGamesBeta\Page-Navigation-using-MVVM-main\Source Code\Page Navigation App\Page Navigation App\bin\Debug\net6.0-windows\zh-TW\AutoUpdater.NET.resources.dll
+D:\SainGamesBeta\Page-Navigation-using-MVVM-main\Source Code\Page Navigation App\Page Navigation App\bin\Debug\net6.0-windows\zh\AutoUpdater.NET.resources.dll
+D:\SainGamesBeta\Page-Navigation-using-MVVM-main\Source Code\Page Navigation App\Page Navigation App\bin\Debug\net6.0-windows\runtimes\win-arm64\native\WebView2Loader.dll
+D:\SainGamesBeta\Page-Navigation-using-MVVM-main\Source Code\Page Navigation App\Page Navigation App\bin\Debug\net6.0-windows\runtimes\win-x64\native\WebView2Loader.dll
+D:\SainGamesBeta\Page-Navigation-using-MVVM-main\Source Code\Page Navigation App\Page Navigation App\bin\Debug\net6.0-windows\runtimes\win-x86\native\WebView2Loader.dll
+D:\SainGamesBeta\Page-Navigation-using-MVVM-main\Source Code\Page Navigation App\Page Navigation App\obj\Debug\net6.0-windows\Sain games platform.csproj.AssemblyReference.cache
+D:\SainGamesBeta\Page-Navigation-using-MVVM-main\Source Code\Page Navigation App\Page Navigation App\obj\Debug\net6.0-windows\Sain games platform.csproj.CopyComplete
+C:\Users\baadu\OneDrive\Desktop\New folder\Debug\net6.0-windows\Sain games platform.exe
+C:\Users\baadu\OneDrive\Desktop\New folder\Debug\net6.0-windows\Images\customer_page.png
+C:\Users\baadu\OneDrive\Desktop\New folder\Debug\net6.0-windows\Images\home_page.png
+C:\Users\baadu\OneDrive\Desktop\New folder\Debug\net6.0-windows\Images\img_customer.png
+C:\Users\baadu\OneDrive\Desktop\New folder\Debug\net6.0-windows\Images\img_home.png
+C:\Users\baadu\OneDrive\Desktop\New folder\Debug\net6.0-windows\Images\img_order.png
+C:\Users\baadu\OneDrive\Desktop\New folder\Debug\net6.0-windows\Images\img_product.png
+C:\Users\baadu\OneDrive\Desktop\New folder\Debug\net6.0-windows\Images\img_setting.png
+C:\Users\baadu\OneDrive\Desktop\New folder\Debug\net6.0-windows\Images\img_shipment.png
+C:\Users\baadu\OneDrive\Desktop\New folder\Debug\net6.0-windows\Images\img_transaction.png
+C:\Users\baadu\OneDrive\Desktop\New folder\Debug\net6.0-windows\Images\order_page.png
+C:\Users\baadu\OneDrive\Desktop\New folder\Debug\net6.0-windows\Images\product_page.png
+C:\Users\baadu\OneDrive\Desktop\New folder\Debug\net6.0-windows\Images\setting_page.png
+C:\Users\baadu\OneDrive\Desktop\New folder\Debug\net6.0-windows\Images\shipment_page.png
+C:\Users\baadu\OneDrive\Desktop\New folder\Debug\net6.0-windows\Images\shutdown_def.png
+C:\Users\baadu\OneDrive\Desktop\New folder\Debug\net6.0-windows\Images\shutdown_mo.png
+C:\Users\baadu\OneDrive\Desktop\New folder\Debug\net6.0-windows\Images\transaction_page.png
+C:\Users\baadu\OneDrive\Desktop\New folder\Debug\net6.0-windows\Sain games platform.deps.json
+C:\Users\baadu\OneDrive\Desktop\New folder\Debug\net6.0-windows\Sain games platform.runtimeconfig.json
+C:\Users\baadu\OneDrive\Desktop\New folder\Debug\net6.0-windows\Sain games platform.dll
+C:\Users\baadu\OneDrive\Desktop\New folder\Debug\net6.0-windows\Sain games platform.pdb

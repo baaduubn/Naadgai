@@ -12,15 +12,30 @@
     <UserControl.DataContext>
         <vm:ProductVM />
     </UserControl.DataContext>
-    
-    <Grid Margin="15">
 
+    <Grid Margin="15">
         <Border CornerRadius="0,20,20,0">
             <Border.Background>
                 <ImageBrush ImageSource="/Images/product_page.png"
                             Stretch="None" />
             </Border.Background>
         </Border>
+
+        <!-- ScrollViewer for the grid of buttons -->
+        <ScrollViewer VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Auto">
+            <UniformGrid Rows="10" Columns="10" Width="500" Height="500">
+                <!-- List of 100 Test Buttons -->
+                <ItemsControl ItemsSource="{Binding YourTestButtonCollection}" Margin="0,0,-320,-161">
+                    <ItemsControl.ItemTemplate>
+                        <DataTemplate>
+                            <Button Content="{Binding}" 
+                                    Command="{Binding DataContext.YourTestCommand, RelativeSource={RelativeSource AncestorType={x:Type UserControl}}}"
+                                    Margin="5"/>
+                        </DataTemplate>
+                    </ItemsControl.ItemTemplate>
+                </ItemsControl>
+            </UniformGrid>
+        </ScrollViewer>
 
         <TextBlock Text="{Binding ProductAvailability}"
                    Foreground="#F25E68"
@@ -29,6 +44,5 @@
                    VerticalAlignment="Center"
                    FontFamily="/Fonts/#Rubik Medium"
                    Margin="261,300,0,0" />
-
     </Grid>
 </UserControl>
