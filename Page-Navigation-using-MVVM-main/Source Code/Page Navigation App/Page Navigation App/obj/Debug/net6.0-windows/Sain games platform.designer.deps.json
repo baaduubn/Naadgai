@@ -1194,7 +1194,11 @@
             "fileVersion": "4.6.24705.1"
           }
         }
-      }
+      },
+      "WixToolset.Firewall.wixext/4.0.3": {},
+      "WixToolset.Heat/4.0.3": {},
+      "WixToolset.UI.wixext/4.0.3": {},
+      "WixToolset.Util.wixext/4.0.3": {}
     }
   },
   "libraries": {
@@ -1750,6 +1754,34 @@
       "sha512": "sha512-5zJ0XDxAIg8iy+t4aMnQAu0MqVbqyvfoUVl1yDV61xdo3Vth45oA2FoY4pPkxYAH5f8ixpmTqXeEIya95x0aCQ==",
       "path": "system.xml.xdocument/4.3.0",
       "hashPath": "system.xml.xdocument.4.3.0.nupkg.sha512"
+    },
+    "WixToolset.Firewall.wixext/4.0.3": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-Yukx7meblgSxVd0dEcB/MLLVhTplZFEB1ch9PJtg3+6iThF8ARJgqF27WrQECEHB4273IAYEA0XT2MupPMQFHA==",
+      "path": "wixtoolset.firewall.wixext/4.0.3",
+      "hashPath": "wixtoolset.firewall.wixext.4.0.3.nupkg.sha512"
+    },
+    "WixToolset.Heat/4.0.3": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-NNaAYVEZo4Gw1mb58OA7/6lXWIx8A6dbX1gXzM+HAEjp35wnTkkB/yYpMeLfCrHSTJ3muAHCvSmI+4qgCFGwmA==",
+      "path": "wixtoolset.heat/4.0.3",
+      "hashPath": "wixtoolset.heat.4.0.3.nupkg.sha512"
+    },
+    "WixToolset.UI.wixext/4.0.3": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-93DL5vwJUzbRjLVA0t2Pe5Te/MtHvLmpXDApv+tjuWu8eqDp+dF70YXV4/nuRvdEQiQ2IeMwSDffP5SnVErvuQ==",
+      "path": "wixtoolset.ui.wixext/4.0.3",
+      "hashPath": "wixtoolset.ui.wixext.4.0.3.nupkg.sha512"
+    },
+    "WixToolset.Util.wixext/4.0.3": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-gWDOZNC6Y+8RPNjjAviFTyZwEYMNa+pg5gqRnZinUYwCi0mLlaD+lpWm37L6oU9hEcvkBXkJRVJSIqjsxiSOHQ==",
+      "path": "wixtoolset.util.wixext/4.0.3",
+      "hashPath": "wixtoolset.util.wixext.4.0.3.nupkg.sha512"
     }
   }
 }

@@ -1,0 +1,8 @@
+﻿<Project Sdk="WixToolset.Sdk/4.0.3">
+  <PropertyGroup>
+    <PreBuildEvent>heat dir "D:\SainGamesBeta\Page-Navigation-using-MVVM-main\Source Code\Page Navigation App\Page Navigation App\bin\Debug\net6.0-windows\Images" -dr INSTALLFOLDER -ke -scom -sfrag -srd -cg ImageGroup -var var.Images -out Images.wxs</PreBuildEvent>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Page Navigation App\Sain games platform.csproj" />
+  </ItemGroup>
+</Project>

@@ -1,9 +1,143 @@
 <Wix xmlns="http://wixtoolset.org/schemas/v4/wxs">
-  <Fragment>
-    <ComponentGroup Id="ExampleComponents" Directory="INSTALLFOLDER">
-      <Component>
-        <File Source="ExampleComponents.wxs" />
-      </Component>
-    </ComponentGroup>
-  </Fragment>
+	<Fragment>
+		<DirectoryRef Id="INSTALLFOLDER">
+		
+			<Directory Id="ImageFolder" Name="Images">
+				<!-- Nothing inside ImageFolder yet, just the directory itself -->
+			</Directory>
+
+		</DirectoryRef>
+		<ComponentGroup Id="ExampleComponents" Directory="INSTALLFOLDER">
+
+						<!-- Executable and DLLs -->
+						<Component>
+							<File Source="Sain games platform.exe" />
+						</Component>
+						<Component>
+							<File Source="AutoUpdater.NET.dll"/>
+						</Component>
+						<Component>
+							<File Source="DeltaCompressionDotNet.dll"/>
+						</Component>
+						<Component>
+							<File Source="DeltaCompressionDotNet.MsDelta.dll"/>
+						</Component>
+						<Component>
+							<File Source="DeltaCompressionDotNet.PatchApi.dll"/>
+						</Component>
+						<Component>
+							<File Source="Microsoft.Web.WebView2.Core.dll"/>
+						</Component>
+						<Component>
+							<File Source="Microsoft.Web.WebView2.WinForms.dll"/>
+						</Component>
+						<Component>
+							<File Source="Microsoft.Web.WebView2.Wpf.dll"/>
+						</Component>
+						<Component>
+							<File Source="Mono.Cecil.dll"/>
+						</Component>
+						<Component>
+							<File Source="Mono.Cecil.Mdb.dll"/>
+						</Component>
+						<Component>
+							<File Source="Mono.Cecil.Pdb.dll"/>
+						</Component>
+						<Component>
+							<File Source="Mono.Cecil.Rocks.dll"/>
+						</Component>
+						<!-- ... (Other DLLs) -->
+
+						<!-- JSON and configuration files -->
+						<Component>
+							<File Source="Sain games platform.deps.json"/>
+						</Component>
+						<Component>
+							<File Source="Sain games platform.dll"/>
+						</Component>
+						<Component>
+							<File Source="Sain games platform.pdb"/>
+						</Component>
+						<Component>
+							<File Source="Sain games platform.runtimeconfig.json"/>
+						</Component>
+
+						<!-- External library -->
+						<Component>
+							<File Source="SharpCompress.dll"/>
+						</Component>
+
+					</ComponentGroup>
+
+		<ComponentGroup Id="ImageFolder" Directory="ImageFolder">
+			<!-- Images -->
+			
+				<Component>
+					<File Source="Images\customer_page.png" />
+				</Component>
+				<Component>
+					<File Source="Images\home_page.png" />
+				</Component>
+				<Component>
+					<File Source="Images\icons8-close-32.png" />
+				</Component>
+				<Component>
+					<File Source="Images\icons8-subtract-32.png" />
+				</Component>
+				<Component>
+					<File Source="Images\img_customer.png" />
+				</Component>
+				<Component>
+					<File Source="Images\img_home.png" />
+				</Component>
+				<Component>
+					<File Source="Images\img_order.png" />
+				</Component>
+				<Component>
+					<File Source="Images\img_product.png" />
+				</Component>
+				<Component>
+					<File Source="Images\img_setting.png" />
+				</Component>
+				<Component>
+					<File Source="Images\img_shipment.png" />
+				</Component>
+				<Component>
+					<File Source="Images\img_transaction.png" />
+				</Component>
+				<Component>
+					<File Source="Images\minimize.png" />
+				</Component>
+				<Component>
+					<File Source="Images\minimizer.png" />
+				</Component>
+				<Component>
+					<File Source="Images\order_page.png" />
+				</Component>
+				<Component>
+					<File Source="Images\product_page.png" />
+				</Component>
+				<Component>
+					<File Source="Images\setting_page.png" />
+				</Component>
+				<Component>
+					<File Source="Images\shipment_page.png" />
+				</Component>
+				<Component>
+					<File Source="Images\shutdown_def.png" />
+				</Component>
+				<Component>
+					<File Source="Images\shutdown_mo.png" />
+				</Component>
+				<Component>
+					<File Source="Images\transaction_page.png" />
+				</Component>
+				<!-- ... (Other image files) -->
+			
+
+		</ComponentGroup>
+		
+	
+	</Fragment>
+
 </Wix>

@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "njulGnKNzBqpK3+C8bUtls47zBPlUFXV/xhtIuL0WtoAYeftEtHLyhVAy32zvfOkrR/DwENt7qZjxR7Ud6IJmw==",
+  "dgSpecHash": "ZK/OpF4DA2ZvfqOlzlPZJzGg8j+EkvgG0pxnItofieO/UBZ812p7V5jIg6w95fusD+NcgWbegIyA2M1gcEvpzg==",
   "success": true,
   "projectFilePath": "D:\\SainGamesBeta\\Page-Navigation-using-MVVM-main\\Source Code\\Page Navigation App\\Page Navigation App\\Sain games platform.csproj",
   "expectedPackageFiles": [
@@ -84,6 +84,7 @@
     "C:\\Users\\baadu\\.nuget\\packages\\system.xml.readerwriter\\4.3.0\\system.xml.readerwriter.4.3.0.nupkg.sha512",
     "C:\\Users\\baadu\\.nuget\\packages\\system.xml.xdocument\\4.3.0\\system.xml.xdocument.4.3.0.nupkg.sha512",
     "C:\\Users\\baadu\\.nuget\\packages\\wixtoolset.firewall.wixext\\4.0.3\\wixtoolset.firewall.wixext.4.0.3.nupkg.sha512",
+    "C:\\Users\\baadu\\.nuget\\packages\\wixtoolset.heat\\4.0.3\\wixtoolset.heat.4.0.3.nupkg.sha512",
     "C:\\Users\\baadu\\.nuget\\packages\\wixtoolset.ui.wixext\\4.0.3\\wixtoolset.ui.wixext.4.0.3.nupkg.sha512",
     "C:\\Users\\baadu\\.nuget\\packages\\wixtoolset.util.wixext\\4.0.3\\wixtoolset.util.wixext.4.0.3.nupkg.sha512"
   ],

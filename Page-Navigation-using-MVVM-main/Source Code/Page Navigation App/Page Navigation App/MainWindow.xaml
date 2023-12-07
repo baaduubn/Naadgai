@@ -189,7 +189,7 @@
                  Style="{StaticResource CustomButtonStyle}"
         BorderBrush="#00707070">
             <Button.Background>
-                <ImageBrush ImageSource="/icons8-close-32.png"/>
+                <ImageBrush ImageSource="/Images/icons8-close-32.png"/>
             </Button.Background>
         </Button>
 
@@ -201,7 +201,7 @@
                  Style="{StaticResource CustomButtonStyle}"
         BorderBrush="#00707070" Foreground="#00000000">
             <Button.Background>
-                <ImageBrush ImageSource="/icons8-subtract-32.png"/>
+                <ImageBrush ImageSource="/Images/icons8-subtract-32.png"/>
             </Button.Background>
         </Button>
 

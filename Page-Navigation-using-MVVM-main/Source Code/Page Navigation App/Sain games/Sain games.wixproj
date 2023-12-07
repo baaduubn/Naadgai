@@ -1,5 +1,11 @@
 ﻿<Project Sdk="WixToolset.Sdk/4.0.3">
-  <ItemGroup>
-    <ProjectReference Include="..\Page Navigation App\Sain games platform.csproj" />
-  </ItemGroup>
+	<PropertyGroup>
+		<PreBuildEvent>
+		</PreBuildEvent>
+	</PropertyGroup>
+	<ItemGroup>
+		<ProjectReference Include="..\Page Navigation App\Sain games platform.csproj" />
+	</ItemGroup>
+
+	<!-- Add the HeatDirectory element to include all files from the "Images" folder -->
 </Project>

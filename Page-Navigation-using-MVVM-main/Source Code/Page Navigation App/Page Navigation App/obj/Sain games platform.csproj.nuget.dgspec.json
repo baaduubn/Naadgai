@@ -52,6 +52,10 @@
               "target": "Package",
               "version": "[4.0.3, )"
             },
+            "WixToolset.Heat": {
+              "target": "Package",
+              "version": "[4.0.3, )"
+            },
             "WixToolset.UI.wixext": {
               "target": "Package",
               "version": "[4.0.3, )"

@@ -7,7 +7,7 @@
     <Nullable>disable</Nullable>
     <UseWPF>true</UseWPF>
     <PlatformTarget>AnyCPU</PlatformTarget>
-    <BaseOutputPath>C:\Users\baadu\OneDrive\Desktop\New folder</BaseOutputPath>
+    <BaseOutputPath></BaseOutputPath>
     <ApplicationIcon>Images\video-game-play-toad-mushroom-mario_108577.ico</ApplicationIcon>
   </PropertyGroup>
 
@@ -18,6 +18,8 @@
     <None Remove="icons8-subtract-32.png" />
     <None Remove="Images\customer_page.png" />
     <None Remove="Images\home_page.png" />
+    <None Remove="Images\icons8-close-32.png" />
+    <None Remove="Images\icons8-subtract-32.png" />
     <None Remove="Images\img_customer.png" />
     <None Remove="Images\img_home.png" />
     <None Remove="Images\img_order.png" />
@@ -32,9 +34,6 @@
     <None Remove="Images\shutdown_def.png" />
     <None Remove="Images\shutdown_mo.png" />
     <None Remove="Images\transaction_page.png" />
-    <None Remove="minimize.png" />
-    <None Remove="minimizer.png" />
-    <None Remove="shutdown_def.png" />
   </ItemGroup>
 
   <ItemGroup>
@@ -44,11 +43,8 @@
     <Resource Include="Fonts\Rubik-Regular.ttf">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Resource>
-    <Resource Include="icons8-close-32.png" />
-    <Resource Include="icons8-subtract-32.png" />
-    <Resource Include="minimize.png" />
-    <Resource Include="minimizer.png" />
-    <Resource Include="shutdown_def.png" />
+    <Resource Include="Images\icons8-close-32.png" />
+    <Resource Include="Images\icons8-subtract-32.png" />
     <Content Include="Images\customer_page.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
@@ -104,6 +100,7 @@
     <PackageReference Include="Autoupdater.NET.Official" Version="1.8.4" />
     <PackageReference Include="squirrel.windows" Version="2.0.1" />
     <PackageReference Include="WixToolset.Firewall.wixext" Version="4.0.3" />
+    <PackageReference Include="WixToolset.Heat" Version="4.0.3" />
     <PackageReference Include="WixToolset.UI.wixext" Version="4.0.3" />
     <PackageReference Include="WixToolset.Util.wixext" Version="4.0.3" />
   </ItemGroup>
