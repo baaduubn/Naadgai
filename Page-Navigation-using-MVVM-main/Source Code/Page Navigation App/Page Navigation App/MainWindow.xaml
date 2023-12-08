@@ -172,7 +172,7 @@
             <Grid Grid.Column="1">
 
                 <ContentControl x:Name="Pages" >
-                    <TextBlock HorizontalAlignment="Left" Margin="563,574,0,0" TextWrapping="Wrap" Text="v1.0.5.0" VerticalAlignment="Top" Opacity="0.5"/>
+                    <TextBlock HorizontalAlignment="Left" Margin="563,574,0,0" TextWrapping="Wrap" Text="v0.0.2.0" VerticalAlignment="Top" Opacity="0.5"/>
                 </ContentControl>
 
             </Grid>
@@ -205,9 +205,11 @@
             </Button.Background>
         </Button>
 
+        <ProgressBar Name="downloadProgressBar" Width="200" Height="20" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10" Visibility="Collapsed"/>
 
 
 
     </Grid>
+    
 
 </Window>
