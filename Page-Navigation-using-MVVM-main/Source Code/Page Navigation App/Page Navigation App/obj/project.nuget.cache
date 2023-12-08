@@ -1,14 +1,14 @@
 {
   "version": 2,
-  "dgSpecHash": "ZK/OpF4DA2ZvfqOlzlPZJzGg8j+EkvgG0pxnItofieO/UBZ812p7V5jIg6w95fusD+NcgWbegIyA2M1gcEvpzg==",
+  "dgSpecHash": "/VLimaUER2s5YAAvf6WrMJT63Ya22hIssYzfRbpA5aMdB4c8YehCzL4jKHg9HD5VYWCJS4MHGzwZQ6zGzsfimg==",
   "success": true,
   "projectFilePath": "D:\\SainGamesBeta\\Page-Navigation-using-MVVM-main\\Source Code\\Page Navigation App\\Page Navigation App\\Sain games platform.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\baadu\\.nuget\\packages\\autoupdater.net.official\\1.8.4\\autoupdater.net.official.1.8.4.nupkg.sha512",
+    "C:\\Users\\baadu\\.nuget\\packages\\autoupdater.net.official\\1.7.3\\autoupdater.net.official.1.7.3.nupkg.sha512",
     "C:\\Users\\baadu\\.nuget\\packages\\deltacompressiondotnet\\1.1.0\\deltacompressiondotnet.1.1.0.nupkg.sha512",
     "C:\\Users\\baadu\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
     "C:\\Users\\baadu\\.nuget\\packages\\microsoft.netcore.targets\\1.1.0\\microsoft.netcore.targets.1.1.0.nupkg.sha512",
-    "C:\\Users\\baadu\\.nuget\\packages\\microsoft.web.webview2\\1.0.1823.32\\microsoft.web.webview2.1.0.1823.32.nupkg.sha512",
+    "C:\\Users\\baadu\\.nuget\\packages\\microsoft.web.webview2\\1.0.1210.39\\microsoft.web.webview2.1.0.1210.39.nupkg.sha512",
     "C:\\Users\\baadu\\.nuget\\packages\\microsoft.win32.primitives\\4.3.0\\microsoft.win32.primitives.4.3.0.nupkg.sha512",
     "C:\\Users\\baadu\\.nuget\\packages\\mono.cecil\\0.11.2\\mono.cecil.0.11.2.nupkg.sha512",
     "C:\\Users\\baadu\\.nuget\\packages\\netstandard.library\\1.6.1\\netstandard.library.1.6.1.nupkg.sha512",

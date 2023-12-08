@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Diagnostics;
 using System.Net;
 using System.Windows;
 using System.Windows.Input;
@@ -13,13 +14,14 @@ namespace Page_Navigation_App
             InitializeComponent();
 
             // Set up AutoUpdater.NET
-            AutoUpdater.Start("https://your-update-server.com/update.xml");
-
+            AutoUpdater.Start("https://www.baaduu.me/version.xml");
+            AutoUpdater.ShowSkipButton = false;
+            AutoUpdater.ShowRemindLaterButton = false;
             // Hook up event handlers
             AutoUpdater.CheckForUpdateEvent += AutoUpdaterOnCheckForUpdateEvent;
-            AutoUpdater.InstalledVersion = new Version("1.0.0.0"); // Set your current application version
+            AutoUpdater.InstalledVersion = new Version("1.0.5.0"); // Set your current application version
         }
-
+       
         private void AutoUpdaterOnCheckForUpdateEvent(UpdateInfoEventArgs args)
         {
             if (args.Error == null)
@@ -30,7 +32,7 @@ namespace Page_Navigation_App
                     if (args.Mandatory.Value)
                     {
                         dialogResult = System.Windows.MessageBox.Show(
-                            $@"Шинэ хувилбар  {args.CurrentVersion} байна. Та {args.InstalledVersion} хувилбарыг ашиглаж байна . Энэ бол шаардлагатай шинэчлэлт юм. Програмыг шинэчлэхийн тулд OK дарна уу.",
+                            $@"Шинэ хувилбар  {args.CurrentVersion} байна. Та {args.InstalledVersion} хувилбарыг ашиглаж байна. Энэ бол шаардлагатай шинэчлэлт юм. Програмыг шинэчлэхийн тулд OK дарна уу.",
                             @"Шинэчлэх боломжтой", MessageBoxButton.OK, MessageBoxImage.Information);
                     }
                     else
@@ -41,7 +43,7 @@ namespace Page_Navigation_App
                     }
 
                     // Uncomment the following line if you want to show the standard update dialog instead.
-                    // AutoUpdater.ShowUpdateForm(args);
+                     AutoUpdater.ShowUpdateForm(args);
 
                     if (dialogResult == MessageBoxResult.Yes || dialogResult == MessageBoxResult.OK)
                     {
@@ -49,13 +51,29 @@ namespace Page_Navigation_App
                         {
                             if (AutoUpdater.DownloadUpdate(args))
                             {
-                                Application.Current.Shutdown();
+                                
+                                try
+                                {
+                                    MessageBox.Show("dsad");
+                                    //string filePath = @"C:\Program Files\Supergem\view";
+                                    //Process.Start(filePath);
+                                }
+                                catch (Exception ex)
+                                {
+                                    MessageBox.Show("sda meen");
+                                    //Console.WriteLine($"An error occurred: {ex.Message}");
+                                }
+
+                            }
+                            else
+                            {
+                                MessageBox.Show("sda yah ged bgan");
                             }
                         }
                         catch (Exception exception)
                         {
-                            MessageBox.Show(exception.Message, exception.GetType().ToString(), MessageBoxButton.OK,
-                                MessageBoxImage.Error);
+                            MessageBox.Show("sda meen");
+                            MessageBox.Show(exception.Message, exception.GetType().ToString(), MessageBoxButton.OK, MessageBoxImage.Error);
                         }
                     }
                 }

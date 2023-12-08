@@ -46,7 +46,7 @@
           "dependencies": {
             "Autoupdater.NET.Official": {
               "target": "Package",
-              "version": "[1.8.4, )"
+              "version": "[1.7.3, )"
             },
             "WixToolset.Firewall.wixext": {
               "target": "Package",

@@ -8,7 +8,7 @@
     ".NETCoreApp,Version=v6.0": {
       "Sain games platform/1.0.0": {
         "dependencies": {
-          "Autoupdater.NET.Official": "1.8.4",
+          "Autoupdater.NET.Official": "1.7.3",
           "WixToolset.Firewall.wixext": "4.0.3",
           "WixToolset.Heat": "4.0.3",
           "WixToolset.UI.wixext": "4.0.3",
@@ -19,78 +19,78 @@
           "Sain games platform.dll": {}
         }
       },
-      "Autoupdater.NET.Official/1.8.4": {
+      "Autoupdater.NET.Official/1.7.3": {
         "dependencies": {
-          "Microsoft.Web.WebView2": "1.0.1823.32"
+          "Microsoft.Web.WebView2": "1.0.1210.39"
         },
         "runtime": {
-          "lib/net6.0-windows7.0/AutoUpdater.NET.dll": {
-            "assemblyVersion": "1.8.4.0",
-            "fileVersion": "1.8.4.0"
+          "lib/net5.0-windows7.0/AutoUpdater.NET.dll": {
+            "assemblyVersion": "1.7.3.0",
+            "fileVersion": "1.7.3.0"
           }
         },
         "resources": {
-          "lib/net6.0-windows7.0/ar/AutoUpdater.NET.resources.dll": {
+          "lib/net5.0-windows7.0/ar/AutoUpdater.NET.resources.dll": {
             "locale": "ar"
           },
-          "lib/net6.0-windows7.0/cs/AutoUpdater.NET.resources.dll": {
+          "lib/net5.0-windows7.0/cs/AutoUpdater.NET.resources.dll": {
             "locale": "cs"
           },
-          "lib/net6.0-windows7.0/da/AutoUpdater.NET.resources.dll": {
+          "lib/net5.0-windows7.0/da/AutoUpdater.NET.resources.dll": {
             "locale": "da"
           },
-          "lib/net6.0-windows7.0/de/AutoUpdater.NET.resources.dll": {
+          "lib/net5.0-windows7.0/de/AutoUpdater.NET.resources.dll": {
             "locale": "de"
           },
-          "lib/net6.0-windows7.0/es/AutoUpdater.NET.resources.dll": {
+          "lib/net5.0-windows7.0/es/AutoUpdater.NET.resources.dll": {
             "locale": "es"
           },
-          "lib/net6.0-windows7.0/fr/AutoUpdater.NET.resources.dll": {
+          "lib/net5.0-windows7.0/fr/AutoUpdater.NET.resources.dll": {
             "locale": "fr"
           },
-          "lib/net6.0-windows7.0/it/AutoUpdater.NET.resources.dll": {
+          "lib/net5.0-windows7.0/it/AutoUpdater.NET.resources.dll": {
             "locale": "it"
           },
-          "lib/net6.0-windows7.0/ja-JP/AutoUpdater.NET.resources.dll": {
+          "lib/net5.0-windows7.0/ja-JP/AutoUpdater.NET.resources.dll": {
             "locale": "ja-JP"
           },
-          "lib/net6.0-windows7.0/ko/AutoUpdater.NET.resources.dll": {
+          "lib/net5.0-windows7.0/ko/AutoUpdater.NET.resources.dll": {
             "locale": "ko"
           },
-          "lib/net6.0-windows7.0/lv/AutoUpdater.NET.resources.dll": {
+          "lib/net5.0-windows7.0/lv/AutoUpdater.NET.resources.dll": {
             "locale": "lv"
           },
-          "lib/net6.0-windows7.0/nl/AutoUpdater.NET.resources.dll": {
+          "lib/net5.0-windows7.0/nl/AutoUpdater.NET.resources.dll": {
             "locale": "nl"
           },
-          "lib/net6.0-windows7.0/pl/AutoUpdater.NET.resources.dll": {
+          "lib/net5.0-windows7.0/pl/AutoUpdater.NET.resources.dll": {
             "locale": "pl"
           },
-          "lib/net6.0-windows7.0/pt-BR/AutoUpdater.NET.resources.dll": {
+          "lib/net5.0-windows7.0/pt-BR/AutoUpdater.NET.resources.dll": {
             "locale": "pt-BR"
           },
-          "lib/net6.0-windows7.0/pt/AutoUpdater.NET.resources.dll": {
+          "lib/net5.0-windows7.0/pt/AutoUpdater.NET.resources.dll": {
             "locale": "pt"
           },
-          "lib/net6.0-windows7.0/ru/AutoUpdater.NET.resources.dll": {
+          "lib/net5.0-windows7.0/ru/AutoUpdater.NET.resources.dll": {
             "locale": "ru"
           },
-          "lib/net6.0-windows7.0/sk/AutoUpdater.NET.resources.dll": {
+          "lib/net5.0-windows7.0/sk/AutoUpdater.NET.resources.dll": {
             "locale": "sk"
           },
-          "lib/net6.0-windows7.0/sv/AutoUpdater.NET.resources.dll": {
+          "lib/net5.0-windows7.0/sv/AutoUpdater.NET.resources.dll": {
             "locale": "sv"
           },
-          "lib/net6.0-windows7.0/th/AutoUpdater.NET.resources.dll": {
+          "lib/net5.0-windows7.0/th/AutoUpdater.NET.resources.dll": {
             "locale": "th"
           },
-          "lib/net6.0-windows7.0/tr/AutoUpdater.NET.resources.dll": {
+          "lib/net5.0-windows7.0/tr/AutoUpdater.NET.resources.dll": {
             "locale": "tr"
           },
-          "lib/net6.0-windows7.0/zh-TW/AutoUpdater.NET.resources.dll": {
+          "lib/net5.0-windows7.0/zh-tw/AutoUpdater.NET.resources.dll": {
             "locale": "zh-TW"
           },
-          "lib/net6.0-windows7.0/zh/AutoUpdater.NET.resources.dll": {
+          "lib/net5.0-windows7.0/zh/AutoUpdater.NET.resources.dll": {
             "locale": "zh"
           }
         }
@@ -113,36 +113,36 @@
       },
       "Microsoft.NETCore.Platforms/1.1.0": {},
       "Microsoft.NETCore.Targets/1.1.0": {},
-      "Microsoft.Web.WebView2/1.0.1823.32": {
+      "Microsoft.Web.WebView2/1.0.1210.39": {
         "runtime": {
           "lib/netcoreapp3.0/Microsoft.Web.WebView2.Core.dll": {
-            "assemblyVersion": "1.0.1823.32",
-            "fileVersion": "1.0.1823.32"
+            "assemblyVersion": "1.0.1210.39",
+            "fileVersion": "1.0.1210.39"
           },
           "lib/netcoreapp3.0/Microsoft.Web.WebView2.WinForms.dll": {
-            "assemblyVersion": "1.0.1823.32",
-            "fileVersion": "1.0.1823.32"
+            "assemblyVersion": "1.0.1210.39",
+            "fileVersion": "1.0.1210.39"
           },
           "lib/netcoreapp3.0/Microsoft.Web.WebView2.Wpf.dll": {
-            "assemblyVersion": "1.0.1823.32",
-            "fileVersion": "1.0.1823.32"
+            "assemblyVersion": "1.0.1210.39",
+            "fileVersion": "1.0.1210.39"
           }
         },
         "runtimeTargets": {
           "runtimes/win-arm64/native/WebView2Loader.dll": {
             "rid": "win-arm64",
             "assetType": "native",
-            "fileVersion": "1.0.1823.32"
+            "fileVersion": "1.0.1210.39"
           },
           "runtimes/win-x64/native/WebView2Loader.dll": {
             "rid": "win-x64",
             "assetType": "native",
-            "fileVersion": "1.0.1823.32"
+            "fileVersion": "1.0.1210.39"
           },
           "runtimes/win-x86/native/WebView2Loader.dll": {
             "rid": "win-x86",
             "assetType": "native",
-            "fileVersion": "1.0.1823.32"
+            "fileVersion": "1.0.1210.39"
           }
         }
       },
@@ -860,12 +860,12 @@
       "serviceable": false,
       "sha512": ""
     },
-    "Autoupdater.NET.Official/1.8.4": {
+    "Autoupdater.NET.Official/1.7.3": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-x9AgPz8vJFOHc3QQ/IIEO8KVTXn+ygVBgP8al4Kb7Tp1IcE1MGHEyj11heYq15XM3JKHmZx4lsejsYVxIeoh8w==",
-      "path": "autoupdater.net.official/1.8.4",
-      "hashPath": "autoupdater.net.official.1.8.4.nupkg.sha512"
+      "sha512": "sha512-231QXHE/vvfzzE+xENBfqpCJkHig7TMkW8GklYyHvUzzDviUfviMwJi3/ImNM+dxJmrHh+NHHYnFL+ik8qpmwg==",
+      "path": "autoupdater.net.official/1.7.3",
+      "hashPath": "autoupdater.net.official.1.7.3.nupkg.sha512"
     },
     "DeltaCompressionDotNet/1.1.0": {
       "type": "package",
@@ -888,12 +888,12 @@
       "path": "microsoft.netcore.targets/1.1.0",
       "hashPath": "microsoft.netcore.targets.1.1.0.nupkg.sha512"
     },
-    "Microsoft.Web.WebView2/1.0.1823.32": {
+    "Microsoft.Web.WebView2/1.0.1210.39": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-ppRcWBUNggFIqyJp7PfgS4Oe8/7yli/mHcTNDOaqo3ZzJWnv9AOr0WE9ceEP5SPs1M7CQ3QvdGMR7KNz0v09EA==",
-      "path": "microsoft.web.webview2/1.0.1823.32",
-      "hashPath": "microsoft.web.webview2.1.0.1823.32.nupkg.sha512"
+      "sha512": "sha512-BjNSaIg/Dvct5o5fhiN8dWf3SZYzU8QZlqyd3Gtj24x3Of5AWH9aUcji4Esj1NJPfnVOgvJDTCeG7JsuhjL0Ew==",
+      "path": "microsoft.web.webview2/1.0.1210.39",
+      "hashPath": "microsoft.web.webview2.1.0.1210.39.nupkg.sha512"
     },
     "Microsoft.Win32.Primitives/4.3.0": {
       "type": "package",
