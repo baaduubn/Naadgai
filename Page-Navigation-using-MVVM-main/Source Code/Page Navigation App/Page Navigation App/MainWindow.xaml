@@ -177,14 +177,12 @@
 
             <Grid Grid.Column="1">
 
-                <ContentControl x:Name="Pages" >
-                    <Label Content="v0..0.2.0" Margin="0,0,10,10" HorizontalAlignment="Right" VerticalAlignment="Bottom"/>
-                </ContentControl>
+                <ContentControl x:Name="Pages"
+                                Content="{Binding CurrentView}" />
 
             </Grid>
 
         </Grid>
-
         <Button x:Name="Close"
         Click="CloseApp_Click" 
         Margin="806,12,20,562" 
