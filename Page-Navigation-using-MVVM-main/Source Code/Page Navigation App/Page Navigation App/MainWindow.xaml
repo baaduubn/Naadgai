@@ -1,10 +1,4 @@
-﻿<!--/// <Summary>
-    /// Author : R. Arun Mutharasu
-    /// Created :25-08-2022
-    /// YouTube Channel : C# Design Pro 
-    /// </Summary>-->
-
-<Window x:Class="Page_Navigation_App.MainWindow"
+﻿<Window x:Class="Page_Navigation_App.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
@@ -46,7 +40,9 @@
                   Width="228">
 
                 <Border Background="#272B2F"
-                        CornerRadius="20,0,0,20" />
+                        CornerRadius="20,0,0,20" >
+                    <Label Content="v.0.0.3.0" Margin="10,564,0,0" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+                </Border>
 
                 <StackPanel Height="400"
                             Width="228">
