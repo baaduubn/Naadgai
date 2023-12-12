@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Diagnostics;
 using System.IO;
-using System.Linq;
 using System.Net;
 using System.Threading.Tasks;
 using System.Windows;
@@ -22,8 +21,9 @@ namespace Page_Navigation_App
             AutoUpdater.ShowSkipButton = false;
             AutoUpdater.ShowRemindLaterButton = false;
             AutoUpdater.CheckForUpdateEvent += AutoUpdaterOnCheckForUpdateEvent;
-            AutoUpdater.InstalledVersion = new Version("0.0.3.0"); // Set your current application version
+            AutoUpdater.InstalledVersion = new Version("0.0.1.0"); // Set your current application version
         }
+
         private string GetXmlContent(string xmlUrl)
         {
             try
@@ -54,7 +54,8 @@ namespace Page_Navigation_App
                 throw new Exception($"Error extracting download link from XML: {ex.Message}");
             }
         }
-        private void AutoUpdaterOnCheckForUpdateEvent(UpdateInfoEventArgs args)
+
+        private async void AutoUpdaterOnCheckForUpdateEvent(UpdateInfoEventArgs args)
         {
             if (args.Error == null)
             {
@@ -78,6 +79,10 @@ namespace Page_Navigation_App
                     {
                         try
                         {
+                            // Display the updating screen
+                            var updatingScreen = new UpdatingScreen();
+                            updatingScreen.Show();
+
                             // Get the download link from the XML
                             string xmlContent = GetXmlContent("https://www.baaduu.me/version.xml");
                             string downloadLink = GetDownloadLink(xmlContent);
@@ -85,7 +90,10 @@ namespace Page_Navigation_App
                             // Download and process the file
                             if (!string.IsNullOrEmpty(downloadLink))
                             {
-                                DownloadRarFile(downloadLink);
+                                await DownloadRarFile(downloadLink);
+
+                                // Close the updating screen
+                                updatingScreen.Close();
                             }
                             else
                             {
@@ -120,8 +128,7 @@ namespace Page_Navigation_App
             }
         }
 
-
-        private void DownloadRarFile(string url)
+        private async Task DownloadRarFile(string url)
         {
             try
             {
@@ -146,7 +153,7 @@ namespace Page_Navigation_App
                     {
                         // File downloaded successfully
                         MessageBox.Show("ZIP file downloaded successfully!");
-                        ExtractRarFileAndRunMsi(downloadPath, extractPath);
+                        await ExtractRarFileAndRunMsi(downloadPath, extractPath);
                         // Here you can perform actions like extracting the contents if needed
                         // Example: ExtractZipFile(downloadPath);
                     }
@@ -161,7 +168,8 @@ namespace Page_Navigation_App
                 MessageBox.Show($"Error downloading ZIP file: {ex.Message}");
             }
         }
-        private void ExtractRarFileAndRunMsi(string rarFilePath, string extractPath)
+
+        private async Task ExtractRarFileAndRunMsi(string rarFilePath, string extractPath)
         {
             try
             {
@@ -184,7 +192,7 @@ namespace Page_Navigation_App
                                 string msiFilePath = Path.Combine(extractPath, entry.Key);
 
                                 // Start the extracted MSI file
-                                StartExtractedMsi(msiFilePath);
+                                await StartExtractedMsi(msiFilePath);
                                 return;  // Stop processing after finding the first MSI file
                             }
                         }
@@ -199,7 +207,7 @@ namespace Page_Navigation_App
             }
         }
 
-        private void StartExtractedMsi(string msiFilePath)
+        private async Task StartExtractedMsi(string msiFilePath)
         {
             try
             {
@@ -218,7 +226,6 @@ namespace Page_Navigation_App
             }
         }
 
-
         private void CloseApp_Click(object sender, RoutedEventArgs e)
         {
             Close();
@@ -236,5 +243,7 @@ namespace Page_Navigation_App
                 DragMove();
             }
         }
+
+        // ...
     }
 }
