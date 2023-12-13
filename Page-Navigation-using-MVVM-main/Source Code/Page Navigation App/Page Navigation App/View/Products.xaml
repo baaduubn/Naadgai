@@ -36,7 +36,18 @@
                                     <ColumnDefinition Width="*"/>
                                 </Grid.ColumnDefinitions>
                                 <Image Grid.Column="0" Width="200" Height="100" Source="{Binding ThumbnailImageSource}" Stretch="UniformToFill" />
-                                <TextBlock Grid.Column="1" Text="{Binding ButtonContent}" VerticalAlignment="Top" Margin="10,10,90,0" FontSize="18" Foreground="White"/>
+                                <!--<Image Grid.Column="1" Source="/Images/windows.png" Margin="11,72,355,5"/>-->
+                                <TextBlock Grid.Column="1" Text="{Binding ButtonContent}" VerticalAlignment="Top" Margin="10,10,90,0" FontSize="18" FontWeight="Bold" Foreground="White"/>
+                                <TextBlock Grid.Column="1" Text="{Binding Price}" Margin="10,31,290,32" FontSize="12" Foreground="Gray" RenderTransformOrigin="0.463,0.576"/>
+                                <Grid>
+                                  
+                                    <TextBlock Text="{Binding AgeRating, StringFormat='+{0}'}" Margin="10,71,121,0" FontSize="12" Foreground="White">
+                                        <TextBlock.Effect>
+                                            <DropShadowEffect Color="Black" Direction="0" ShadowDepth="3" BlurRadius="2"/>
+                                        </TextBlock.Effect>
+                                    </TextBlock>
+                                </Grid>
+
                             </Grid>
                         </Button>
                     </DataTemplate>

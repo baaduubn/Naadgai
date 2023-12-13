@@ -10,6 +10,9 @@ namespace Page_Navigation_App
     {
         public string ThumbnailImageSource { get; set; }
         public string ButtonContent { get; set; }
+        public string Price { get; set; }
+        public string AgeRating { get; set; }
+        
     }
 
 }

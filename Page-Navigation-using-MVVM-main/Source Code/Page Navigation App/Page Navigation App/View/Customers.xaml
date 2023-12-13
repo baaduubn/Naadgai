@@ -12,32 +12,75 @@
     <UserControl.DataContext>
         <vm:CustomerVM />
     </UserControl.DataContext>
-    
-    <Grid Margin="15">
 
+    <Grid Margin="15">
         <Border CornerRadius="0,20,20,0">
             <Border.Background>
-                <ImageBrush ImageSource="/Images/customer_page.png"
-                            Stretch="None" />
+                <LinearGradientBrush StartPoint="0,0" EndPoint="0,1">
+                    <GradientStop Color="#212529" Offset="0.0" />
+                    <GradientStop Color="#212529" Offset="1.0" />
+                </LinearGradientBrush>
             </Border.Background>
         </Border>
 
-        <TextBlock
-                   Foreground="#DBDBDB"
-                   FontSize="12"
-                   HorizontalAlignment="Left"
-                   VerticalAlignment="Top"
-                   FontFamily="/Fonts/#Rubik Medium"
-                   Margin="70,138,0,0" ><Run Language="mn-mn" Text="Хэрэглэгчийн"/><Run Text=" ID  :"/></TextBlock>
+        <Grid Margin="15">
+            <Border CornerRadius="0,20,20,0" Background="#212529">
+                <Border BorderBrush="Gray" Background="Gray" BorderThickness="1" Margin="19,20,398,367">
+                    <Image HorizontalAlignment="Center" VerticalAlignment="Center" Source="/Images/profile.jpg" Stretch="UniformToFill" />
+                </Border>
 
-        <TextBlock Text="{Binding CustomerID}"
-                   Foreground="#CED565"
-                   FontSize="12"
-                   HorizontalAlignment="Left"
-                   VerticalAlignment="Top"
-                   FontFamily="/Fonts/#Rubik Medium"
-                   Margin="181,138,0,0" />
-     
 
+            </Border>
+            <TextBlock Foreground="#DBDBDB"
+            FontSize="25"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            FontFamily="/Fonts/#Rubik Medium"
+            Margin="185,48,0,0" Height="46" Width="170">
+            <Run Language="mn-mn" Text="BAADUU"/>
+            </TextBlock>
+            <TextBlock Text="{Binding CustomerID}"
+            Foreground="Gray"
+            FontSize="12"
+            FontFamily="/Fonts/#Rubik Medium"  Height="22" RenderTransformOrigin="0.5,0.5" Margin="187,78,219,440"  />
+            <Grid>
+                <Border Grid.Column="0" Background="#FF1A1D21" Margin="10,188,177,19" BorderBrush="Gray" BorderThickness="1" >
+                    <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center" Height="270" Width="311">
+                        <TextBlock Foreground="#DBDBDB"
+                                   FontSize="12"
+                                   HorizontalAlignment="Left"
+                                   VerticalAlignment="Top"
+                                   FontFamily="/Fonts/#Rubik Medium"
+                                   Margin="0,138,0,0">
+                            <Run Language="mn-mn" Text="Хэрэглэгчийн"/>
+                            <Run Text=" ID  :"/>
+                        </TextBlock>
+                        <TextBlock Text="{Binding CustomerID}"
+                                   Foreground="#CED565"
+                                   FontSize="12"
+                                   FontFamily="/Fonts/#Rubik Medium"
+                                   Height="22" Width="99" />
+                    </StackPanel>
+                </Border>
+                <Border Grid.Column="0" Background="#FF1A1D21" Margin="403,188,9,19" BorderBrush="Gray" BorderThickness="1">
+                    <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center" Height="270" Width="311">
+                        <TextBlock Foreground="#DBDBDB"
+                    FontSize="12"
+                    HorizontalAlignment="Left"
+                    VerticalAlignment="Top"
+                    FontFamily="/Fonts/#Rubik Medium"
+                    Margin="0,138,0,0">
+             <Run Language="mn-mn" Text="Хэрэглэгчийн"/>
+             <Run Text=" ID  :"/>
+                        </TextBlock>
+                        <TextBlock Text="{Binding CustomerID}"
+                    Foreground="#CED565"
+                    FontSize="12"
+                    FontFamily="/Fonts/#Rubik Medium"
+                    Height="22" Width="99" />
+                    </StackPanel>
+                </Border>
+            </Grid>
+        </Grid>
     </Grid>
 </UserControl>
