@@ -12,12 +12,16 @@
         AllowsTransparency="True"
         WindowStartupLocation="CenterScreen"
         WindowStyle="None"
+        MouseMove="Window_MouseMove"
         Background="Transparent">
 
     <Window.DataContext>
         <vm:NavigationVM />
     </Window.DataContext>
-
+    <Window.Resources>
+        <SolidColorBrush x:Key="MouseOverColor" Color="#272B2F" />
+        <!-- Define the MouseOverColor here -->
+    </Window.Resources>
     <Grid>
 
         <!--// Window Border //-->
@@ -58,7 +62,7 @@
                             <Image Source="Images/img_home.png"
                                    Style="{StaticResource Image_Style}" />
 
-                            <TextBlock Text="Home"
+                            <TextBlock Text="Нүүр"
                                        Style="{StaticResource Text_Style}" />
 
                         </Grid>
@@ -75,7 +79,7 @@
                             <Image Source="Images/img_customer.png"
                                    Style="{StaticResource Image_Style}" />
 
-                            <TextBlock Text="Customer"
+                            <TextBlock Text="Профайл"
                                        Style="{StaticResource Text_Style}" />
 
                         </Grid>
@@ -92,7 +96,7 @@
                             <Image Source="Images/img_product.png"
                                    Style="{StaticResource Image_Style}" />
 
-                            <TextBlock Text="Products"
+                            <TextBlock Text="Тоглоомнууд"
                                        Style="{StaticResource Text_Style}" />
 
                         </Grid>
@@ -109,7 +113,7 @@
                             <Image Source="Images/img_order.png"
                                    Style="{StaticResource Image_Style}" />
 
-                            <TextBlock Text="Orders"
+                            <TextBlock Text="Мэдээ"
                                        Style="{StaticResource Text_Style}" />
 
                         </Grid>
@@ -126,7 +130,7 @@
                             <Image Source="Images/img_transaction.png"
                                    Style="{StaticResource Image_Style}" />
 
-                            <TextBlock Text="Transactions"
+                            <TextBlock Text="Төлбөр"
                                        Style="{StaticResource Text_Style}" />
 
                         </Grid>
@@ -135,7 +139,7 @@
 
                     <!--// Shipments //-->
 
-                    <Menu:Btn Style="{StaticResource BtnStyle}"
+                    <!--<Menu:Btn Style="{StaticResource BtnStyle}"
                               Command="{Binding ShipmentsCommand}">
 
                         <Grid>
@@ -148,7 +152,7 @@
 
                         </Grid>
 
-                    </Menu:Btn>
+                    </Menu:Btn>-->
 
                     <!--// Settings //-->
 
@@ -160,7 +164,7 @@
                             <Image Source="Images/img_setting.png"
                                    Style="{StaticResource Image_Style}" />
 
-                            <TextBlock Text="Settings"
+                            <TextBlock Text="Тохиргоо"
                                        Style="{StaticResource Text_Style}" />
 
                         </Grid>
@@ -179,29 +183,57 @@
             </Grid>
 
         </Grid>
+
+
         <Button x:Name="Close"
-        Click="CloseApp_Click" 
-        Margin="806,12,20,562" 
-        Width="25"
-        Height="25"
-                 Style="{StaticResource CustomButtonStyle}"
-        BorderBrush="#00707070">
+  Click="CloseApp_Click" 
+  Margin="802,10,22,565" 
+  Width="25"
+  Height="25"
+ 
+            BorderBrush="#00707070">
+            <Button.Style>
+                <Style TargetType="Button">
+                    <Setter Property="Background" Value="Red" />
+                  
+                    <Style.Triggers>
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter Property="Background" Value="Green" />
+                        </Trigger>
+                    </Style.Triggers>
+                </Style>
+            </Button.Style>
             <Button.Background>
                 <ImageBrush ImageSource="/Images/icons8-close-32.png"/>
             </Button.Background>
         </Button>
 
         <Button x:Name="MinimizeApp"
-        Click="MinimizeApp_Click" 
-        Margin="766,18,59,557" 
-        Width="25"
-        Height="25"
-                 Style="{StaticResource CustomButtonStyle}"
-        BorderBrush="#00707070" Foreground="#00000000">
+  Click="MinimizeApp_Click" 
+  Margin="760,9,59,565" 
+  Width="25"
+  Height="25"
+
+            BorderBrush="#00707070" Foreground="#00000000">
+            <Button.Style>
+                <Style TargetType="Button">
+                    <Setter Property="Background" Value="Red" />
+                    
+                    <Style.Triggers>
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter Property="Background" Value="Green" />
+                        </Trigger>
+                    </Style.Triggers>
+                </Style>
+            </Button.Style>
             <Button.Background>
                 <ImageBrush ImageSource="/Images/icons8-subtract-32.png"/>
             </Button.Background>
         </Button>
+
+
+
+
 
 
     </Grid>

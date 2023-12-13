@@ -5,7 +5,8 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Page_Navigation_App"
         mc:Ignorable="d"
-        Title="Updating Screen" Height="150" Width="500">
+        Title="Updating Screen" Height="150" Width="500"
+        WindowStartupLocation="CenterScreen">
     <Grid>
         <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center">
             <TextBlock Text="Шинэчилж байна..." FontSize="24"/>

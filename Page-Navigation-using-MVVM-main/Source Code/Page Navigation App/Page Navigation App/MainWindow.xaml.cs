@@ -2,9 +2,11 @@
 using System.Diagnostics;
 using System.IO;
 using System.Net;
+using System.Runtime.InteropServices;
 using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Input;
+using System.Windows.Interop;
 using System.Xml;
 using AutoUpdaterDotNET;
 using SharpCompress.Archives;
@@ -14,6 +16,13 @@ namespace Page_Navigation_App
 {
     public partial class MainWindow : Window
     {
+        private const int WM_NCLBUTTONDOWN = 0xA1;
+        private const int HT_CAPTION = 0x2;
+
+        [DllImport("user32.dll")]
+        private static extern IntPtr SendMessage(IntPtr hWnd, int Msg, IntPtr wParam, IntPtr lParam);
+        [DllImport("user32.dll")]
+        private static extern bool ReleaseCapture();
         public MainWindow()
         {
             InitializeComponent();
@@ -152,20 +161,20 @@ namespace Page_Navigation_App
                     if (File.Exists(downloadPath))
                     {
                         // File downloaded successfully
-                        MessageBox.Show("ZIP file downloaded successfully!");
+                        //MessageBox.Show("ZIP file downloaded successfully!");
                         await ExtractRarFileAndRunMsi(downloadPath, extractPath);
                         // Here you can perform actions like extracting the contents if needed
                         // Example: ExtractZipFile(downloadPath);
                     }
                     else
                     {
-                        MessageBox.Show("Failed to download ZIP file.");
+                        MessageBox.Show("Failed to download update file.");
                     }
                 }
             }
             catch (Exception ex)
             {
-                MessageBox.Show($"Error downloading ZIP file: {ex.Message}");
+                MessageBox.Show($"Error downloading update file: {ex.Message}");
             }
         }
 
@@ -199,11 +208,11 @@ namespace Page_Navigation_App
                     }
                 }
 
-                MessageBox.Show("RAR file extracted successfully!");
+                //MessageBox.Show("RAR file extracted successfully!");
             }
             catch (Exception ex)
             {
-                MessageBox.Show($"Error extracting RAR file: {ex.Message}");
+                MessageBox.Show($"Error extracting update file: {ex.Message}");
             }
         }
 
@@ -218,11 +227,11 @@ namespace Page_Navigation_App
                     UseShellExecute = true
                 });
 
-                MessageBox.Show("Extracted MSI file started successfully!");
+                MessageBox.Show("Extracted update file started successfully!");
             }
             catch (Exception ex)
             {
-                MessageBox.Show($"Error starting extracted MSI file: {ex.Message}");
+                MessageBox.Show($"Error starting extracted update file: {ex.Message}");
             }
         }
 
@@ -236,11 +245,12 @@ namespace Page_Navigation_App
             WindowState = WindowState.Minimized;
         }
 
-        private void WindowDrag(object sender, MouseButtonEventArgs e)
+        private void Window_MouseMove(object sender, MouseEventArgs e)
         {
             if (e.LeftButton == MouseButtonState.Pressed)
             {
-                DragMove();
+                ReleaseCapture();
+                SendMessage(new WindowInteropHelper(this).Handle, WM_NCLBUTTONDOWN, (IntPtr)HT_CAPTION, IntPtr.Zero);
             }
         }
 

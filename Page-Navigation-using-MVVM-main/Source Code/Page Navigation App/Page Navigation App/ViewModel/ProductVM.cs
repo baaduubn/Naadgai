@@ -14,10 +14,52 @@ namespace Page_Navigation_App.ViewModel
             set { _pageModel.ProductStatus = value; OnPropertyChanged(); }
         }
 
+        public ObservableCollection<ButtonData> YourTestButtonCollection { get; } = new ObservableCollection<ButtonData>();
+
         public ProductVM()
         {
             _pageModel = new PageModel();
-            ProductAvailability = "Out of Stock";
+
+            // Button 1 (CS:GO image)
+            YourTestButtonCollection.Add(new ButtonData
+            {
+                ThumbnailImageSource = "https://steamcdn-a.akamaihd.net/apps/csgo/blog/images/wallpaper_nologo.jpg", // Replace with the CS:GO image URL
+                ButtonContent = "CS:GO"
+            });
+
+            // Button 2 (Dota 2 image)
+            YourTestButtonCollection.Add(new ButtonData
+            {
+                ThumbnailImageSource = "https://community.tm/attachments/thumb-099-dota-2-3-jpg.15775/", // Replace with the Dota 2 image URL
+                ButtonContent = "Dota 2"
+            });
+            YourTestButtonCollection.Add(new ButtonData
+            {
+                ThumbnailImageSource = "https://steamcdn-a.akamaihd.net/apps/csgo/blog/images/wallpaper_nologo.jpg", // Replace with the CS:GO image URL
+                ButtonContent = "CS:GO"
+            });
+            YourTestButtonCollection.Add(new ButtonData
+            {
+                ThumbnailImageSource = "https://steamcdn-a.akamaihd.net/apps/csgo/blog/images/wallpaper_nologo.jpg", // Replace with the CS:GO image URL
+                ButtonContent = "CS:GO"
+            });
+            YourTestButtonCollection.Add(new ButtonData
+            {
+                ThumbnailImageSource = "https://steamcdn-a.akamaihd.net/apps/csgo/blog/images/wallpaper_nologo.jpg", // Replace with the CS:GO image URL
+                ButtonContent = "CS:GO"
+            });
+            YourTestButtonCollection.Add(new ButtonData
+            {
+                ThumbnailImageSource = "https://steamcdn-a.akamaihd.net/apps/csgo/blog/images/wallpaper_nologo.jpg", // Replace with the CS:GO image URL
+                ButtonContent = "CS:GO"
+            });
+            YourTestButtonCollection.Add(new ButtonData
+            {
+                ThumbnailImageSource = "https://steamcdn-a.akamaihd.net/apps/csgo/blog/images/wallpaper_nologo.jpg", // Replace with the CS:GO image URL
+                ButtonContent = "CS:GO"
+            });
+
+            // Add more buttons as needed with different image URLs
         }
     }
 }
