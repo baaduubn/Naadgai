@@ -12,21 +12,13 @@ namespace Page_Navigation_App
 
         private void LoginButton_Click(object sender, RoutedEventArgs e)
         {
-            // Get the entered username and password
             string username = UsernameTextBox.Text;
             string password = PasswordBox.Password;
 
-            // Implement your authentication logic here
-            bool isAuthenticated = AuthenticateUser(username, password);
-
-            if (isAuthenticated)
+            if (AuthenticateUser(username, password, out UserData userData))
             {
-                // If authentication is successful, close the login window and open the main window
-                MessageBox.Show("Амжилттай нэвтэрлээ!");
+                AppData.CurrentUser = userData; // Save the user data globally
 
-                // Close the login window
-
-                // Open the MainWindow (replace with your actual main window name)
                 MainWindow mainWindow = new MainWindow();
                 mainWindow.Show();
                 Close();
@@ -37,12 +29,48 @@ namespace Page_Navigation_App
             }
         }
 
-        private bool AuthenticateUser(string username, string password)
+
+
+        private bool AuthenticateUser(string username, string password ,out UserData userData)
         {
             // Replace this with your actual authentication logic (e.g., checking against a database)
             // For demonstration purposes, we assume a simple username and password here.
             // You should replace this with your own authentication mechanism.
-            return username == "admin" && password == "admin";
+            if (username == "admin" && password == "admin")
+            {
+                // Authentication successful, create a UserData object with user information
+                userData = new UserData
+                {
+                    Username = "admin",
+                    Id = "000000",
+                    lvl = 99,
+                    like = 999,
+                    premium = true,
+                    premiumDate ="2023-12-15",
+                    createdDate ="2014-09-01"
+                    // Add more user information as needed
+                };
+                return true;
+            }
+            if (username == "baaduu" && password == "baaduu")
+            {
+                // Authentication successful, create a UserData object with user information
+                userData = new UserData
+                {
+                    Username = "baaduu",
+                    Id = "000001",
+                    lvl = 1,
+                    like = 99,
+                    premium = false,
+                    premiumDate = "2021-02-06",
+                    createdDate = "1997-05-31"
+                    // Add more user information as needed
+                };
+                return true;
+            }
+
+            userData = null; // Authentication failed
+            return false;
         }
 
 

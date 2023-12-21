@@ -25,6 +25,7 @@ Input	D:\SainGamesBeta\Page-Navigation-using-MVVM-main\Source Code\Page Navigati
 Input	D:\SainGamesBeta\Page-Navigation-using-MVVM-main\Source Code\Page Navigation App\Page Navigation App\bin\Debug\net6.0-windows\Images\shutdown_def.png
 Input	D:\SainGamesBeta\Page-Navigation-using-MVVM-main\Source Code\Page Navigation App\Page Navigation App\bin\Debug\net6.0-windows\Images\shutdown_mo.png
 Input	D:\SainGamesBeta\Page-Navigation-using-MVVM-main\Source Code\Page Navigation App\Page Navigation App\bin\Debug\net6.0-windows\Images\transaction_page.png
+Input	D:\SainGamesBeta\Page-Navigation-using-MVVM-main\Source Code\Page Navigation App\Page Navigation App\bin\Debug\net6.0-windows\LibGit2Sharp.dll
 Input	D:\SainGamesBeta\Page-Navigation-using-MVVM-main\Source Code\Page Navigation App\Page Navigation App\bin\Debug\net6.0-windows\Microsoft.Web.WebView2.Core.dll
 Input	D:\SainGamesBeta\Page-Navigation-using-MVVM-main\Source Code\Page Navigation App\Page Navigation App\bin\Debug\net6.0-windows\Microsoft.Web.WebView2.WinForms.dll
 Input	D:\SainGamesBeta\Page-Navigation-using-MVVM-main\Source Code\Page Navigation App\Page Navigation App\bin\Debug\net6.0-windows\Microsoft.Web.WebView2.Wpf.dll
@@ -32,10 +33,16 @@ Input	D:\SainGamesBeta\Page-Navigation-using-MVVM-main\Source Code\Page Navigati
 Input	D:\SainGamesBeta\Page-Navigation-using-MVVM-main\Source Code\Page Navigation App\Page Navigation App\bin\Debug\net6.0-windows\Mono.Cecil.Mdb.dll
 Input	D:\SainGamesBeta\Page-Navigation-using-MVVM-main\Source Code\Page Navigation App\Page Navigation App\bin\Debug\net6.0-windows\Mono.Cecil.Pdb.dll
 Input	D:\SainGamesBeta\Page-Navigation-using-MVVM-main\Source Code\Page Navigation App\Page Navigation App\bin\Debug\net6.0-windows\Mono.Cecil.Rocks.dll
+Input	D:\SainGamesBeta\Page-Navigation-using-MVVM-main\Source Code\Page Navigation App\Page Navigation App\bin\Debug\net6.0-windows\Newtonsoft.Json.dll
+Input	D:\SainGamesBeta\Page-Navigation-using-MVVM-main\Source Code\Page Navigation App\Page Navigation App\bin\Debug\net6.0-windows\path_to_target_directory\repository.zip
+Input	D:\SainGamesBeta\Page-Navigation-using-MVVM-main\Source Code\Page Navigation App\Page Navigation App\bin\Debug\net6.0-windows\runtimes\win-x64\native\git2-a2bde63.dll
+Input	D:\SainGamesBeta\Page-Navigation-using-MVVM-main\Source Code\Page Navigation App\Page Navigation App\bin\Debug\net6.0-windows\runtimes\win-x64\native\WebView2Loader.dll
 Input	D:\SainGamesBeta\Page-Navigation-using-MVVM-main\Source Code\Page Navigation App\Page Navigation App\bin\Debug\net6.0-windows\Sain games platform.deps.json
 Input	D:\SainGamesBeta\Page-Navigation-using-MVVM-main\Source Code\Page Navigation App\Page Navigation App\bin\Debug\net6.0-windows\Sain games platform.dll
 Input	D:\SainGamesBeta\Page-Navigation-using-MVVM-main\Source Code\Page Navigation App\Page Navigation App\bin\Debug\net6.0-windows\Sain games platform.exe
 Input	D:\SainGamesBeta\Page-Navigation-using-MVVM-main\Source Code\Page Navigation App\Page Navigation App\bin\Debug\net6.0-windows\Sain games platform.pdb
 Input	D:\SainGamesBeta\Page-Navigation-using-MVVM-main\Source Code\Page Navigation App\Page Navigation App\bin\Debug\net6.0-windows\Sain games platform.runtimeconfig.json
 Input	D:\SainGamesBeta\Page-Navigation-using-MVVM-main\Source Code\Page Navigation App\Page Navigation App\bin\Debug\net6.0-windows\SharpCompress.dll
+Input	D:\SainGamesBeta\Page-Navigation-using-MVVM-main\Source Code\Page Navigation App\Page Navigation App\bin\Debug\net6.0-windows\your_download_path\installer.msi
+Input	D:\SainGamesBeta\Page-Navigation-using-MVVM-main\Source Code\Page Navigation App\Page Navigation App\bin\Debug\net6.0-windows\ZstdSharp.dll
 Intermediate	D:\SainGamesBeta\Page-Navigation-using-MVVM-main\Source Code\Page Navigation App\Sain games\obj\x64\Debug\en-US\cab1.cab

@@ -30,7 +30,7 @@ namespace Page_Navigation_App
             AutoUpdater.ShowSkipButton = false;
             AutoUpdater.ShowRemindLaterButton = false;
             AutoUpdater.CheckForUpdateEvent += AutoUpdaterOnCheckForUpdateEvent;
-            AutoUpdater.InstalledVersion = new Version("0.0.4.0"); // Set your current application version
+            AutoUpdater.InstalledVersion = new Version("0.0.5.1"); // Set your current application version
         }
 
         private string GetXmlContent(string xmlUrl)
@@ -117,8 +117,7 @@ namespace Page_Navigation_App
                 }
                 else
                 {
-                    MessageBox.Show(@"No updates available. Please check again later.", @"No Updates Available",
-                        MessageBoxButton.OK, MessageBoxImage.Information);
+                  
                 }
             }
             else
@@ -252,6 +251,11 @@ namespace Page_Navigation_App
                 ReleaseCapture();
                 SendMessage(new WindowInteropHelper(this).Handle, WM_NCLBUTTONDOWN, (IntPtr)HT_CAPTION, IntPtr.Zero);
             }
+        }
+
+        private void Btn_Checked(object sender, RoutedEventArgs e)
+        {
+
         }
 
         // ...

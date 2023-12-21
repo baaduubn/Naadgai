@@ -5,8 +5,38 @@
 			<Directory Id="ImageFolder" Name="Images">
 				<!-- Nothing inside ImageFolder yet, just the directory itself -->
 			</Directory>
-
+			<Directory Id ="PathFolder" Name="path_to_target_directory"></Directory>
+			
+			<Directory Id="RuntimesFolder" Name="runtimes">
+				<Directory Id="WinX64Folder" Name="win-x64">
+					<Directory Id="NativeFolder" Name="native">
+						<!-- Nothing inside NativeFolder yet, just the directory itself -->
+					</Directory>
+				</Directory>
+			</Directory>
 		</DirectoryRef>
+		
+		<DirectoryRef Id="ProgramMenuFolder">
+			<Directory Id="ApplicationProgramsFolder" Name="Sain Games">
+				<Component Id="ApplicationShortcut" Guid="*">
+					<Shortcut Id="ApplicationStartMenuShortcut"
+							  Name="Sain Games"
+							  Description="Play Sain Games"
+							  Target="[INSTALLFOLDER]Sain games platform.exe"
+							  WorkingDirectory="INSTALLFOLDER"/>
+					<RemoveFolder Id="ApplicationProgramsFolder" On="uninstall"/>
+					<RegistryValue Root="HKCU"
+								   Key="Software\[Manufacturer]\[ProductName]"
+								   Name="installed"
+								   Type="integer"
+								   Value="1"
+								   KeyPath="yes"/>
+				</Component>
+			</Directory>
+		</DirectoryRef>
+		
+		
+		
 		<ComponentGroup Id="ExampleComponents" Directory="INSTALLFOLDER">
 
 						<!-- Executable and DLLs -->
@@ -46,6 +76,16 @@
 						<Component>
 							<File Source="Mono.Cecil.Rocks.dll"/>
 						</Component>
+						<Component>
+							<File Source="LibGit2Sharp.dll"/>
+						</Component>
+			
+			<Component>
+				<File Source="ZstdSharp.dll"/>
+			</Component>
+			<Component>
+				<File Source="Newtonsoft.Json.dll"/>
+			</Component>
 						<!-- ... (Other DLLs) -->
 
 						<!-- JSON and configuration files -->
@@ -136,8 +176,28 @@
 			
 
 		</ComponentGroup>
-		
-	
+
+		<Component Id="TargetFolder" Directory="TargetFolder">
+			<File Id="RepositoryZip" Source="path_to_target_directory\repository.zip" />
+		</Component>
+		<Component Id="DowFolder" Directory="DowFolder">
+			<File Id="RepositoryMsi" Source="your_download_path\installer.msi" />
+		</Component>
+
+		<ComponentGroup Id="NativeRuntimeComponents" Directory="NativeFolder">
+			<!-- git2-a2bde63.dll component -->
+			<Component Id="Git2NativeDll" Guid="*">
+				<File Id="Git2Dll" Source="runtimes\win-x64\native\git2-a2bde63.dll" KeyPath="yes" />
+			</Component>
+
+			<!-- WebView2Loader.dll component -->
+			<Component Id="WebView2LoaderComponent" Guid="*">
+				<File Id="WebView2LoaderDll" Source="runtimes\win-x64\native\WebView2Loader.dll" KeyPath="yes" />
+			</Component>
+		</ComponentGroup>
+
+
+
 	</Fragment>
 
 </Wix>

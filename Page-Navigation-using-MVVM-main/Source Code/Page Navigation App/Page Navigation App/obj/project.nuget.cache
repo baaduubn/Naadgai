@@ -1,13 +1,16 @@
 {
   "version": 2,
-  "dgSpecHash": "kIsEZwA3Yby8DqnsddwDGBplG4Uos4o1MtEELGByF5OqBGWZqELEZCL2tNz66T4SzKVrIPzvVD2LTkncqZu5Iw==",
+  "dgSpecHash": "TfYspudzMFAivevgSTbhJMdvW5znQcl7SagHqrUJ6UWGHq0expISgVzhXJdx7HRQqaKICKt8ibMmJ0ZwwVKzCA==",
   "success": true,
   "projectFilePath": "D:\\SainGamesBeta\\Page-Navigation-using-MVVM-main\\Source Code\\Page Navigation App\\Page Navigation App\\Sain games platform.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\baadu\\.nuget\\packages\\autoupdater.net.official\\1.7.3\\autoupdater.net.official.1.7.3.nupkg.sha512",
     "C:\\Users\\baadu\\.nuget\\packages\\deltacompressiondotnet\\1.1.0\\deltacompressiondotnet.1.1.0.nupkg.sha512",
+    "C:\\Users\\baadu\\.nuget\\packages\\libgit2sharp\\0.29.0\\libgit2sharp.0.29.0.nupkg.sha512",
+    "C:\\Users\\baadu\\.nuget\\packages\\libgit2sharp.nativebinaries\\2.0.321\\libgit2sharp.nativebinaries.2.0.321.nupkg.sha512",
     "C:\\Users\\baadu\\.nuget\\packages\\microsoft.web.webview2\\1.0.1210.39\\microsoft.web.webview2.1.0.1210.39.nupkg.sha512",
     "C:\\Users\\baadu\\.nuget\\packages\\mono.cecil\\0.11.2\\mono.cecil.0.11.2.nupkg.sha512",
+    "C:\\Users\\baadu\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512",
     "C:\\Users\\baadu\\.nuget\\packages\\sharpcompress\\0.34.2\\sharpcompress.0.34.2.nupkg.sha512",
     "C:\\Users\\baadu\\.nuget\\packages\\squirrel.windows\\2.0.1\\squirrel.windows.2.0.1.nupkg.sha512",
     "C:\\Users\\baadu\\.nuget\\packages\\wixtoolset.firewall.wixext\\4.0.3\\wixtoolset.firewall.wixext.4.0.3.nupkg.sha512",

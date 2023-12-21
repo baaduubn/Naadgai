@@ -7,6 +7,9 @@
     </ApplicationDefinition>
   </ItemGroup>
   <ItemGroup>
+    <Compile Update="GameView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="loginscreen.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -36,6 +39,9 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Page Update="GameView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
     <Page Update="loginscreen.xaml">
       <SubType>Designer</SubType>
     </Page>

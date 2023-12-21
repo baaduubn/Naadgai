@@ -12,11 +12,13 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="customer_page.png" />
     <None Remove="Fonts\Rubik-Medium.ttf" />
     <None Remove="Fonts\Rubik-Regular.ttf" />
     <None Remove="icons8-close-32.png" />
     <None Remove="icons8-subtract-32.png" />
     <None Remove="Images\customer_page.png" />
+    <None Remove="Images\heart.png" />
     <None Remove="Images\home_page.png" />
     <None Remove="Images\icons8-close-32.png" />
     <None Remove="Images\icons8-subtract-32.png" />
@@ -37,6 +39,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Resource Include="customer_page.png" />
     <Resource Include="Fonts\Rubik-Medium.ttf">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Resource>
@@ -98,6 +101,8 @@
 
   <ItemGroup>
     <PackageReference Include="Autoupdater.NET.Official" Version="1.7.3" />
+    <PackageReference Include="LibGit2Sharp" Version="0.29.0" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
     <PackageReference Include="SharpCompress" Version="0.34.2" />
     <PackageReference Include="squirrel.windows" Version="2.0.1" />
     <PackageReference Include="WixToolset.Firewall.wixext" Version="4.0.3" />

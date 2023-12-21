@@ -45,7 +45,7 @@
 
                 <Border Background="#272B2F"
                         CornerRadius="20,0,0,20" >
-                    <Label Content="v.0.0.3.0" Margin="10,564,0,0" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+                    <Label Content="v.0.0.5.1" Margin="10,564,0,0" HorizontalAlignment="Left" VerticalAlignment="Top"/>
                 </Border>
 
                 <StackPanel Height="400"
@@ -89,14 +89,14 @@
                     <!--// Products //-->
 
                     <Menu:Btn Style="{StaticResource BtnStyle}"
-                              Command="{Binding ProductsCommand}">
+                              Command="{Binding ProductsCommand}" Checked="Btn_Checked">
 
                         <Grid>
 
                             <Image Source="Images/img_product.png"
                                    Style="{StaticResource Image_Style}" />
 
-                            <TextBlock Text="Тоглоомнууд"
+                            <TextBlock Text="Тоглоом"
                                        Style="{StaticResource Text_Style}" />
 
                         </Grid>
@@ -105,7 +105,7 @@
 
                     <!--// Orders //-->
 
-                    <Menu:Btn Style="{StaticResource BtnStyle}"
+                    <!--<Menu:Btn Style="{StaticResource BtnStyle}"
                               Command="{Binding OrdersCommand}">
 
                         <Grid>
@@ -118,7 +118,7 @@
 
                         </Grid>
 
-                    </Menu:Btn>
+                    </Menu:Btn>-->
 
                     <!--// Transactions //-->
 
@@ -156,7 +156,7 @@
 
                     <!--// Settings //-->
 
-                    <Menu:Btn Style="{StaticResource BtnStyle}"
+                    <!--<Menu:Btn Style="{StaticResource BtnStyle}"
                               Command="{Binding SettingsCommand}">
 
                         <Grid>
@@ -169,7 +169,7 @@
 
                         </Grid>
 
-                    </Menu:Btn>
+                    </Menu:Btn>-->
 
                 </StackPanel>
 

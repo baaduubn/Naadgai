@@ -25,6 +25,8 @@ namespace Page_Navigation_App.ViewModel
         public ICommand ShipmentsCommand { get; set; }
         public ICommand SettingsCommand { get; set; }
 
+        public ICommand GameStoreCommant {  get; set; }
+
         private void Home(object obj) => CurrentView = new HomeVM();
         private void Customer(object obj) => CurrentView = new CustomerVM();
         private void Product(object obj) => CurrentView = new ProductVM();
@@ -32,7 +34,7 @@ namespace Page_Navigation_App.ViewModel
         private void Transaction(object obj) => CurrentView = new TransactionVM();
         private void Shipment(object obj) => CurrentView = new ShipmentVM();
         private void Setting(object obj) => CurrentView = new SettingVM();
-
+       
         public NavigationVM()
         {
             HomeCommand = new RelayCommand(Home);
@@ -42,7 +44,7 @@ namespace Page_Navigation_App.ViewModel
             TransactionsCommand = new RelayCommand(Transaction);
             ShipmentsCommand = new RelayCommand(Shipment);
             SettingsCommand = new RelayCommand(Setting);
-
+          
             // Startup Page
             CurrentView = new HomeVM();
         }

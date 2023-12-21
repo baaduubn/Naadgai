@@ -1,10 +1,14 @@
 ﻿<Wix xmlns="http://wixtoolset.org/schemas/v4/wxs">
-  <Package Name="Sain_games" Manufacturer="SUPERGEM" Version="0.0.4.0" UpgradeCode="8654ea41-7f11-4569-99cb-18c489cc2201">
+  <Package Name="Sain_games" Manufacturer="SUPERGEM" Version="0.0.5.1" UpgradeCode="8654ea41-7f11-4569-99cb-18c489cc2201">
     <MajorUpgrade DowngradeErrorMessage="!(loc.DowngradeError)" />
 
-    <Feature Id="Main">
+	  <Feature Id="MainApplication" Title="Main Application" Level="1">
       <ComponentGroupRef Id="ExampleComponents" />
 		<ComponentGroupRef Id="ImageFolder"/>
+		<ComponentRef Id="TargetFolder" />
+		<ComponentRef Id="DowFolder"/>
+		<ComponentGroupRef Id="NativeRuntimeComponents" />
+		<ComponentRef Id="ApplicationShortcut" />
     </Feature>
   </Package>
 </Wix>

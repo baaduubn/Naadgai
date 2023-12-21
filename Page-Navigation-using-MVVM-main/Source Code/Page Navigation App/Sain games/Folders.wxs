@@ -2,8 +2,9 @@
 	<Fragment>
 		<StandardDirectory Id="ProgramFiles6432Folder">
 			<Directory Id="INSTALLFOLDER" Name="!(bind.Property.Manufacturer) !(bind.Property.ProductName)">
-				<Directory Id="ImagesFolder" Name="Images">
-				</Directory>
+				<Directory Id="ImagesFolder" Name="Images"></Directory>
+				<Directory Id="TargetFolder" Name="path_to_target_directory"></Directory>
+				<Directory Id="DowFolder" Name="your_download_path"></Directory>
 			</Directory>
 		</StandardDirectory>
 	</Fragment>

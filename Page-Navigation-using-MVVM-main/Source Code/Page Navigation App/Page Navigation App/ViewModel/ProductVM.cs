@@ -2,7 +2,11 @@
 using Page_Navigation_App.Utilities;
 using System.Collections.ObjectModel;
 using System.Windows.Input;
-
+using System.Net.Http;
+using Newtonsoft.Json;
+using System.Threading.Tasks;
+using System.Collections.Generic;
+using System;
 namespace Page_Navigation_App.ViewModel
 {
     class ProductVM : Utilities.ViewModelBase
@@ -19,62 +23,39 @@ namespace Page_Navigation_App.ViewModel
         public ProductVM()
         {
             _pageModel = new PageModel();
-
-            // Button 1 (CS:GO image)
-            YourTestButtonCollection.Add(new ButtonData
-            {
-                ThumbnailImageSource = "https://steamcdn-a.akamaihd.net/apps/csgo/blog/images/wallpaper_nologo.jpg", // Replace with the CS:GO image URL
-                ButtonContent = "CS:GO",
-                Price="Онцгой",
-                AgeRating="17"
-            });
-
-            // Button 2 (Dota 2 image)
-            YourTestButtonCollection.Add(new ButtonData
-            {
-                ThumbnailImageSource = "https://community.tm/attachments/thumb-099-dota-2-3-jpg.15775/", // Replace with the Dota 2 image URL
-                ButtonContent = "Dota 2",
-                Price = "Үнэгүй",
-                AgeRating = "17"
-
-            });
-            YourTestButtonCollection.Add(new ButtonData
-            {
-                ThumbnailImageSource = "https://steamcdn-a.akamaihd.net/apps/csgo/blog/images/wallpaper_nologo.jpg", // Replace with the CS:GO image URL
-                ButtonContent = "CS:GO",
-                Price = "Үнэгүй",
-                AgeRating = "17"
-            });
-            YourTestButtonCollection.Add(new ButtonData
-            {
-                ThumbnailImageSource = "https://steamcdn-a.akamaihd.net/apps/csgo/blog/images/wallpaper_nologo.jpg", // Replace with the CS:GO image URL
-                ButtonContent = "CS:GO",
-                Price = "Үнэгүй",
-                AgeRating = "17"
-            });
-            YourTestButtonCollection.Add(new ButtonData
-            {
-                ThumbnailImageSource = "https://steamcdn-a.akamaihd.net/apps/csgo/blog/images/wallpaper_nologo.jpg", // Replace with the CS:GO image URL
-                ButtonContent = "CS:GO",
-                Price = "Үнэгүй",
-                AgeRating = "17"
-            });
-            YourTestButtonCollection.Add(new ButtonData
-            {
-                ThumbnailImageSource = "https://steamcdn-a.akamaihd.net/apps/csgo/blog/images/wallpaper_nologo.jpg", // Replace with the CS:GO image URL
-                ButtonContent = "CS:GO",
-                Price = "Free",
-                AgeRating = "17"
-            });
-            YourTestButtonCollection.Add(new ButtonData
-            {
-                ThumbnailImageSource = "https://steamcdn-a.akamaihd.net/apps/csgo/blog/images/wallpaper_nologo.jpg", // Replace with the CS:GO image URL
-                ButtonContent = "CS:GO",
-                Price = "Үнэгүй",
-                AgeRating = "17"
-            });
-
+            LoadButtonsFromJson();
+           
             // Add more buttons as needed with different image URLs
+        }
+        private async void LoadButtonsFromJson()
+        {
+            string jsonUrl = "https://www.baaduu.me/games.json"; // Replace with your JSON URL
+            try
+            {
+                using (HttpClient client = new HttpClient())
+                {
+                    string json = await client.GetStringAsync(jsonUrl);
+                    GamesContainer gamesContainer = JsonConvert.DeserializeObject<GamesContainer>(json);
+
+                    foreach (var game in gamesContainer.Games)
+                    {
+                        YourTestButtonCollection.Add(new ButtonData
+                        {
+                            ThumbnailImageSource = game.ThumbnailImageSource,
+                            GameTitle = game.Title,
+                            AgeRating = game.AgeRating,
+                            Price = game.Price,
+                            
+                            // Other properties like Price, AgeRating if available
+                        });
+                    }
+
+                }
+            }
+            catch (Exception ex)
+            {
+                // Handle exceptions, e.g., network issues, JSON parsing errors
+            }
         }
     }
 }

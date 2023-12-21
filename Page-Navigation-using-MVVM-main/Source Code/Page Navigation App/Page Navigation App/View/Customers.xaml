@@ -26,61 +26,125 @@
         <Grid Margin="15">
             <Border CornerRadius="0,20,20,0" Background="#212529">
                 <Border BorderBrush="Gray" Background="Gray" BorderThickness="1" Margin="19,20,398,367">
-                    <Image HorizontalAlignment="Center" VerticalAlignment="Center" Source="/Images/profile.jpg" Stretch="UniformToFill" />
+                    <Image HorizontalAlignment="Center" VerticalAlignment="Center" Source="https://i.pinimg.com/564x/09/ba/47/09ba475a69da0ad3f3c0402ca2489dc6.jpg" Stretch="UniformToFill" />
                 </Border>
-
-
             </Border>
             <TextBlock Foreground="#DBDBDB"
-            FontSize="25"
-            HorizontalAlignment="Left"
-            VerticalAlignment="Top"
-            FontFamily="/Fonts/#Rubik Medium"
-            Margin="185,48,0,0" Height="46" Width="170">
-            <Run Language="mn-mn" Text="BAADUU"/>
-            </TextBlock>
-            <TextBlock Text="{Binding CustomerID}"
-            Foreground="Gray"
-            FontSize="12"
-            FontFamily="/Fonts/#Rubik Medium"  Height="22" RenderTransformOrigin="0.5,0.5" Margin="187,78,219,440"  />
-            <Grid>
-                <Border Grid.Column="0" Background="#FF1A1D21" Margin="10,188,177,19" BorderBrush="Gray" BorderThickness="1" >
-                    <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center" Height="270" Width="311">
-                        <TextBlock Foreground="#DBDBDB"
-                                   FontSize="12"
-                                   HorizontalAlignment="Left"
-                                   VerticalAlignment="Top"
-                                   FontFamily="/Fonts/#Rubik Medium"
-                                   Margin="0,138,0,0">
-                            <Run Language="mn-mn" Text="Хэрэглэгчийн"/>
-                            <Run Text=" ID  :"/>
-                        </TextBlock>
-                        <TextBlock Text="{Binding CustomerID}"
-                                   Foreground="#CED565"
-                                   FontSize="12"
-                                   FontFamily="/Fonts/#Rubik Medium"
-                                   Height="22" Width="99" />
-                    </StackPanel>
-                </Border>
-                <Border Grid.Column="0" Background="#FF1A1D21" Margin="403,188,9,19" BorderBrush="Gray" BorderThickness="1">
-                    <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center" Height="270" Width="311">
-                        <TextBlock Foreground="#DBDBDB"
-                    FontSize="12"
-                    HorizontalAlignment="Left"
-                    VerticalAlignment="Top"
-                    FontFamily="/Fonts/#Rubik Medium"
-                    Margin="0,138,0,0">
-             <Run Language="mn-mn" Text="Хэрэглэгчийн"/>
-             <Run Text=" ID  :"/>
-                        </TextBlock>
-                        <TextBlock Text="{Binding CustomerID}"
-                    Foreground="#CED565"
-                    FontSize="12"
-                    FontFamily="/Fonts/#Rubik Medium"
-                    Height="22" Width="99" />
-                    </StackPanel>
-                </Border>
+                       FontSize="25"
+                       HorizontalAlignment="Left"
+                       VerticalAlignment="Top"
+                       FontFamily="/Fonts/#Rubik Medium"
+                       Margin="185,48,0,0"
+                       Height="46"
+                       Width="224"
+                       Text="{Binding Username}" />
+
+            <TextBlock Foreground="Gray"
+                       FontSize="12"
+                       HorizontalAlignment="Left"
+                       VerticalAlignment="Top"
+                       FontFamily="/Fonts/#Rubik Medium"
+                       Margin="185,80,0,0"
+                       Height="46"
+                       Width="170"
+                       Text="{Binding Id, StringFormat='#{0}'}" />
+
+            <Canvas Width="75" Height="75" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="469,64,0,0">
+                <Ellipse Width="75" Height="75" HorizontalAlignment="Left" VerticalAlignment="Top" RenderTransformOrigin="0.02,0.08">
+                    <Ellipse.Fill>
+                        <RadialGradientBrush>
+                            <GradientStop Color="#FF212529" Offset="0.0" />
+                            <GradientStop Color="#FF171616" Offset="1.0" />
+                        </RadialGradientBrush>
+                    </Ellipse.Fill>
+                </Ellipse>
+            </Canvas>
+
+            <Grid Margin="171,114,114,366">
+                <!-- First Image and TextBlock -->
+                <Image Source="/Images/icons8-heart-60.png" Margin="168,2,69,18" Height="40" Width="40" />
+                <TextBlock Foreground="Gray"
+                           FontSize="12"
+                           HorizontalAlignment="Left"
+                           VerticalAlignment="Top"
+                           FontFamily="/Fonts/#Rubik Medium"
+                           Margin="150,40,0,0"
+                           Height="20"
+                           Width="75"
+                           Text="{Binding like}"
+                           TextAlignment="Center" />
+
+                <!-- Second Image and TextBlock -->
+                <Image Source="/Images/crown.png" Margin="95,0,142,20" Height="40" Width="40" />
+                <TextBlock Foreground="Gray"
+                           FontSize="12"
+                           HorizontalAlignment="Left"
+                           VerticalAlignment="Top"
+                           FontFamily="/Fonts/#Rubik Medium"
+                           Margin="76,40,0,0"
+                           Height="20"
+                           Width="75"
+                           Text="{Binding like}"
+                           TextAlignment="Center" />
+
+                <!-- Third Image and TextBlock -->
+                <Image Source="/Images/icons8-cute-cake-96.png" Margin="19,-1,218,21" Height="40" Width="40" />
+                <TextBlock Foreground="Gray"
+                           FontSize="12"
+                           HorizontalAlignment="Left"
+                           VerticalAlignment="Top"
+                           FontFamily="/Fonts/#Rubik Medium"
+                           Margin="0,40,0,0"
+                           Height="20"
+                           Width="75"
+                           Text="{Binding createdDate}"
+                           TextAlignment="Center" />
             </Grid>
+
+            <!-- Premium Border -->
+           
+            <Border Grid.Column="0" Background="#FF329AEA" Margin="10,181,10,295" BorderBrush="Gray" BorderThickness="1">
+                <Border.Style>
+                    <Style TargetType="Border">
+                        <!-- Set the default visibility to Collapsed -->
+                        <Setter Property="Visibility" Value="Collapsed" />
+                        <Style.Triggers>
+                            <!-- Show the border when PREMIUM is true -->
+                            <DataTrigger Binding="{Binding premium}" Value="True">
+                                <Setter Property="Visibility" Value="Visible" />
+                            </DataTrigger>
+                        </Style.Triggers>
+                    </Style>
+                </Border.Style>
+                <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center" Height="64" Width="542">
+                    <Image Source="/Images/icons8-diamond-64.png" Margin="-450,10,0,0" Height="40" Width="40"/>
+                    <TextBlock Foreground="White"
+                FontSize="18"
+                HorizontalAlignment="Right"
+                FontFamily="/Fonts/#Rubik Medium"
+                Margin="0,-30,0,0"
+                Height="78"
+                Width="183"
+                Text="{Binding premiumDate, StringFormat='{}{0} хойш'}"
+                TextAlignment="Center" />
+                    <TextBlock Foreground="White"
+                FontSize="18"
+                HorizontalAlignment="Right"
+                FontFamily="/Fonts/#Rubik Medium"
+                Margin="0,-76,300,0"
+                Height="78"
+                Width="183"
+                Text="PREMIUM MEMBER"
+                TextAlignment="Center" />
+                </StackPanel>
+            </Border>
+            <!--<Border Grid.Column="0" Background="#FF1A1D21" Margin="10,250,177,19" BorderBrush="Gray" BorderThickness="1">
+                <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center" Height="270" Width="311" />
+            </Border>
+            <Border Grid.Column="0" Background="#FF1A1D21" Margin="390,250,9,19" BorderBrush="Gray" BorderThickness="1">
+                <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center" Height="270" Width="311" />
+            </Border>-->
+
         </Grid>
     </Grid>
 </UserControl>

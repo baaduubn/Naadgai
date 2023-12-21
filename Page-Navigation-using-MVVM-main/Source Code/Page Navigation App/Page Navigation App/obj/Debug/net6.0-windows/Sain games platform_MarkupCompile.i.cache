@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NET;NET6_0;NETCOREAPP
 D:\SainGamesBeta\Page-Navigation-using-MVVM-main\Source Code\Page Navigation App\Page Navigation App\App.xaml
-159419794
+16-484975677
 17526107713
-27-1844620290
-216-1293431579
-loginscreen.xaml;MainWindow.xaml;Styles\Button.xaml;Styles\Image.xaml;Styles\Page.xaml;Styles\Text.xaml;UpdatingScreen.xaml;Utilities\DataTemplate.xaml;View\Customers.xaml;View\Home.xaml;View\Orders.xaml;View\Products.xaml;View\Settings.xaml;View\Shipments.xaml;View\Transactions.xaml;
+31-369530090
+218-125737998
+GameView.xaml;loginscreen.xaml;MainWindow.xaml;Styles\Button.xaml;Styles\Image.xaml;Styles\Page.xaml;Styles\Text.xaml;UpdatingScreen.xaml;Utilities\DataTemplate.xaml;View\Customers.xaml;View\Home.xaml;View\Orders.xaml;View\Products.xaml;View\Settings.xaml;View\Shipments.xaml;View\Transactions.xaml;
 
-True
+False
 

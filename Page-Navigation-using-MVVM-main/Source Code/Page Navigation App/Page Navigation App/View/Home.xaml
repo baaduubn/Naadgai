@@ -9,13 +9,20 @@
              d:DesignWidth="622">
 
     <Grid>
+        <Border CornerRadius="0,20,20,0">
+            <Border.Background>
+                <LinearGradientBrush StartPoint="0,0" EndPoint="0,1">
+                    <GradientStop Color="#212529" Offset="0.0" />
+                    <GradientStop Color="#212529" Offset="1.0" />
+                </LinearGradientBrush>
+            </Border.Background>
 
-        <Border CornerRadius="0,20,20,0" Margin="0,5,5,0">
-
-            <Image Source="/Images/home_page.png"
-                   Stretch="Fill" />
-
+            <!-- Add your gaming platform home content here -->
+            <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center" Height="340" Width="360">
+                <TextBlock Foreground="White" FontSize="24" Margin="10">Welcome to Gaming Platform</TextBlock>
+          
+                <Image Source="/Images/video-game-play-toad-mushroom-mario_108577.ico" Width="200" Height="200" Margin="10" />
+            </StackPanel>
         </Border>
-
     </Grid>
 </UserControl>

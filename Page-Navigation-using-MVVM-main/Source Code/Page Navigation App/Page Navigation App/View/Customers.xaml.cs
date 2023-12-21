@@ -13,6 +13,8 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
+using Page_Navigation_App.ViewModel; // Add this using directive
+
 namespace Page_Navigation_App.View
 {
     /// <summary>
@@ -23,7 +25,12 @@ namespace Page_Navigation_App.View
         public Customers()
         {
             InitializeComponent();
+            Loaded += Customers_Loaded;
+        }
 
+        private void Customers_Loaded(object sender, RoutedEventArgs e)
+        {
+            DataContext = new CustomerVM();
         }
     }
 }
