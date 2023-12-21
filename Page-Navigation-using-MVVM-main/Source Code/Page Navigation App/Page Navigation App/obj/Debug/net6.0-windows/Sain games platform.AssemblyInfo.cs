@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Sain games platform")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+53da4377815014abcbbe11bfbadea3d06a938dd8")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
 [assembly: System.Reflection.AssemblyProductAttribute("Sain games platform")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Sain games platform")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
