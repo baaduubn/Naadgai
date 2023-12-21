@@ -5,6 +5,7 @@
 				<Directory Id="ImagesFolder" Name="Images"></Directory>
 				<Directory Id="TargetFolder" Name="path_to_target_directory"></Directory>
 				<Directory Id="DowFolder" Name="your_download_path"></Directory>
+				<Directory Id="DesktopFolder" />
 			</Directory>
 		</StandardDirectory>
 	</Fragment>

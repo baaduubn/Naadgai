@@ -34,7 +34,22 @@
 				</Component>
 			</Directory>
 		</DirectoryRef>
-		
+		<DirectoryRef Id="DesktopFolder">
+			<Component Id="ApplicationDesktopShortcut" Guid="*">
+				<Shortcut Id="DesktopShortcut"
+						  Name="Sain Games"
+						  Description="Play Sain Games"
+						  Target="[INSTALLFOLDER]Sain games platform.exe"
+						  WorkingDirectory="INSTALLFOLDER"/>
+				<RemoveFolder Id="DesktopFolder" On="uninstall"/>
+				<RegistryValue Root="HKCU"
+							   Key="Software\[Manufacturer]\[ProductName]\DesktopShortcut"
+							   Name="installed"
+							   Type="integer"
+							   Value="1"
+							   KeyPath="yes"/>
+			</Component>
+		</DirectoryRef>
 		
 		
 		<ComponentGroup Id="ExampleComponents" Directory="INSTALLFOLDER">

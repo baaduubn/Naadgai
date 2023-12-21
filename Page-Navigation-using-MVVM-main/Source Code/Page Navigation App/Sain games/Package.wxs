@@ -9,6 +9,7 @@
 		<ComponentRef Id="DowFolder"/>
 		<ComponentGroupRef Id="NativeRuntimeComponents" />
 		<ComponentRef Id="ApplicationShortcut" />
+		  <ComponentRef Id="ApplicationDesktopShortcut" />
     </Feature>
   </Package>
 </Wix>
