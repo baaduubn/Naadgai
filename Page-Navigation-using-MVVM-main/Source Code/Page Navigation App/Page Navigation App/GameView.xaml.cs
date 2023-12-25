@@ -34,6 +34,17 @@ namespace Page_Navigation_App
         public string repositoryUrl { get; set; } 
         
         public bool isBusy = false;
+        private bool isCloning = false;
+        public bool IsCloning
+        {
+            get { return isCloning; }
+            private set
+            {
+                isCloning = value;
+                // Notify the UI or perform other actions when the value changes.
+            }
+        }
+
         public GameView(GameViewModel viewModel)
         {
           
@@ -54,7 +65,7 @@ namespace Page_Navigation_App
 
         private async void PlayOrInstall(object sender, RoutedEventArgs e)
         {
-            if (isBusy) return;
+            if (isBusy||IsCloning) return;
             isBusy = true;
             var viewModel = DataContext as GameViewModel;
             if (viewModel.Price == "Үнэгүй"|| AppData.CurrentUser.premium)
@@ -73,6 +84,7 @@ namespace Page_Navigation_App
                     }
                     else
                     {
+                        IsCloning = true;
                         myButton.Content = "Installing..."; // Set to "Installing..." before starting the clone process
 
                         await Task.Run(() =>
@@ -91,7 +103,7 @@ namespace Page_Navigation_App
                             {
                                 // Clone the repository using the correct URL
                                 Repository.Clone(repositoryUrl, targetDirectory);
-
+                                IsCloning = false;
 
                                 isInstalled = true;
                             }
@@ -102,10 +114,12 @@ namespace Page_Navigation_App
                 }
                 catch (Exception ex)
                 {
+                    IsCloning = false;
                     Dispatcher.Invoke(() => MessageBox.Show("Error: " + ex.Message));
                 }
                 finally
                 {
+                    IsCloning = false;
                     isBusy = false; // Ensure isBusy is reset correctly
                     Dispatcher.Invoke(() => myButton.Content = isInstalled ? "Play" : "Install");
                 }
