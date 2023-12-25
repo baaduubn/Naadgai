@@ -1,5 +1,7 @@
 ﻿using System;
 using System.Windows;
+using System.Windows.Input;
+
 
 namespace Page_Navigation_App
 {
@@ -8,6 +10,8 @@ namespace Page_Navigation_App
         public loginscreen()
         {
             InitializeComponent();
+            UsernameTextBox.KeyDown += OnKeyDownHandler;
+            PasswordBox.KeyDown += OnKeyDownHandler;
         }
 
         private void LoginButton_Click(object sender, RoutedEventArgs e)
@@ -29,7 +33,13 @@ namespace Page_Navigation_App
             }
         }
 
-
+        private void OnKeyDownHandler(object sender, KeyEventArgs e)
+        {
+            if (e.Key == Key.Enter)
+            {
+                LoginButton_Click(sender, e); // Call the login method
+            }
+        }
 
         private bool AuthenticateUser(string username, string password ,out UserData userData)
         {

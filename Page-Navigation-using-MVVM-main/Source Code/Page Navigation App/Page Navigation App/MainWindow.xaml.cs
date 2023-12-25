@@ -30,7 +30,7 @@ namespace Page_Navigation_App
             AutoUpdater.ShowSkipButton = false;
             AutoUpdater.ShowRemindLaterButton = false;
             AutoUpdater.CheckForUpdateEvent += AutoUpdaterOnCheckForUpdateEvent;
-            AutoUpdater.InstalledVersion = new Version("0.0.5.2"); // Set your current application version
+            AutoUpdater.InstalledVersion = new Version("0.0.5.3"); // Set your current application version
         }
 
         private string GetXmlContent(string xmlUrl)

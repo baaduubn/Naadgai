@@ -23,6 +23,17 @@ namespace Page_Navigation_App.View
         public Home()
         {
             InitializeComponent();
+
         }
+        private void OpenLink(object sender, RoutedEventArgs e)
+        {
+            Button button = sender as Button;
+            if (button != null && button.Tag is string url)
+            {
+                // Open the link
+                System.Diagnostics.Process.Start(url);
+            }
+        }
+
     }
 }

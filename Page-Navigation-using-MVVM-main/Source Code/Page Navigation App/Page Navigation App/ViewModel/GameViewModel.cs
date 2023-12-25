@@ -15,6 +15,7 @@ namespace Page_Navigation_App.ViewModel
         public string repositoryUrl {  get; set; }
         public string ThumbnailImageSource { get; set; }
 
+        public string Price { get; set; }
         public string ScreenShotSource1 {  get; set; }
         public string ScreenShotSource2 {  get; set; }
 

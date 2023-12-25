@@ -22,6 +22,7 @@ namespace Page_Navigation_App
         public string GameTitle { get; set; }
         public string ThumbnailImageSource { get; set; }
         private string targetDirectory;
+        
         private void InitializeDirectories(string idda)
         {
             
@@ -55,57 +56,65 @@ namespace Page_Navigation_App
         {
             if (isBusy) return;
             isBusy = true;
-
-            try
+            var viewModel = DataContext as GameViewModel;
+            if (viewModel.Price == "Үнэгүй"|| AppData.CurrentUser.premium)
             {
-                if (isInstalled || IsApplicationInstalled())
+                try
                 {
-                    if (IsUpdateAvailable())
+                    if (isInstalled || IsApplicationInstalled())
                     {
-                        myButton.Content = "Updating...";
-                        await Task.Run(() => HandleUpdate());
+                        if (IsUpdateAvailable())
+                        {
+                            myButton.Content = "Updating...";
+                            await Task.Run(() => HandleUpdate());
+                        }
+
+                        Play();
                     }
-
-                    Play();
-                }
-                else
-                {
-                    myButton.Content = "Installing..."; // Set to "Installing..." before starting the clone process
-
-                    await Task.Run(() =>
+                    else
                     {
-                        if (!Directory.Exists(targetDirectory))
-                        {
-                            Directory.CreateDirectory(targetDirectory);
-                        }
+                        myButton.Content = "Installing..."; // Set to "Installing..." before starting the clone process
 
-                        if (Repository.IsValid(targetDirectory))
+                        await Task.Run(() =>
                         {
-                            Dispatcher.Invoke(() => MessageBox.Show("Repository already exists."));
-                            isInstalled = true;
-                        }
-                        else
-                        {
-                            // Clone the repository using the correct URL
-                            Repository.Clone(repositoryUrl, targetDirectory);
-                         
+                            if (!Directory.Exists(targetDirectory))
+                            {
+                                Directory.CreateDirectory(targetDirectory);
+                            }
 
-                            isInstalled = true;
-                        }
-                    });
+                            if (Repository.IsValid(targetDirectory))
+                            {
+                                Dispatcher.Invoke(() => MessageBox.Show("Repository already exists."));
+                                isInstalled = true;
+                            }
+                            else
+                            {
+                                // Clone the repository using the correct URL
+                                Repository.Clone(repositoryUrl, targetDirectory);
 
-                    myButton.Content = "Play"; // Update to "Play" after the cloning is done
+
+                                isInstalled = true;
+                            }
+                        });
+
+                        myButton.Content = "Play"; // Update to "Play" after the cloning is done
+                    }
+                }
+                catch (Exception ex)
+                {
+                    Dispatcher.Invoke(() => MessageBox.Show("Error: " + ex.Message));
+                }
+                finally
+                {
+                    isBusy = false; // Ensure isBusy is reset correctly
+                    Dispatcher.Invoke(() => myButton.Content = isInstalled ? "Play" : "Install");
                 }
             }
-            catch (Exception ex)
+            else
             {
-                Dispatcher.Invoke(() => MessageBox.Show("Error: " + ex.Message));
+                MessageBox.Show("Үйлчлгээний эрхээ сунга нуу");
             }
-            finally
-            {
-                isBusy = false; // Ensure isBusy is reset correctly
-                Dispatcher.Invoke(() => myButton.Content = isInstalled ? "Play" : "Install");
-            }
+       
         }
 
 
@@ -118,10 +127,8 @@ namespace Page_Navigation_App
 
         private void Play()
         {
-            // Cast DataContext to the appropriate type
             var viewModel = DataContext as GameViewModel;
 
-            // Check if the cast was successful
             if (viewModel != null)
             {
                 string gameExecutablePath = Path.Combine(targetDirectory, viewModel.GameTitle + ".exe");
@@ -130,10 +137,15 @@ namespace Page_Navigation_App
                 {
                     try
                     {
+                        // Example of user data
+                        string userDataArgument = $"-premium {AppData.CurrentUser.premium.ToString().ToLower()} -price \"{viewModel.Price}\"";
+
+
                         ProcessStartInfo startInfo = new ProcessStartInfo(gameExecutablePath)
                         {
-                            WorkingDirectory = Path.GetDirectoryName(gameExecutablePath), // Set the working directory to the game's directory
-                            UseShellExecute = true // This is necessary for GUI applications
+                            WorkingDirectory = Path.GetDirectoryName(gameExecutablePath),
+                            UseShellExecute = true,
+                            Arguments = userDataArgument // Passing user data as arguments
                         };
                         Process gameProcess = Process.Start(startInfo);
                     }
@@ -152,6 +164,7 @@ namespace Page_Navigation_App
                 MessageBox.Show("Game data is not available.");
             }
         }
+
 
 
 

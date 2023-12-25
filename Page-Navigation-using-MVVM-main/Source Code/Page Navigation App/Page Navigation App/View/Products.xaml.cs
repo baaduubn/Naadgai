@@ -26,6 +26,7 @@ namespace Page_Navigation_App.View
 
         private async void Button_Click(object sender, RoutedEventArgs e)
         {
+         
             var button = sender as Button;
             if (button == null) return;
 
@@ -57,6 +58,7 @@ namespace Page_Navigation_App.View
                             ShortDescription = sproutValleyData.ShortDescription,
                             GameDescription = sproutValleyData.GameDescription,
                             GameGenre = sproutValleyData.GameGenre,
+                            Price = sproutValleyData.Price,
                             ThumbnailImageSource = sproutValleyData.ThumbnailImageSource,
                             ScreenShotSource1 = sproutValleyData?.ScreenShotSource1,
                             ScreenShotSource2 = sproutValleyData.ScreenShotSource2,
