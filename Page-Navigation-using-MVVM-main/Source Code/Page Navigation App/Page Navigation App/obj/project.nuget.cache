@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "TfYspudzMFAivevgSTbhJMdvW5znQcl7SagHqrUJ6UWGHq0expISgVzhXJdx7HRQqaKICKt8ibMmJ0ZwwVKzCA==",
+  "dgSpecHash": "9Y38rpVbbgTav0biZUVdzGxg6elX3tVSvvXPFWiP5hkcKtJzc09FB5vK8584VjW/Kb0M/4wyRiEuIJgAgFCteg==",
   "success": true,
-  "projectFilePath": "D:\\SainGamesBeta\\Page-Navigation-using-MVVM-main\\Source Code\\Page Navigation App\\Page Navigation App\\Sain games platform.csproj",
+  "projectFilePath": "D:\\SainGamesBeta\\Page-Navigation-using-MVVM-main\\Source Code\\Page Navigation App\\Page Navigation App\\Naadgai.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\baadu\\.nuget\\packages\\autoupdater.net.official\\1.7.3\\autoupdater.net.official.1.7.3.nupkg.sha512",
     "C:\\Users\\baadu\\.nuget\\packages\\deltacompressiondotnet\\1.1.0\\deltacompressiondotnet.1.1.0.nupkg.sha512",

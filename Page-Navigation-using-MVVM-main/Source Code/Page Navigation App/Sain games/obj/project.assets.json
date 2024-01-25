@@ -18,9 +18,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\SainGamesBeta\\Page-Navigation-using-MVVM-main\\Source Code\\Page Navigation App\\Sain games\\Sain games.wixproj",
-      "projectName": "Sain games",
-      "projectPath": "D:\\SainGamesBeta\\Page-Navigation-using-MVVM-main\\Source Code\\Page Navigation App\\Sain games\\Sain games.wixproj",
+      "projectUniqueName": "D:\\SainGamesBeta\\Page-Navigation-using-MVVM-main\\Source Code\\Page Navigation App\\Sain games\\Naadgai install.wixproj",
+      "projectName": "Naadgai install",
+      "projectPath": "D:\\SainGamesBeta\\Page-Navigation-using-MVVM-main\\Source Code\\Page Navigation App\\Sain games\\Naadgai install.wixproj",
       "packagesPath": "C:\\Users\\baadu\\.nuget\\packages\\",
       "outputPath": "D:\\SainGamesBeta\\Page-Navigation-using-MVVM-main\\Source Code\\Page Navigation App\\Sain games\\obj\\",
       "projectStyle": "PackageReference",

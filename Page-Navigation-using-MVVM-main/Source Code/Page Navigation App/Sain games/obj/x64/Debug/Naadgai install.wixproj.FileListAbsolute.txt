@@ -1,0 +1,8 @@
+D:\SainGamesBeta\Page-Navigation-using-MVVM-main\Source Code\Page Navigation App\Sain games\bin\x64\Debug\en-US\Naadgai install.msi
+D:\SainGamesBeta\Page-Navigation-using-MVVM-main\Source Code\Page Navigation App\Sain games\bin\x64\Debug\en-US\cab1.cab
+D:\SainGamesBeta\Page-Navigation-using-MVVM-main\Source Code\Page Navigation App\Sain games\bin\x64\Debug\en-US\Naadgai install.wixpdb
+D:\SainGamesBeta\Page-Navigation-using-MVVM-main\Source Code\Page Navigation App\Sain games\obj\x64\Debug\Naadgai install.wixproj.CoreCompileInputs.cache
+D:\SainGamesBeta\Page-Navigation-using-MVVM-main\Source Code\Page Navigation App\Sain games\obj\x64\Debug\en-US\cab1.cab
+D:\SainGamesBeta\Page-Navigation-using-MVVM-main\Source Code\Page Navigation App\Sain games\obj\x64\Debug\en-US\Naadgai install.msi
+D:\SainGamesBeta\Page-Navigation-using-MVVM-main\Source Code\Page Navigation App\Sain games\obj\x64\Debug\en-US\Naadgai install.wixpdb
+D:\SainGamesBeta\Page-Navigation-using-MVVM-main\Source Code\Page Navigation App\Sain games\obj\x64\Debug\Naadgai install.wixproj.BindTracking-en-US.txt

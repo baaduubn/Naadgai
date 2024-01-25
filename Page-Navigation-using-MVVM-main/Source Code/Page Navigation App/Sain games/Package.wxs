@@ -1,5 +1,5 @@
 ﻿<Wix xmlns="http://wixtoolset.org/schemas/v4/wxs">
-  <Package Name="Sain_games" Manufacturer="SUPERGEM" Version="0.0.5.3" UpgradeCode="8654ea41-7f11-4569-99cb-18c489cc2201">
+  <Package Name="Naadgai" Manufacturer="SUPERGEM" Version="0.0.5.3" UpgradeCode="8654ea41-7f11-4569-99cb-18c489cc2201">
     <MajorUpgrade DowngradeErrorMessage="!(loc.DowngradeError)" />
 
 	  <Feature Id="MainApplication" Title="Main Application" Level="1">

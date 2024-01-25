@@ -17,12 +17,12 @@
 		</DirectoryRef>
 		
 		<DirectoryRef Id="ProgramMenuFolder">
-			<Directory Id="ApplicationProgramsFolder" Name="Sain Games">
+			<Directory Id="ApplicationProgramsFolder" Name="Naadgai">
 				<Component Id="ApplicationShortcut" Guid="*">
 					<Shortcut Id="ApplicationStartMenuShortcut"
-							  Name="Sain Games"
-							  Description="Play Sain Games"
-							  Target="[INSTALLFOLDER]Sain games platform.exe"
+							  Name="Naadgai"
+							  Description="Play Naadgai"
+							  Target="[INSTALLFOLDER]Naadgai.exe"
 							  WorkingDirectory="INSTALLFOLDER"/>
 					<RemoveFolder Id="ApplicationProgramsFolder" On="uninstall"/>
 					<RegistryValue Root="HKCU"
@@ -37,9 +37,9 @@
 		<DirectoryRef Id="DesktopFolder">
 			<Component Id="ApplicationDesktopShortcut" Guid="*">
 				<Shortcut Id="DesktopShortcut"
-						  Name="Sain Games"
-						  Description="Play Sain Games"
-						  Target="[INSTALLFOLDER]Sain games platform.exe"
+						  Name="Naadgai"
+						  Description="Play Naadgai"
+						  Target="[INSTALLFOLDER]Naadgai.exe"
 						  WorkingDirectory="INSTALLFOLDER"/>
 				<RemoveFolder Id="DesktopFolder" On="uninstall"/>
 				<RegistryValue Root="HKCU"
@@ -56,7 +56,7 @@
 
 						<!-- Executable and DLLs -->
 						<Component>
-							<File Source="Sain games platform.exe" />
+							<File Source="Naadgai.exe" />
 						</Component>
 						<Component>
 							<File Source="AutoUpdater.NET.dll"/>
@@ -105,16 +105,16 @@
 
 						<!-- JSON and configuration files -->
 						<Component>
-							<File Source="Sain games platform.deps.json"/>
+							<File Source="Naadgai.deps.json"/>
 						</Component>
 						<Component>
-							<File Source="Sain games platform.dll"/>
+							<File Source="Naadgai.dll"/>
 						</Component>
 						<Component>
-							<File Source="Sain games platform.pdb"/>
+							<File Source="Naadgai.pdb"/>
 						</Component>
 						<Component>
-							<File Source="Sain games platform.runtimeconfig.json"/>
+							<File Source="Naadgai.runtimeconfig.json"/>
 						</Component>
 
 						<!-- External library -->
