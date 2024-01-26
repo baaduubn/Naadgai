@@ -48,6 +48,10 @@
               "target": "Package",
               "version": "[1.7.3, )"
             },
+            "BCrypt.Net": {
+              "target": "Package",
+              "version": "[0.1.0, )"
+            },
             "LibGit2Sharp": {
               "target": "Package",
               "version": "[0.29.0, )"

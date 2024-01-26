@@ -8,7 +8,8 @@
         AllowsTransparency="True"
         WindowStartupLocation="CenterScreen"
         WindowStyle="None"
-        Title="Login" Height="300" Width="400">
+        Title="Login" Height="300" Width="400"
+        Loaded="Window_Loaded">
     <Grid Background="#272727">
         <!-- Set your desired background color here -->
         <!-- Title Bar with Close Button -->

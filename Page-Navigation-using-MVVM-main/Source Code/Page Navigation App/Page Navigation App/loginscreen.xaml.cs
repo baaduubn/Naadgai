@@ -12,6 +12,7 @@ namespace Page_Navigation_App
             InitializeComponent();
             UsernameTextBox.KeyDown += OnKeyDownHandler;
             PasswordBox.KeyDown += OnKeyDownHandler;
+           
         }
 
         private void LoginButton_Click(object sender, RoutedEventArgs e)
@@ -28,7 +29,8 @@ namespace Page_Navigation_App
                 Close();
                 if (rememberMe)
                 {
-                    MessageBox.Show("stored password.");
+                    SecureStorage.StoreCredentials(username, password);
+                 
                 }
             }
             else
@@ -86,7 +88,17 @@ namespace Page_Navigation_App
             userData = null; // Authentication failed
             return false;
         }
-
+        private void Window_Loaded(object sender, RoutedEventArgs e)
+        {
+            // Check if stored credentials exist and populate the fields
+            if (SecureStorage.TryGetStoredCredentials(out string storedUsername, out string storedPassword))
+            {
+                UsernameTextBox.Text = storedUsername;
+                PasswordBox.Password = storedPassword;
+                RememberMeCheckBox.IsChecked = true;
+              
+            }
+        }
 
 
         private void ForgotPassword_Click(object sender, RoutedEventArgs e)

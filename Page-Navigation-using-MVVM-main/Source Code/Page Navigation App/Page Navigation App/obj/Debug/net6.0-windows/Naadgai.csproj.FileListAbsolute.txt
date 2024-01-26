@@ -115,3 +115,4 @@ D:\SainGamesBeta\Page-Navigation-using-MVVM-main\Source Code\Page Navigation App
 D:\SainGamesBeta\Page-Navigation-using-MVVM-main\Source Code\Page Navigation App\Page Navigation App\obj\Debug\net6.0-windows\Naadgai.pdb
 D:\SainGamesBeta\Page-Navigation-using-MVVM-main\Source Code\Page Navigation App\Page Navigation App\obj\Debug\net6.0-windows\Naadgai.genruntimeconfig.cache
 D:\SainGamesBeta\Page-Navigation-using-MVVM-main\Source Code\Page Navigation App\Page Navigation App\obj\Debug\net6.0-windows\ref\Naadgai.dll
+D:\SainGamesBeta\Page-Navigation-using-MVVM-main\Source Code\Page Navigation App\Page Navigation App\bin\Debug\net6.0-windows\BCrypt.Net.dll

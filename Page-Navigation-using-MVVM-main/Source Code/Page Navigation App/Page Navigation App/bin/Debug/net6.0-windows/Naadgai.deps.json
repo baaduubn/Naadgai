@@ -9,6 +9,7 @@
       "Naadgai/1.0.0": {
         "dependencies": {
           "Autoupdater.NET.Official": "1.7.3",
+          "BCrypt.Net": "0.1.0",
           "LibGit2Sharp": "0.29.0",
           "Newtonsoft.Json": "13.0.3",
           "SharpCompress": "0.34.2",
@@ -95,6 +96,14 @@
           },
           "lib/net5.0-windows7.0/zh/AutoUpdater.NET.resources.dll": {
             "locale": "zh"
+          }
+        }
+      },
+      "BCrypt.Net/0.1.0": {
+        "runtime": {
+          "lib/net35/BCrypt.Net.dll": {
+            "assemblyVersion": "0.1.4141.31969",
+            "fileVersion": "0.1.0.0"
           }
         }
       },
@@ -289,6 +298,13 @@
       "sha512": "sha512-231QXHE/vvfzzE+xENBfqpCJkHig7TMkW8GklYyHvUzzDviUfviMwJi3/ImNM+dxJmrHh+NHHYnFL+ik8qpmwg==",
       "path": "autoupdater.net.official/1.7.3",
       "hashPath": "autoupdater.net.official.1.7.3.nupkg.sha512"
+    },
+    "BCrypt.Net/0.1.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-sST2w361Dxt9GGMfpOTiK50wXGV64Ybb1hiX3xjEWnhVYZNF43NuySGwADJa7X1R+bA53NsFR+tuDxcYiJeIOA==",
+      "path": "bcrypt.net/0.1.0",
+      "hashPath": "bcrypt.net.0.1.0.nupkg.sha512"
     },
     "DeltaCompressionDotNet/1.1.0": {
       "type": "package",

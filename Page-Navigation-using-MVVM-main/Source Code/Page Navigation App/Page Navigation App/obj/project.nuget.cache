@@ -1,10 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "9Y38rpVbbgTav0biZUVdzGxg6elX3tVSvvXPFWiP5hkcKtJzc09FB5vK8584VjW/Kb0M/4wyRiEuIJgAgFCteg==",
+  "dgSpecHash": "U59aYOD9pqYRVNC8d9XBFYspzSFvlnjT4rFadlL+yp7E7Kv5s8MrCFTE8QmrV089Ca6c3pfDul3jTpeaSSssjg==",
   "success": true,
   "projectFilePath": "D:\\SainGamesBeta\\Page-Navigation-using-MVVM-main\\Source Code\\Page Navigation App\\Page Navigation App\\Naadgai.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\baadu\\.nuget\\packages\\autoupdater.net.official\\1.7.3\\autoupdater.net.official.1.7.3.nupkg.sha512",
+    "C:\\Users\\baadu\\.nuget\\packages\\bcrypt.net\\0.1.0\\bcrypt.net.0.1.0.nupkg.sha512",
     "C:\\Users\\baadu\\.nuget\\packages\\deltacompressiondotnet\\1.1.0\\deltacompressiondotnet.1.1.0.nupkg.sha512",
     "C:\\Users\\baadu\\.nuget\\packages\\libgit2sharp\\0.29.0\\libgit2sharp.0.29.0.nupkg.sha512",
     "C:\\Users\\baadu\\.nuget\\packages\\libgit2sharp.nativebinaries\\2.0.321\\libgit2sharp.nativebinaries.2.0.321.nupkg.sha512",
@@ -26,6 +27,16 @@
       "warningLevel": 1,
       "message": "Detected package version outside of dependency constraint: squirrel.windows 2.0.1 requires SharpCompress (= 0.17.1) but version SharpCompress 0.34.2 was resolved.",
       "libraryId": "SharpCompress",
+      "targetGraphs": [
+        "net6.0-windows7.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'BCrypt.Net 0.1.0' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net6.0-windows7.0'. This package may not be fully compatible with your project.",
+      "libraryId": "BCrypt.Net",
       "targetGraphs": [
         "net6.0-windows7.0"
       ]
