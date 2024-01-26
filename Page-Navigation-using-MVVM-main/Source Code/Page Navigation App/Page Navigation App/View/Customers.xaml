@@ -49,60 +49,18 @@
                        Width="170"
                        Text="{Binding Id, StringFormat='#{0}'}" />
 
-            <Canvas Width="75" Height="75" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="469,64,0,0">
-                <Ellipse Width="75" Height="75" HorizontalAlignment="Left" VerticalAlignment="Top" RenderTransformOrigin="0.02,0.08">
-                    <Ellipse.Fill>
-                        <RadialGradientBrush>
-                            <GradientStop Color="#FF212529" Offset="0.0" />
-                            <GradientStop Color="#FF171616" Offset="1.0" />
-                        </RadialGradientBrush>
-                    </Ellipse.Fill>
-                </Ellipse>
-            </Canvas>
+            <Canvas Width="75" Height="75" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="469,64,0,0"/>
 
             <Grid Margin="171,114,114,366">
                 <!-- First Image and TextBlock -->
-                <Image Source="/Images/icons8-heart-60.png" Margin="168,2,69,18" Height="40" Width="40" />
-                <TextBlock Foreground="Gray"
-                           FontSize="12"
-                           HorizontalAlignment="Left"
-                           VerticalAlignment="Top"
-                           FontFamily="/Fonts/#Rubik Medium"
-                           Margin="150,40,0,0"
-                           Height="20"
-                           Width="75"
-                           Text="{Binding like}"
-                           TextAlignment="Center" />
 
                 <!-- Second Image and TextBlock -->
-                <Image Source="/Images/crown.png" Margin="95,0,142,20" Height="40" Width="40" />
-                <TextBlock Foreground="Gray"
-                           FontSize="12"
-                           HorizontalAlignment="Left"
-                           VerticalAlignment="Top"
-                           FontFamily="/Fonts/#Rubik Medium"
-                           Margin="76,40,0,0"
-                           Height="20"
-                           Width="75"
-                           Text="{Binding like}"
-                           TextAlignment="Center" />
 
                 <!-- Third Image and TextBlock -->
-                <Image Source="/Images/icons8-cute-cake-96.png" Margin="19,-1,218,21" Height="40" Width="40" />
-                <TextBlock Foreground="Gray"
-                           FontSize="12"
-                           HorizontalAlignment="Left"
-                           VerticalAlignment="Top"
-                           FontFamily="/Fonts/#Rubik Medium"
-                           Margin="0,40,0,0"
-                           Height="20"
-                           Width="75"
-                           Text="{Binding createdDate}"
-                           TextAlignment="Center" />
             </Grid>
 
             <!-- Premium Border -->
-           
+
             <Border Grid.Column="0" Background="#FF329AEA" Margin="10,181,10,295" BorderBrush="Gray" BorderThickness="1">
                 <Border.Style>
                     <Style TargetType="Border">

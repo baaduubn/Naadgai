@@ -18,7 +18,7 @@ namespace Page_Navigation_App
         {
             string username = UsernameTextBox.Text;
             string password = PasswordBox.Password;
-
+            bool rememberMe = RememberMeCheckBox.IsChecked ?? false;
             if (AuthenticateUser(username, password, out UserData userData))
             {
                 AppData.CurrentUser = userData; // Save the user data globally
@@ -26,6 +26,10 @@ namespace Page_Navigation_App
                 MainWindow mainWindow = new MainWindow();
                 mainWindow.Show();
                 Close();
+                if (rememberMe)
+                {
+                    MessageBox.Show("stored password.");
+                }
             }
             else
             {

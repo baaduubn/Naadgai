@@ -36,6 +36,9 @@
     <None Remove="Images\shutdown_def.png" />
     <None Remove="Images\shutdown_mo.png" />
     <None Remove="Images\transaction_page.png" />
+    <None Remove="View\crown.png" />
+    <None Remove="View\heart.png" />
+    <None Remove="View\icons8-cute-cake-96.png" />
   </ItemGroup>
 
   <ItemGroup>
@@ -48,6 +51,9 @@
     </Resource>
     <Resource Include="Images\icons8-close-32.png" />
     <Resource Include="Images\icons8-subtract-32.png" />
+    <Resource Include="View\crown.png" />
+    <Resource Include="View\heart.png" />
+    <Resource Include="View\icons8-cute-cake-96.png" />
     <Content Include="Images\customer_page.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
