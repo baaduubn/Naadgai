@@ -146,10 +146,22 @@ namespace Page_Navigation_App
 
         private void ForgotPassword_Click(object sender, RoutedEventArgs e)
         {
-            // Handle the "Forgot Password" link click event
-            MessageBox.Show("Forgot Password clicked!");
-            // Implement your "Forgot Password" functionality here
+            try
+            {
+                // Open the default web browser with the specified URL
+                System.Diagnostics.Process.Start(new System.Diagnostics.ProcessStartInfo
+                {
+                    FileName = "http://www.naadgai.mn",
+                    UseShellExecute = true
+                });
+            }
+            catch (System.ComponentModel.Win32Exception ex)
+            {
+                // Handle the exception, log it, or show an error message
+                MessageBox.Show($"Error: {ex.Message}");
+            }
         }
+
 
         private void CloseButton_Click(object sender, RoutedEventArgs e)
         {
