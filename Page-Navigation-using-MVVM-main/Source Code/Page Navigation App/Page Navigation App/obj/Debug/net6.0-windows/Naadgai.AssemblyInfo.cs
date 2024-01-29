@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Naadgai")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a9162915daa6a7ab8dc6684857e880937963c40e")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+4fce228875959b015585063488fb2e73fa15f394")]
 [assembly: System.Reflection.AssemblyProductAttribute("Naadgai")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Naadgai")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
