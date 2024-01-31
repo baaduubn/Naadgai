@@ -39,6 +39,8 @@
     <None Remove="View\crown.png" />
     <None Remove="View\heart.png" />
     <None Remove="View\icons8-cute-cake-96.png" />
+    <None Remove="View\icons8-diamond-64.png" />
+    <None Remove="View\profile.png" />
   </ItemGroup>
 
   <ItemGroup>
@@ -54,6 +56,8 @@
     <Resource Include="View\crown.png" />
     <Resource Include="View\heart.png" />
     <Resource Include="View\icons8-cute-cake-96.png" />
+    <Resource Include="View\icons8-diamond-64.png" />
+    <Resource Include="View\profile.png" />
     <Content Include="Images\customer_page.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>

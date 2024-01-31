@@ -16,27 +16,29 @@
                     <GradientStop Color="#212529" Offset="1.0" />
                 </LinearGradientBrush>
             </Border.Background>
-
-            <!-- Grid to center the StackPanel -->
-
-
         </Border>
 
-        <StackPanel Orientation="Vertical" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="-190,50,0,0">
-            <!-- Button Style with Rounded Corners and Image -->
-            <TextBlock FontSize="32" FontWeight="Bold" FontStyle="Italic" Foreground="White">
-                    Онцлох!
+        <!--<StackPanel Orientation="Vertical" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="-190,50,0,0">
+            <TextBlock FontSize="24" FontWeight="Bold" FontStyle="Italic" Foreground="White">
+                Онцлох!
             </TextBlock>
+            <Button Click="OpenLink" Tag="YourLinkURL1" BorderBrush="DarkGray" BorderThickness="1">
+                <Button.Background>
+                    <ImageBrush ImageSource="https://img.itch.zone/aW1hZ2UvMjQyMjc3Ny8xNDMzOTAzMi5qcGc=/original/eBwtPp.jpg"/>
+                </Button.Background>
+            </Button>
+
+
             <StackPanel.Resources>
                 <Style TargetType="Button">
                     <Setter Property="Template">
                         <Setter.Value>
                             <ControlTemplate TargetType="Button">
                                 <Border Background="{TemplateBinding Background}"
-                                                BorderThickness="{TemplateBinding BorderThickness}"
-                                                CornerRadius="10"
-                                                Height="200"
-                                                Width="400">
+                                        BorderThickness="{TemplateBinding BorderThickness}"
+                                        CornerRadius="10"
+                                        Height="200"
+                                        Width="400">
                                     <Image Source="{TemplateBinding Content}" Stretch="Fill"/>
                                 </Border>
                             </ControlTemplate>
@@ -44,37 +46,139 @@
                     </Setter>
                 </Style>
             </StackPanel.Resources>
+        </StackPanel>-->
 
-            <!--<Button Content="https://img.itch.zone/aW1hZ2UvMjQyMjc3Ny8xNDMzOTAzMi5qcGc=/original/eBwtPp.jpg" Margin="5" Background="LightGray" BorderBrush="DarkGray" BorderThickness="1"/>-->
-            <!-- Add more buttons as needed -->
+
+        
+            <StackPanel Orientation="Vertical" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,20,0,0" Width="600" Height="250">
+                <TextBlock FontSize="24" FontWeight="Bold" FontStyle="Italic" Foreground="White">
+            Онцлох!
+                </TextBlock>
+            <Border Background="#FF0E1012" Margin="0,0,0,0" Height="200" Width="590">
+                <StackPanel Orientation="Horizontal">
+                    <!-- Your Button with Image Content -->
+                    <Button x:Name="imageSliderButton" Click="Button_Click">
+                        <Button.Template>
+                            <ControlTemplate TargetType="Button">
+                                <Border Background="{TemplateBinding Background}"
+                                BorderThickness="{TemplateBinding BorderThickness}"
+                                CornerRadius="10"
+                                Height="200"
+                                Width="350">
+                                    <Image Source="{TemplateBinding Content}" Stretch="Fill"/>
+                                </Border>
+                            </ControlTemplate>
+                        </Button.Template>
+                    </Button>
+
+                    <StackPanel Orientation="Vertical" VerticalAlignment="Top" Height="162" Width="250">
+                        <TextBlock x:Name="textBlockGameTitle" FontSize="24" Foreground="White" VerticalAlignment="Center" Margin="10,0,0,0" Text="Counter strike 1.6"/>
+                        <TextBlock x:Name="textBlockAdditionalText" Foreground="White" Text="Counter-Strike is an objective-based first-person shooter in which players are divided into the terrorist team and the counter-terrorist team." TextWrapping="Wrap" Width="224"/>
+                    </StackPanel>
+                </StackPanel>
+                </Border>
+            </StackPanel>
+     
+
+
+
+
+
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,270,0,0">
+            <StackPanel.Resources>
+                <Style TargetType="Button">
+                    <Setter Property="Template">
+                        <Setter.Value>
+                            <ControlTemplate TargetType="Button">
+                                <Border Background="{TemplateBinding Background}"
+                                 BorderThickness="{TemplateBinding BorderThickness}"
+                                 CornerRadius="5"
+                                 Height="160"
+                                 Width="110"
+                                 Margin="5"
+                                 Cursor="Hand">
+                                    <Image Source="{TemplateBinding Content}" Stretch="UniformToFill"/>
+                                </Border>
+                            </ControlTemplate>
+                        </Setter.Value>
+                    </Setter>
+                </Style>
+            </StackPanel.Resources>
+            <Button Click="OpenLink" Tag="YourLinkURL1" BorderBrush="DarkGray" BorderThickness="1">
+                <Button.Background>
+                    <ImageBrush ImageSource="https://img.itch.zone/aW1hZ2UvMjQyMjc3Ny8xNDMzOTAzMi5qcGc=/original/eBwtPp.jpg"/>
+                </Button.Background>
+            </Button>
+
+            <Button Click="OpenLink" Tag="YourLinkURL1" BorderBrush="DarkGray" BorderThickness="1">
+                <Button.Background>
+                    <ImageBrush ImageSource="https://img.itch.zone/aW1hZ2UvMjQyMjc3Ny8xNDMzOTAzMi5qcGc=/original/eBwtPp.jpg"/>
+                </Button.Background>
+            </Button>
+            <Button Click="OpenLink" Tag="YourLinkURL1" BorderBrush="DarkGray" BorderThickness="1">
+                <Button.Background>
+                    <ImageBrush ImageSource="https://img.itch.zone/aW1hZ2UvMjQyMjc3Ny8xNDMzOTAzMi5qcGc=/original/eBwtPp.jpg"/>
+                </Button.Background>
+            </Button>
+            <Button Click="OpenLink" Tag="YourLinkURL1" BorderBrush="DarkGray" BorderThickness="1">
+                <Button.Background>
+                    <ImageBrush ImageSource="https://img.itch.zone/aW1hZ2UvMjQyMjc3Ny8xNDMzOTAzMi5qcGc=/original/eBwtPp.jpg"/>
+                </Button.Background>
+            </Button>
+            <Button Click="OpenLink" Tag="YourLinkURL1" BorderBrush="DarkGray" BorderThickness="1">
+                <Button.Background>
+                    <ImageBrush ImageSource="https://img.itch.zone/aW1hZ2UvMjQyMjc3Ny8xNDMzOTAzMi5qcGc=/original/eBwtPp.jpg"/>
+                </Button.Background>
+            </Button>
+
+
+
         </StackPanel>
+
+
         <StackPanel Orientation="Vertical" Margin="0,450,0,0">
             <TextBlock FontSize="16" Foreground="White" Margin="20,0,0,0">
-               Өөрчлөлт
+                Өөрчлөлт
             </TextBlock>
             <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,0,0,0">
-                <!-- Button Style with Rounded Corners and Image -->
-
                 <StackPanel.Resources>
                     <Style TargetType="Button">
                         <Setter Property="Template">
                             <Setter.Value>
                                 <ControlTemplate TargetType="Button">
                                     <Border Background="{TemplateBinding Background}"
-                                    BorderThickness="{TemplateBinding BorderThickness}"
-                                    CornerRadius="5"
-                                    Height="90"
-                                    Width="190">
-                                        <Image Source="{TemplateBinding Content}" Stretch="Fill"/>
+                                            BorderThickness="{TemplateBinding BorderThickness}"
+                                            CornerRadius="5"
+                                            Height="100"
+                                            Width="190"
+                                            Margin="5"
+                                            Cursor="Hand">
+                                        <Image Source="{TemplateBinding Content}" Stretch="UniformToFill"/>
                                     </Border>
                                 </ControlTemplate>
                             </Setter.Value>
                         </Setter>
                     </Style>
                 </StackPanel.Resources>
-                <Button Click="OpenLink" Content="https://img.itch.zone/aW1hZ2UvMjQyMjc3Ny8xNDMzOTAzMi5qcGc=/original/eBwtPp.jpg" Tag="YourLinkURL1" Margin="5" Background="LightGray" BorderBrush="DarkGray" BorderThickness="1"/>
-                <Button Click="OpenLink" Content="https://img.itch.zone/aW1hZ2UvMjQyMjc3Ny8xNDMzOTAzMi5qcGc=/original/eBwtPp.jpg" Tag="YourLinkURL2" Margin="5" Background="LightGray" BorderBrush="DarkGray" BorderThickness="1"/>
-                <Button Click="OpenLink" Content="https://img.itch.zone/aW1hZ2UvMjQyMjc3Ny8xNDMzOTAzMi5qcGc=/original/eBwtPp.jpg" Tag="YourLinkURL3" Margin="5" Background="LightGray" BorderBrush="DarkGray" BorderThickness="1"/>
+                <Button Click="OpenLink" Tag="http://www.naadgai.mn" BorderBrush="DarkGray" BorderThickness="1">
+                    <Button.Background>
+                        <ImageBrush ImageSource="https://hawk.live/storage/post-images/dota-2-patch-735-released-5053.jpg"/>
+                    </Button.Background>
+                </Button>
+
+                <Button Click="OpenLink" Tag="http://www.naadgai.mn" BorderBrush="DarkGray" BorderThickness="1">
+                    <Button.Background>
+                        <ImageBrush ImageSource="https://clan.cloudflare.steamstatic.com/images//3703047/c3c4b277a51b4a0fef0a49c88538440ffb46e782.jpg"/>
+                    </Button.Background>
+                </Button>
+
+                <Button Click="OpenLink" Tag="http://www.naadgai.mn" BorderBrush="DarkGray" BorderThickness="1">
+                    <Button.Background>
+                        <ImageBrush ImageSource="https://clan.cloudflare.steamstatic.com/images//3703047/d6dd5c3f90f646707afbb86af452b8eea0bff6ad.png"/>
+                    </Button.Background>
+                </Button>
+
+
             </StackPanel>
         </StackPanel>
     </Grid>

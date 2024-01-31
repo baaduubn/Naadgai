@@ -1,12 +1,12 @@
 <Wix xmlns="http://wixtoolset.org/schemas/v4/wxs">
 	<Fragment>
 		<DirectoryRef Id="INSTALLFOLDER">
-		
+
 			<Directory Id="ImageFolder" Name="Images">
 				<!-- Nothing inside ImageFolder yet, just the directory itself -->
 			</Directory>
 			<Directory Id ="PathFolder" Name="path_to_target_directory"></Directory>
-			
+
 			<Directory Id="RuntimesFolder" Name="runtimes">
 				<Directory Id="WinX64Folder" Name="win-x64">
 					<Directory Id="NativeFolder" Name="native">
@@ -15,7 +15,7 @@
 				</Directory>
 			</Directory>
 		</DirectoryRef>
-		
+
 		<DirectoryRef Id="ProgramMenuFolder">
 			<Directory Id="ApplicationProgramsFolder" Name="Naadgai">
 				<Component Id="ApplicationShortcut" Guid="*">
@@ -50,145 +50,148 @@
 							   KeyPath="yes"/>
 			</Component>
 		</DirectoryRef>
-		
-		
+
+
 		<ComponentGroup Id="ExampleComponents" Directory="INSTALLFOLDER">
 
-						<!-- Executable and DLLs -->
-						<Component>
-							<File Source="Naadgai.exe" />
-						</Component>
-						<Component>
-							<File Source="AutoUpdater.NET.dll"/>
-						</Component>
-						<Component>
-							<File Source="DeltaCompressionDotNet.dll"/>
-						</Component>
-						<Component>
-							<File Source="DeltaCompressionDotNet.MsDelta.dll"/>
-						</Component>
-						<Component>
-							<File Source="DeltaCompressionDotNet.PatchApi.dll"/>
-						</Component>
-						<Component>
-							<File Source="Microsoft.Web.WebView2.Core.dll"/>
-						</Component>
-						<Component>
-							<File Source="Microsoft.Web.WebView2.WinForms.dll"/>
-						</Component>
-						<Component>
-							<File Source="Microsoft.Web.WebView2.Wpf.dll"/>
-						</Component>
-						<Component>
-							<File Source="Mono.Cecil.dll"/>
-						</Component>
-						<Component>
-							<File Source="Mono.Cecil.Mdb.dll"/>
-						</Component>
-						<Component>
-							<File Source="Mono.Cecil.Pdb.dll"/>
-						</Component>
-						<Component>
-							<File Source="Mono.Cecil.Rocks.dll"/>
-						</Component>
-						<Component>
-							<File Source="LibGit2Sharp.dll"/>
-						</Component>
-			
+			<!-- Executable and DLLs -->
+			<Component>
+				<File Source="Naadgai.exe" />
+			</Component>
+			<Component>
+				<File Source="AutoUpdater.NET.dll"/>
+			</Component>
+			<Component>
+				<File Source="DeltaCompressionDotNet.dll"/>
+			</Component>
+			<Component>
+				<File Source="DeltaCompressionDotNet.MsDelta.dll"/>
+			</Component>
+			<Component>
+				<File Source="DeltaCompressionDotNet.PatchApi.dll"/>
+			</Component>
+			<Component>
+				<File Source="Microsoft.Web.WebView2.Core.dll"/>
+			</Component>
+			<Component>
+				<File Source="Microsoft.Web.WebView2.WinForms.dll"/>
+			</Component>
+			<Component>
+				<File Source="Microsoft.Web.WebView2.Wpf.dll"/>
+			</Component>
+			<Component>
+				<File Source="Mono.Cecil.dll"/>
+			</Component>
+			<Component>
+				<File Source="Mono.Cecil.Mdb.dll"/>
+			</Component>
+			<Component>
+				<File Source="Mono.Cecil.Pdb.dll"/>
+			</Component>
+			<Component>
+				<File Source="Mono.Cecil.Rocks.dll"/>
+			</Component>
+			<Component>
+				<File Source="LibGit2Sharp.dll"/>
+			</Component>
+
 			<Component>
 				<File Source="ZstdSharp.dll"/>
 			</Component>
 			<Component>
 				<File Source="Newtonsoft.Json.dll"/>
 			</Component>
-						<!-- ... (Other DLLs) -->
+			<!-- ... (Other DLLs) -->
 
-						<!-- JSON and configuration files -->
-						<Component>
-							<File Source="Naadgai.deps.json"/>
-						</Component>
-						<Component>
-							<File Source="Naadgai.dll"/>
-						</Component>
-						<Component>
-							<File Source="Naadgai.pdb"/>
-						</Component>
-						<Component>
-							<File Source="Naadgai.runtimeconfig.json"/>
-						</Component>
+			<!-- JSON and configuration files -->
+			<Component>
+				<File Source="Naadgai.deps.json"/>
+			</Component>
+			<Component>
+				<File Source="Naadgai.dll"/>
+			</Component>
+			<Component>
+				<File Source="Naadgai.pdb"/>
+			</Component>
+			<Component>
+				<File Source="Naadgai.runtimeconfig.json"/>
+			</Component>
 
-						<!-- External library -->
-						<Component>
-							<File Source="SharpCompress.dll"/>
-						</Component>
+			<!-- External library -->
+			<Component>
+				<File Source="SharpCompress.dll"/>
+			</Component>
 
-					</ComponentGroup>
+		</ComponentGroup>
 
 		<ComponentGroup Id="ImageFolder" Directory="ImageFolder">
 			<!-- Images -->
-			
-				<Component>
-					<File Source="Images\customer_page.png" />
-				</Component>
-				<Component>
-					<File Source="Images\home_page.png" />
-				</Component>
-				<Component>
-					<File Source="Images\icons8-close-32.png" />
-				</Component>
-				<Component>
-					<File Source="Images\icons8-subtract-32.png" />
-				</Component>
-				<Component>
-					<File Source="Images\img_customer.png" />
-				</Component>
-				<Component>
-					<File Source="Images\img_home.png" />
-				</Component>
-				<Component>
-					<File Source="Images\img_order.png" />
-				</Component>
-				<Component>
-					<File Source="Images\img_product.png" />
-				</Component>
-				<Component>
-					<File Source="Images\img_setting.png" />
-				</Component>
-				<Component>
-					<File Source="Images\img_shipment.png" />
-				</Component>
-				<Component>
-					<File Source="Images\img_transaction.png" />
-				</Component>
-				<Component>
-					<File Source="Images\minimize.png" />
-				</Component>
-				<Component>
-					<File Source="Images\minimizer.png" />
-				</Component>
-				<Component>
-					<File Source="Images\order_page.png" />
-				</Component>
-				<Component>
-					<File Source="Images\product_page.png" />
-				</Component>
-				<Component>
-					<File Source="Images\setting_page.png" />
-				</Component>
-				<Component>
-					<File Source="Images\shipment_page.png" />
-				</Component>
-				<Component>
-					<File Source="Images\shutdown_def.png" />
-				</Component>
-				<Component>
-					<File Source="Images\shutdown_mo.png" />
-				</Component>
-				<Component>
-					<File Source="Images\transaction_page.png" />
-				</Component>
-				<!-- ... (Other image files) -->
-			
+
+			<Component>
+				<File Source="Images\customer_page.png" />
+			</Component>
+			<Component>
+				<File Source="Images\home_page.png" />
+			</Component>
+			<Component>
+				<File Source="Images\profile.png" />
+			</Component>
+			<Component>
+				<File Source="Images\icons8-close-32.png" />
+			</Component>
+			<Component>
+				<File Source="Images\icons8-subtract-32.png" />
+			</Component>
+			<Component>
+				<File Source="Images\img_customer.png" />
+			</Component>
+			<Component>
+				<File Source="Images\img_home.png" />
+			</Component>
+			<Component>
+				<File Source="Images\img_order.png" />
+			</Component>
+			<Component>
+				<File Source="Images\img_product.png" />
+			</Component>
+			<Component>
+				<File Source="Images\img_setting.png" />
+			</Component>
+			<Component>
+				<File Source="Images\img_shipment.png" />
+			</Component>
+			<Component>
+				<File Source="Images\img_transaction.png" />
+			</Component>
+			<Component>
+				<File Source="Images\minimize.png" />
+			</Component>
+			<Component>
+				<File Source="Images\minimizer.png" />
+			</Component>
+			<Component>
+				<File Source="Images\order_page.png" />
+			</Component>
+			<Component>
+				<File Source="Images\product_page.png" />
+			</Component>
+			<Component>
+				<File Source="Images\setting_page.png" />
+			</Component>
+			<Component>
+				<File Source="Images\shipment_page.png" />
+			</Component>
+			<Component>
+				<File Source="Images\shutdown_def.png" />
+			</Component>
+			<Component>
+				<File Source="Images\shutdown_mo.png" />
+			</Component>
+			<Component>
+				<File Source="Images\transaction_page.png" />
+			</Component>
+			<!-- ... (Other image files) -->
+
 
 		</ComponentGroup>
 

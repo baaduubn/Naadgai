@@ -27,29 +27,17 @@
             </Grid.ColumnDefinitions>
 
             <!-- Left Column (Free Features) -->
-            <Border Grid.Column="0" Background="#FF1A1D21" Margin="20" BorderBrush="White" BorderThickness="1" CornerRadius="20">
-                <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center" Margin="20">
-                    <TextBlock Text="Free багц" FontSize="20" FontWeight="Bold" FontStyle="Italic" Foreground="White"/>
-                    <TextBlock Text="&#10004; Үнэгүй тоглоом" Foreground="White"/>
-                    <TextBlock Text="&#10006; Онцгой тоглоом" Foreground="White"/>
-                    <TextBlock Text="0 хоног" Foreground="White"/>
-                </StackPanel>
-            </Border>
 
             <!-- Right Column (Premium Features) -->
-            <Border Grid.Column="1" Background="#FF232D38" Margin="20" BorderBrush="White" BorderThickness="1" CornerRadius="20">
-                <StackPanel HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,227,0,0">
-                    <TextBlock Text="Premium багц" FontSize="20" FontStyle="Italic" FontWeight="Bold" Foreground="White"/>
-                    <TextBlock Text="&#10004; Үнэгүй тоглоом" Foreground="White"/>
-                    <TextBlock Text="&#10004; Онцгой тоглоом" Foreground="White"/>
-                    <TextBlock Text="30 хоног" Foreground="White"/>
-                    <Button Content="Сунгах"
-                            HorizontalAlignment="Center"
-                            VerticalAlignment="Bottom"
-                            Margin="0,20,0,0"
+            <Border Background="White" Margin="14,137,14,159"  BorderThickness="1" CornerRadius="0" Grid.Column="1">
+                <StackPanel HorizontalAlignment="Center" VerticalAlignment="Top" Margin="10,10,10,10">
+                    <TextBlock Text="QPay." Foreground="Black" FontSize="18"/>
+                    <TextBlock Text="Та банкны аппликейшнаар доорх&#x0a;QR кодыг уншуулан төлбөр төлнө үү." Foreground="Black"/>
+                    <Image Source="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c6/QR_Code_Model_1_Example.svg/480px-QR_Code_Model_1_Example.svg.png" Grid.ColumnSpan="2" Height="150" Width="150" />
+                    <Button Content="Төлбөр шалгах"
                             Width="120"
                             Height="40"
-                            Click="OpenSubscriptionUrl"/>
+                            Click="OpenSubscriptionUrl" Background="#FF2BE42E"/>
                 </StackPanel>
             </Border>
         </Grid>
