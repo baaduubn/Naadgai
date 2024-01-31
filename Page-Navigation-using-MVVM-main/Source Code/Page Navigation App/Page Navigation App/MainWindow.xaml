@@ -45,7 +45,7 @@
 
                 <Border Background="#272B2F"
                        >
-                    <Label Content="v.0.0.5.3" Margin="10,564,0,0" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+                    <Label Content="v.0.0.6" Margin="10,564,0,0" HorizontalAlignment="Left" VerticalAlignment="Top"/>
                 </Border>
 
                 <StackPanel Height="400"
