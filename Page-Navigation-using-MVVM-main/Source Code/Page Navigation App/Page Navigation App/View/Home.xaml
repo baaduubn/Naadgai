@@ -84,7 +84,7 @@
 
 
 
-        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,270,0,0">
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,280,0,0">
             <StackPanel.Resources>
                 <Style TargetType="Button">
                     <Setter Property="Template">
@@ -93,8 +93,8 @@
                                 <Border Background="{TemplateBinding Background}"
                                  BorderThickness="{TemplateBinding BorderThickness}"
                                  CornerRadius="5"
-                                 Height="160"
-                                 Width="110"
+                                 Height="150"
+                                 Width="580"
                                  Margin="5"
                                  Cursor="Hand">
                                     <Image Source="{TemplateBinding Content}" Stretch="UniformToFill"/>
@@ -103,14 +103,16 @@
                         </Setter.Value>
                     </Setter>
                 </Style>
+                
             </StackPanel.Resources>
-            <Button Click="OpenLink" Tag="YourLinkURL1" BorderBrush="DarkGray" BorderThickness="1">
+
+            <Button Click="OpenLink" Tag="https://www.salessupercharged.com" BorderBrush="DarkGray" BorderThickness="1">
                 <Button.Background>
-                    <ImageBrush ImageSource="https://img.itch.zone/aW1hZ2UvMjQyMjc3Ny8xNDMzOTAzMi5qcGc=/original/eBwtPp.jpg"/>
+                    <ImageBrush ImageSource="https://www.salessupercharged.co.uk/images/top-banner-zero-sugar.jpg"/>
                 </Button.Background>
             </Button>
 
-            <Button Click="OpenLink" Tag="YourLinkURL1" BorderBrush="DarkGray" BorderThickness="1">
+            <!--<Button Click="OpenLink" Tag="YourLinkURL1" BorderBrush="DarkGray" BorderThickness="1">
                 <Button.Background>
                     <ImageBrush ImageSource="https://img.itch.zone/aW1hZ2UvMjQyMjc3Ny8xNDMzOTAzMi5qcGc=/original/eBwtPp.jpg"/>
                 </Button.Background>
@@ -129,7 +131,7 @@
                 <Button.Background>
                     <ImageBrush ImageSource="https://img.itch.zone/aW1hZ2UvMjQyMjc3Ny8xNDMzOTAzMi5qcGc=/original/eBwtPp.jpg"/>
                 </Button.Background>
-            </Button>
+            </Button>-->
 
 
 
@@ -138,7 +140,7 @@
 
         <StackPanel Orientation="Vertical" Margin="0,450,0,0">
             <TextBlock FontSize="16" Foreground="White" Margin="20,0,0,0">
-                Өөрчлөлт
+                Мэдээлэл
             </TextBlock>
             <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,0,0,0">
                 <StackPanel.Resources>
