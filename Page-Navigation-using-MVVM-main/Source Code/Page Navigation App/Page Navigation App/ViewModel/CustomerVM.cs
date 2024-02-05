@@ -1,10 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Page_Navigation_App.Model;
-using Page_Navigation_App.ViewModel; 
+﻿using Page_Navigation_App.Model;
+using System;
 
 namespace Page_Navigation_App.ViewModel
 {
@@ -17,11 +12,7 @@ namespace Page_Navigation_App.ViewModel
         public int lvl => AppData.CurrentUser?.lvl ?? 0;
         public int like => AppData.CurrentUser?.like ?? 7468;
         public bool premium => AppData.CurrentUser?.premium ?? false;
-        public string premiumDate => AppData.CurrentUser?.premiumDate ?? "2023-12-15";
+        public string premiumDate => (AppData.CurrentUser?.premiumDate != null) ? DateTime.Parse(AppData.CurrentUser.premiumDate).ToString("yyyy-MM-dd") : "2023-12-15";
         public string createdDate => AppData.CurrentUser?.createdDate ?? "2014-09-01";
-
-
-
     }
-
 }
