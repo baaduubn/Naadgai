@@ -17,10 +17,13 @@
     <None Remove="Fonts\Rubik-Regular.ttf" />
     <None Remove="icons8-close-32.png" />
     <None Remove="icons8-subtract-32.png" />
+    <None Remove="Images\crown.png" />
     <None Remove="Images\customer_page.png" />
     <None Remove="Images\heart.png" />
     <None Remove="Images\home_page.png" />
     <None Remove="Images\icons8-close-32.png" />
+    <None Remove="Images\icons8-cute-cake-96.png" />
+    <None Remove="Images\icons8-diamond-64.png" />
     <None Remove="Images\icons8-subtract-32.png" />
     <None Remove="Images\img_customer.png" />
     <None Remove="Images\img_home.png" />
@@ -31,6 +34,7 @@
     <None Remove="Images\img_transaction.png" />
     <None Remove="Images\order_page.png" />
     <None Remove="Images\product_page.png" />
+    <None Remove="Images\profile.png" />
     <None Remove="Images\setting_page.png" />
     <None Remove="Images\shipment_page.png" />
     <None Remove="Images\shutdown_def.png" />
@@ -39,7 +43,6 @@
     <None Remove="View\crown.png" />
     <None Remove="View\heart.png" />
     <None Remove="View\icons8-cute-cake-96.png" />
-    <None Remove="View\icons8-diamond-64.png" />
     <None Remove="View\profile.png" />
   </ItemGroup>
 
@@ -51,13 +54,13 @@
     <Resource Include="Fonts\Rubik-Regular.ttf">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Resource>
+    <Resource Include="Images\crown.png" />
     <Resource Include="Images\icons8-close-32.png" />
+    <Resource Include="Images\icons8-cute-cake-96.png" />
+    <Resource Include="Images\icons8-diamond-64.png" />
     <Resource Include="Images\icons8-subtract-32.png" />
-    <Resource Include="View\crown.png" />
-    <Resource Include="View\heart.png" />
-    <Resource Include="View\icons8-cute-cake-96.png" />
-    <Resource Include="View\icons8-diamond-64.png" />
-    <Resource Include="View\profile.png" />
+    <Resource Include="Images\heart.png" />
+    <Resource Include="Images\profile.png" />
     <Content Include="Images\customer_page.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
@@ -106,7 +109,6 @@
     <Content Include="Images\transaction_page.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Images\video-game-play-toad-mushroom-mario_108577.ico" />
   </ItemGroup>
 
   <ItemGroup>

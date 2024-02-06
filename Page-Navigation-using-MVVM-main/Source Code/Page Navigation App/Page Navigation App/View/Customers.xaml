@@ -26,7 +26,7 @@
         <Grid Margin="15">
             <Border CornerRadius="0,20,20,0" Background="#212529">
                 <Border BorderBrush="Gray" Background="Gray" BorderThickness="1" Margin="19,20,398,367">
-                    <Image HorizontalAlignment="Center" VerticalAlignment="Center" Source="/View/profile.png" Stretch="UniformToFill" />
+                    <Image HorizontalAlignment="Center" VerticalAlignment="Center" Source="/Images/profile.png" Stretch="UniformToFill" />
                 </Border>
             </Border>
             <TextBlock Foreground="#DBDBDB"
@@ -75,7 +75,7 @@
                     </Style>
                 </Border.Style>
                 <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center" Height="64" Width="542">
-                    <Image Source="/View/icons8-diamond-64.png" Margin="-450,10,0,0" Height="40" Width="40"/>
+                    <Image Source="/Images/icons8-diamond-64.png" Margin="-450,10,0,0" Height="40" Width="40"/>
                     <TextBlock Foreground="White"
                 FontSize="18"
                 HorizontalAlignment="Right"

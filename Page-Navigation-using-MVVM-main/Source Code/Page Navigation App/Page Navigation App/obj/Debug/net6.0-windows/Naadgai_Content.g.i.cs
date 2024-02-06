@@ -24,6 +24,5 @@
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("images/shutdown_def.png")]
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("images/shutdown_mo.png")]
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("images/transaction_page.png")]
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("images/video-game-play-toad-mushroom-mario_108577.ico")]
 
 
