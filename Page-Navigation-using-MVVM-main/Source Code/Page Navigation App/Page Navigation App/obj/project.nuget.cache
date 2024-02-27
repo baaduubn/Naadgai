@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "4zTvY8uSdkQoq9P1gNlWZ10uFlleV28UGSVa3VPHJEHzWwgLPxayPDXluv6ou708cQeynLwItx4JF2PqjQnI4Q==",
+  "dgSpecHash": "YGJco+N0i3zzC+L4DjDS8ptqE0gXu5LIPwr9iVzd7i73r35oHCd/inZOeP8GvbGPoXUunn5/rqrhKSs4bksouQ==",
   "success": true,
-  "projectFilePath": "D:\\SainGamesBeta\\Page-Navigation-using-MVVM-main\\Source Code\\Page Navigation App\\Page Navigation App\\Naadgai.csproj",
+  "projectFilePath": "D:\\Naadgai\\Page-Navigation-using-MVVM-main\\Source Code\\Page Navigation App\\Page Navigation App\\Naadgai.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\baadu\\.nuget\\packages\\autoupdater.net.official\\1.7.3\\autoupdater.net.official.1.7.3.nupkg.sha512",
     "C:\\Users\\baadu\\.nuget\\packages\\bcrypt.net\\0.1.0\\bcrypt.net.0.1.0.nupkg.sha512",

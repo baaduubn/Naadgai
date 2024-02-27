@@ -11,7 +11,7 @@ namespace Page_Navigation_App
         public string Username { get; set; }
         public string Id { get; set; }
         public int lvl {  get; set; }
-        public int like {  get; set; }
+        public int love {  get; set; }
         public string createdDate { get; set; }
         public bool premium { get; set; }
         public string premiumDate {  get; set; }

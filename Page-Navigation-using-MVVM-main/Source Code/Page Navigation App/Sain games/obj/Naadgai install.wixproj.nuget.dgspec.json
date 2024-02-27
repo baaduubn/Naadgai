@@ -1,24 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "D:\\SainGamesBeta\\Page-Navigation-using-MVVM-main\\Source Code\\Page Navigation App\\Sain games\\Naadgai install.wixproj": {}
+    "D:\\Naadgai\\Page-Navigation-using-MVVM-main\\Source Code\\Page Navigation App\\Sain games\\Naadgai install.wixproj": {}
   },
   "projects": {
-    "D:\\SainGamesBeta\\Page-Navigation-using-MVVM-main\\Source Code\\Page Navigation App\\Sain games\\Naadgai install.wixproj": {
+    "D:\\Naadgai\\Page-Navigation-using-MVVM-main\\Source Code\\Page Navigation App\\Sain games\\Naadgai install.wixproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\SainGamesBeta\\Page-Navigation-using-MVVM-main\\Source Code\\Page Navigation App\\Sain games\\Naadgai install.wixproj",
+        "projectUniqueName": "D:\\Naadgai\\Page-Navigation-using-MVVM-main\\Source Code\\Page Navigation App\\Sain games\\Naadgai install.wixproj",
         "projectName": "Naadgai install",
-        "projectPath": "D:\\SainGamesBeta\\Page-Navigation-using-MVVM-main\\Source Code\\Page Navigation App\\Sain games\\Naadgai install.wixproj",
+        "projectPath": "D:\\Naadgai\\Page-Navigation-using-MVVM-main\\Source Code\\Page Navigation App\\Sain games\\Naadgai install.wixproj",
         "packagesPath": "C:\\Users\\baadu\\.nuget\\packages\\",
-        "outputPath": "D:\\SainGamesBeta\\Page-Navigation-using-MVVM-main\\Source Code\\Page Navigation App\\Sain games\\obj\\",
+        "outputPath": "D:\\Naadgai\\Page-Navigation-using-MVVM-main\\Source Code\\Page Navigation App\\Sain games\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
           "C:\\Users\\baadu\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -33,6 +29,11 @@
             "targetAlias": "native",
             "projectReferences": {}
           }
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
         }
       },
       "frameworks": {

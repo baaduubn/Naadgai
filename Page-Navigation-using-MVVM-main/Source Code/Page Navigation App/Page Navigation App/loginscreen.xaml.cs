@@ -13,7 +13,7 @@ namespace Page_Navigation_App
             InitializeComponent();
             UsernameTextBox.KeyDown += OnKeyDownHandler;
             PasswordBox.KeyDown += OnKeyDownHandler;
-           
+
         }
         private bool isOffline = false;
         private void LoginButton_Click(object sender, RoutedEventArgs e)
@@ -31,7 +31,7 @@ namespace Page_Navigation_App
                 if (rememberMe)
                 {
                     SecureStorage.StoreCredentials(username, password);
-                 
+
                 }
             }
             else
@@ -44,7 +44,7 @@ namespace Page_Navigation_App
                 {
                     MessageBox.Show("Нэвтрэх нэр нууц үг буруу байна.");
                 }
-               
+
             }
         }
 
@@ -55,13 +55,24 @@ namespace Page_Navigation_App
         {
             try
             {
-                string connectionString = "Server=localhost;Database=registration;User ID=root;Password=L0Lyumaa";
+                string connectionString = "Server=202.131.4.20;Port=3306;Database=naadgaim_registration;User ID=naadgaim_naadgaim;Password=L0Lyumaa";
 
                 using (MySqlConnection connection = new MySqlConnection(connectionString))
                 {
-                    connection.Open();
+                    // Check database connection
+                    try
+                    {
+                        connection.Open();
+                    }
+                    catch (InvalidOperationException)
+                    {
+                        MessageBox.Show("Error connecting to MySQL database.");
+                        isOffline = true;
+                        userData = null;
+                        return false;
+                    }
 
-                    string query = "SELECT * FROM Users WHERE Username = @Username AND Password = @Password";
+                    string query = "SELECT * FROM UserData WHERE Username = @Username AND Password = @Password";
 
                     using (MySqlCommand command = new MySqlCommand(query, connection))
                     {
@@ -77,7 +88,7 @@ namespace Page_Navigation_App
                                     Username = reader["Username"].ToString(),
                                     Id = reader["Id"].ToString(),
                                     lvl = Convert.ToInt32(reader["lvl"]),
-                                    like = Convert.ToInt32(reader["user_like"]),
+                                    love = Convert.ToInt32(reader["love"]),
                                     premium = Convert.ToBoolean(reader["premium"]),
                                     premiumDate = reader["premiumDate"].ToString(),
                                     createdDate = reader["createdDate"].ToString()
@@ -94,7 +105,6 @@ namespace Page_Navigation_App
 
                 // Authentication failed
                 userData = null;
-               
                 return false;
             }
             catch (MySqlException ex)
@@ -131,6 +141,7 @@ namespace Page_Navigation_App
 
 
 
+
         private void Window_Loaded(object sender, RoutedEventArgs e)
         {
             // Check if stored credentials exist and populate the fields
@@ -139,7 +150,7 @@ namespace Page_Navigation_App
                 UsernameTextBox.Text = storedUsername;
                 PasswordBox.Password = storedPassword;
                 RememberMeCheckBox.IsChecked = true;
-              
+
             }
         }
 

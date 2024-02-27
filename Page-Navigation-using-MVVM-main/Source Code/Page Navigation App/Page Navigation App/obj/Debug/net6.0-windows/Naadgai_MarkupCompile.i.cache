@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-D:\SainGamesBeta\Page-Navigation-using-MVVM-main\Source Code\Page Navigation App\Page Navigation App\obj\Debug\net6.0-windows\
+D:\Naadgai\Page-Navigation-using-MVVM-main\Source Code\Page Navigation App\Page Navigation App\obj\Debug\net6.0-windows\
 Page_Navigation_App
 none
 false
 TRACE;DEBUG;NET;NET6_0;NETCOREAPP
-D:\SainGamesBeta\Page-Navigation-using-MVVM-main\Source Code\Page Navigation App\Page Navigation App\App.xaml
+D:\Naadgai\Page-Navigation-using-MVVM-main\Source Code\Page Navigation App\Page Navigation App\App.xaml
 16-484975677
 16236240406
 32511699896
-226-330248369
+226-457654018
 GameView.xaml;loginscreen.xaml;MainWindow.xaml;Styles\Button.xaml;Styles\Image.xaml;Styles\Page.xaml;Styles\Text.xaml;UpdatingScreen.xaml;Utilities\DataTemplate.xaml;View\Customers.xaml;View\Home.xaml;View\Orders.xaml;View\Products.xaml;View\Settings.xaml;View\Shipments.xaml;View\Transactions.xaml;
 
-False
+True
 
