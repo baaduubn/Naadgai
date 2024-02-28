@@ -59,6 +59,39 @@
 				<File Source="Naadgai.exe" />
 			</Component>
 			<Component>
+				<File Source="BCrypt.Net.dll" />
+			</Component>
+			<Component>
+				<File Source="BouncyCastle.Cryptography.dll"/>
+			</Component>
+			<Component>
+				<File Source="Google.Protobuf.dll"/>
+			</Component>
+			<Component>
+				<File Source="K4os.Compression.LZ4.dll"/>
+			</Component>
+			<Component>
+				<File Source="K4os.Compression.LZ4.Streams.dll"/>
+			</Component>
+			<Component>
+				<File Source="K4os.Hash.xxHash.dll"/>
+			</Component>
+			<Component>
+				<File Source="MySql.Data.dll"/>
+			</Component>
+			<Component>
+				<File Source="System.Diagnostics.DiagnosticSource.dll"/>
+			</Component>
+			<Component>
+				<File Source="System.IO.Pipelines.dll"/>
+			</Component>
+			<Component>
+				<File Source="System.Text.Encodings.Web.dll"/>
+			</Component>
+			<Component>
+				<File Source="System.Text.Json.dll"/>
+			</Component>
+			<Component>
 				<File Source="AutoUpdater.NET.dll"/>
 			</Component>
 			<Component>
