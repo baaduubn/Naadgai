@@ -7,8 +7,8 @@
       "RelativeMoniker": "D:0:0:{582286F1-6054-4031-89AD-B1E4C5D625E8}|Page Navigation App\\Naadgai.csproj|solutionrelative:page navigation app\\loginscreen.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{582286F1-6054-4031-89AD-B1E4C5D625E8}|Page Navigation App\\Naadgai.csproj|d:\\naadgai\\page-navigation-using-mvvm-main\\source code\\page navigation app\\page navigation app\\userdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{582286F1-6054-4031-89AD-B1E4C5D625E8}|Page Navigation App\\Naadgai.csproj|solutionrelative:page navigation app\\userdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{582286F1-6054-4031-89AD-B1E4C5D625E8}|Page Navigation App\\Naadgai.csproj|D:\\Naadgai\\Page-Navigation-using-MVVM-main\\Source Code\\Page Navigation App\\page navigation app\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{582286F1-6054-4031-89AD-B1E4C5D625E8}|Page Navigation App\\Naadgai.csproj|solutionrelative:page navigation app\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{582286F1-6054-4031-89AD-B1E4C5D625E8}|Page Navigation App\\Naadgai.csproj|d:\\naadgai\\page-navigation-using-mvvm-main\\source code\\page navigation app\\page navigation app\\loginscreen.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
@@ -26,15 +26,14 @@
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "UserData.cs",
-              "DocumentMoniker": "D:\\Naadgai\\Page-Navigation-using-MVVM-main\\Source Code\\Page Navigation App\\Page Navigation App\\UserData.cs",
-              "RelativeDocumentMoniker": "Page Navigation App\\UserData.cs",
-              "ToolTip": "D:\\Naadgai\\Page-Navigation-using-MVVM-main\\Source Code\\Page Navigation App\\Page Navigation App\\UserData.cs",
-              "RelativeToolTip": "Page Navigation App\\UserData.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAA9AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-02-27T04:40:53.967Z",
+              "DocumentIndex": 2,
+              "Title": "loginscreen.xaml",
+              "DocumentMoniker": "D:\\Naadgai\\Page-Navigation-using-MVVM-main\\Source Code\\Page Navigation App\\Page Navigation App\\loginscreen.xaml",
+              "RelativeDocumentMoniker": "Page Navigation App\\loginscreen.xaml",
+              "ToolTip": "D:\\Naadgai\\Page-Navigation-using-MVVM-main\\Source Code\\Page Navigation App\\Page Navigation App\\loginscreen.xaml",
+              "RelativeToolTip": "Page Navigation App\\loginscreen.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-02-28T03:25:17.904Z",
               "EditorCaption": ""
             },
             {
@@ -45,21 +44,28 @@
               "RelativeDocumentMoniker": "Page Navigation App\\loginscreen.xaml.cs",
               "ToolTip": "D:\\Naadgai\\Page-Navigation-using-MVVM-main\\Source Code\\Page Navigation App\\Page Navigation App\\loginscreen.xaml.cs",
               "RelativeToolTip": "Page Navigation App\\loginscreen.xaml.cs",
-              "ViewState": "AQIAADsAAAAAAAAAAAAowFcAAABLAAAA",
+              "ViewState": "AQIAAEsBAAAAAAAAAAAYwGYBAABBAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-02-27T04:34:38.531Z",
+              "WhenOpened": "2024-02-28T03:25:31.294Z",
               "EditorCaption": ""
-            },
+            }
+          ]
+        },
+        {
+          "DockedWidth": 303,
+          "SelectedChildIndex": 0,
+          "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "loginscreen.xaml",
-              "DocumentMoniker": "D:\\Naadgai\\Page-Navigation-using-MVVM-main\\Source Code\\Page Navigation App\\Page Navigation App\\loginscreen.xaml",
-              "RelativeDocumentMoniker": "Page Navigation App\\loginscreen.xaml",
-              "ToolTip": "D:\\Naadgai\\Page-Navigation-using-MVVM-main\\Source Code\\Page Navigation App\\Page Navigation App\\loginscreen.xaml",
-              "RelativeToolTip": "Page Navigation App\\loginscreen.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-02-27T04:06:36.648Z",
+              "DocumentIndex": 1,
+              "Title": "MainWindow.xaml.cs",
+              "DocumentMoniker": "D:\\Naadgai\\Page-Navigation-using-MVVM-main\\Source Code\\Page Navigation App\\Page Navigation App\\MainWindow.xaml.cs",
+              "RelativeDocumentMoniker": "Page Navigation App\\MainWindow.xaml.cs",
+              "ToolTip": "D:\\Naadgai\\Page-Navigation-using-MVVM-main\\Source Code\\Page Navigation App\\Page Navigation App\\MainWindow.xaml.cs",
+              "RelativeToolTip": "Page Navigation App\\MainWindow.xaml.cs",
+              "ViewState": "AQIAAAwAAAAAAAAAAAASwDcAAAAQAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-27T05:20:35.405Z",
               "EditorCaption": ""
             }
           ]
