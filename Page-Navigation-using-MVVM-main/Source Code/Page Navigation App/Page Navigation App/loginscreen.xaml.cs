@@ -3,12 +3,17 @@ using System.Data;
 using System.Diagnostics;
 using System.IO;
 using System.Net;
+using System.Net.Http;
 using System.Threading.Tasks;
+using System.Web;
 using System.Windows;
 using System.Windows.Input;
 using System.Xml;
 using AutoUpdaterDotNET;
 using MySql.Data.MySqlClient;
+using Newtonsoft.Json;
+using Newtonsoft.Json.Linq;
+using Page_Navigation_App;
 using SharpCompress.Archives;
 using SharpCompress.Common;
 
@@ -24,37 +29,99 @@ namespace Page_Navigation_App
 
         }
         private bool isOffline = false;
-        private void LoginButton_Click(object sender, RoutedEventArgs e)
+        private async void LoginButton_Click(object sender, RoutedEventArgs e)
         {
-            string username = UsernameTextBox.Text;
-            string password = PasswordBox.Password;
-            bool rememberMe = RememberMeCheckBox.IsChecked ?? false;
-            if (AuthenticateUser(username, password, out UserData userData))
+            try
             {
-                AppData.CurrentUser = userData; // Save the user data globally
+                string username = UsernameTextBox.Text;
+                string password = PasswordBox.Password;
+                bool rememberMe = RememberMeCheckBox.IsChecked ?? false;
 
-                MainWindow mainWindow = new MainWindow();
-                mainWindow.Show();
-                Close();
-                if (rememberMe)
-                {
-                    SecureStorage.StoreCredentials(username, password);
+                ApiResponse response = await CallApiAsync(username, password);
 
-                }
-            }
-            else
-            {
-                if (isOffline)
+                if (response.IsSuccess)
                 {
-                    MessageBox.Show($"Сервертэй холбогдоход алдаа гарлаа");
+                    AppData.CurrentUser = response.UserData;
+                    MainWindow mainWindow = new MainWindow();
+                    mainWindow.Show();
+                    Close();
+
+                    if (rememberMe)
+                    {
+                        SecureStorage.StoreCredentials(username, password);
+                    }
                 }
                 else
                 {
-                    MessageBox.Show("Нэвтрэх нэр нууц үг буруу байна.");
+                    if (isOffline)
+                    {
+                        MessageBox.Show("Failed to connect to the server.");
+                    }
+                    else
+                    {
+                        MessageBox.Show("Incorrect username or password.");
+                    }
                 }
-
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"An error occurred: {ex.Message}", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
             }
         }
+        private async Task<ApiResponse> CallApiAsync(string username, string password)
+        {
+            string baseUrl = "https://naadgai.mn/authenticateUser.php";
+
+            using (HttpClient client = new HttpClient())
+            {
+                try
+                {
+                    string url = $"{baseUrl}?username={HttpUtility.UrlEncode(username)}&password={HttpUtility.UrlEncode(password)}";
+
+                    HttpResponseMessage response = await client.GetAsync(url);
+
+                    if (response.IsSuccessStatusCode)
+                    {
+                        string responseBody = await response.Content.ReadAsStringAsync();
+                        UserData userData = ParseUserData(responseBody);
+                        return new ApiResponse { IsSuccess = true, UserData = userData };
+                    }
+                    else
+                    {
+                        return new ApiResponse { IsSuccess = false, UserData = null };
+                    }
+                }
+                catch (HttpRequestException ex)
+                {
+                    Debug.WriteLine($"Error: {ex.Message}");
+                    return new ApiResponse { IsSuccess = false, UserData = null };
+                }
+            }
+        }
+
+        private UserData ParseUserData(string responseBody)
+        {
+            // Parse the JSON array string into a JArray
+            JArray jsonArray = JArray.Parse(responseBody);
+
+            // Ensure the array is not empty
+            if (jsonArray.Count > 0)
+            {
+                // Get the first object from the array
+                JObject jsonObject = jsonArray[0] as JObject;
+
+                // Deserialize the JSON object into a UserData object
+                UserData userData = jsonObject.ToObject<UserData>();
+                return userData;
+            }
+            else
+            {
+                // Handle the case where the JSON array is empty
+                throw new Exception("JSON array is empty.");
+            }
+        }
+
+
 
         private string GetDownloadLink(string xmlContent)
         {
@@ -393,4 +460,9 @@ namespace Page_Navigation_App
         }
     }
   
+}
+public class ApiResponse
+{
+    public bool IsSuccess { get; set; }
+    public UserData UserData { get; set; }
 }
