@@ -3,40 +3,44 @@
   "WorkspaceRootPath": "D:\\Naadgai\\Page-Navigation-using-MVVM-main\\Source Code\\Page Navigation App\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{582286F1-6054-4031-89AD-B1E4C5D625E8}|Page Navigation App\\Naadgai.csproj|d:\\naadgai\\page-navigation-using-mvvm-main\\source code\\page navigation app\\page navigation app\\loginscreen.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{582286F1-6054-4031-89AD-B1E4C5D625E8}|Page Navigation App\\Naadgai.csproj|solutionrelative:page navigation app\\loginscreen.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{582286F1-6054-4031-89AD-B1E4C5D625E8}|Page Navigation App\\Naadgai.csproj|d:\\naadgai\\page-navigation-using-mvvm-main\\source code\\page navigation app\\page navigation app\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{582286F1-6054-4031-89AD-B1E4C5D625E8}|Page Navigation App\\Naadgai.csproj|solutionrelative:page navigation app\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5F176A4C-59BC-4556-9CF8-6FA00040198C}|Sain games\\Naadgai install.wixproj|d:\\naadgai\\page-navigation-using-mvvm-main\\source code\\page navigation app\\sain games\\package.wxs||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{5F176A4C-59BC-4556-9CF8-6FA00040198C}|Sain games\\Naadgai install.wixproj|solutionrelative:sain games\\package.wxs||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5F176A4C-59BC-4556-9CF8-6FA00040198C}|Sain games\\Naadgai install.wixproj|d:\\naadgai\\page-navigation-using-mvvm-main\\source code\\page navigation app\\sain games\\package.en-us.wxl||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{5F176A4C-59BC-4556-9CF8-6FA00040198C}|Sain games\\Naadgai install.wixproj|solutionrelative:sain games\\package.en-us.wxl||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5F176A4C-59BC-4556-9CF8-6FA00040198C}|Sain games\\Naadgai install.wixproj|d:\\naadgai\\page-navigation-using-mvvm-main\\source code\\page navigation app\\sain games\\folders.wxs||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{5F176A4C-59BC-4556-9CF8-6FA00040198C}|Sain games\\Naadgai install.wixproj|solutionrelative:sain games\\folders.wxs||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{5F176A4C-59BC-4556-9CF8-6FA00040198C}|Sain games\\Naadgai install.wixproj|d:\\naadgai\\page-navigation-using-mvvm-main\\source code\\page navigation app\\sain games\\examplecomponents.wxs||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
       "RelativeMoniker": "D:0:0:{5F176A4C-59BC-4556-9CF8-6FA00040198C}|Sain games\\Naadgai install.wixproj|solutionrelative:sain games\\examplecomponents.wxs||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{582286F1-6054-4031-89AD-B1E4C5D625E8}|Page Navigation App\\Naadgai.csproj|D:\\Naadgai\\Page-Navigation-using-MVVM-main\\Source Code\\Page Navigation App\\page navigation app\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{582286F1-6054-4031-89AD-B1E4C5D625E8}|Page Navigation App\\Naadgai.csproj|solutionrelative:page navigation app\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{582286F1-6054-4031-89AD-B1E4C5D625E8}|Page Navigation App\\Naadgai.csproj|D:\\Naadgai\\Page-Navigation-using-MVVM-main\\Source Code\\Page Navigation App\\page navigation app\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{582286F1-6054-4031-89AD-B1E4C5D625E8}|Page Navigation App\\Naadgai.csproj|solutionrelative:page navigation app\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5F176A4C-59BC-4556-9CF8-6FA00040198C}|Sain games\\Naadgai install.wixproj|D:\\Naadgai\\Page-Navigation-using-MVVM-main\\Source Code\\Page Navigation App\\sain games\\naadgai install.wixproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "AbsoluteMoniker": "D:0:0:{5F176A4C-59BC-4556-9CF8-6FA00040198C}|Sain games\\Naadgai install.wixproj|d:\\naadgai\\page-navigation-using-mvvm-main\\source code\\page navigation app\\sain games\\naadgai install.wixproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
       "RelativeMoniker": "D:0:0:{5F176A4C-59BC-4556-9CF8-6FA00040198C}|Sain games\\Naadgai install.wixproj|solutionrelative:sain games\\naadgai install.wixproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5F176A4C-59BC-4556-9CF8-6FA00040198C}|Sain games\\Naadgai install.wixproj|D:\\Naadgai\\Page-Navigation-using-MVVM-main\\Source Code\\Page Navigation App\\sain games\\package.wxs||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
-      "RelativeMoniker": "D:0:0:{5F176A4C-59BC-4556-9CF8-6FA00040198C}|Sain games\\Naadgai install.wixproj|solutionrelative:sain games\\package.wxs||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+      "AbsoluteMoniker": "D:0:0:{582286F1-6054-4031-89AD-B1E4C5D625E8}|Page Navigation App\\Naadgai.csproj|d:\\naadgai\\page-navigation-using-mvvm-main\\source code\\page navigation app\\page navigation app\\loginscreen.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{582286F1-6054-4031-89AD-B1E4C5D625E8}|Page Navigation App\\Naadgai.csproj|solutionrelative:page navigation app\\loginscreen.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5F176A4C-59BC-4556-9CF8-6FA00040198C}|Sain games\\Naadgai install.wixproj|D:\\Naadgai\\Page-Navigation-using-MVVM-main\\Source Code\\Page Navigation App\\sain games\\package.en-us.wxl||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
-      "RelativeMoniker": "D:0:0:{5F176A4C-59BC-4556-9CF8-6FA00040198C}|Sain games\\Naadgai install.wixproj|solutionrelative:sain games\\package.en-us.wxl||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5F176A4C-59BC-4556-9CF8-6FA00040198C}|Sain games\\Naadgai install.wixproj|D:\\Naadgai\\Page-Navigation-using-MVVM-main\\Source Code\\Page Navigation App\\sain games\\folders.wxs||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
-      "RelativeMoniker": "D:0:0:{5F176A4C-59BC-4556-9CF8-6FA00040198C}|Sain games\\Naadgai install.wixproj|solutionrelative:sain games\\folders.wxs||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{582286F1-6054-4031-89AD-B1E4C5D625E8}|Page Navigation App\\Naadgai.csproj|D:\\Naadgai\\Page-Navigation-using-MVVM-main\\Source Code\\Page Navigation App\\page navigation app\\loginscreen.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "AbsoluteMoniker": "D:0:0:{582286F1-6054-4031-89AD-B1E4C5D625E8}|Page Navigation App\\Naadgai.csproj|d:\\naadgai\\page-navigation-using-mvvm-main\\source code\\page navigation app\\page navigation app\\loginscreen.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{582286F1-6054-4031-89AD-B1E4C5D625E8}|Page Navigation App\\Naadgai.csproj|solutionrelative:page navigation app\\loginscreen.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{582286F1-6054-4031-89AD-B1E4C5D625E8}|Page Navigation App\\Naadgai.csproj|d:\\naadgai\\page-navigation-using-mvvm-main\\source code\\page navigation app\\page navigation app\\view\\transactions.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{582286F1-6054-4031-89AD-B1E4C5D625E8}|Page Navigation App\\Naadgai.csproj|solutionrelative:page navigation app\\view\\transactions.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{582286F1-6054-4031-89AD-B1E4C5D625E8}|Page Navigation App\\Naadgai.csproj|d:\\naadgai\\page-navigation-using-mvvm-main\\source code\\page navigation app\\page navigation app\\view\\transactions.xaml||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{582286F1-6054-4031-89AD-B1E4C5D625E8}|Page Navigation App\\Naadgai.csproj|solutionrelative:page navigation app\\view\\transactions.xaml||{8B382828-6202-11D1-8870-0000F87579D2}"
     }
   ],
   "DocumentGroupContainers": [
@@ -46,77 +50,36 @@
       "DocumentGroups": [
         {
           "DockedWidth": 303,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "loginscreen.xaml",
-              "DocumentMoniker": "D:\\Naadgai\\Page-Navigation-using-MVVM-main\\Source Code\\Page Navigation App\\Page Navigation App\\loginscreen.xaml",
-              "RelativeDocumentMoniker": "Page Navigation App\\loginscreen.xaml",
-              "ToolTip": "D:\\Naadgai\\Page-Navigation-using-MVVM-main\\Source Code\\Page Navigation App\\Page Navigation App\\loginscreen.xaml",
-              "RelativeToolTip": "Page Navigation App\\loginscreen.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-02-28T03:25:17.904Z"
-            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "loginscreen.xaml.cs",
-              "DocumentMoniker": "D:\\Naadgai\\Page-Navigation-using-MVVM-main\\Source Code\\Page Navigation App\\Page Navigation App\\loginscreen.xaml.cs",
-              "RelativeDocumentMoniker": "Page Navigation App\\loginscreen.xaml.cs",
-              "ToolTip": "D:\\Naadgai\\Page-Navigation-using-MVVM-main\\Source Code\\Page Navigation App\\Page Navigation App\\loginscreen.xaml.cs",
-              "RelativeToolTip": "Page Navigation App\\loginscreen.xaml.cs",
-              "ViewState": "AQIAAFQAAAAAAAAAAAAwwHAAAABFAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-02-28T03:25:31.294Z",
-              "EditorCaption": ""
-            }
-          ]
-        },
-        {
-          "DockedWidth": 303,
-          "SelectedChildIndex": 5,
-          "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
               "Title": "MainWindow.xaml",
               "DocumentMoniker": "D:\\Naadgai\\Page-Navigation-using-MVVM-main\\Source Code\\Page Navigation App\\Page Navigation App\\MainWindow.xaml",
               "RelativeDocumentMoniker": "Page Navigation App\\MainWindow.xaml",
               "ToolTip": "D:\\Naadgai\\Page-Navigation-using-MVVM-main\\Source Code\\Page Navigation App\\Page Navigation App\\MainWindow.xaml",
               "RelativeToolTip": "Page Navigation App\\MainWindow.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-02-28T03:30:06.137Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Naadgai install.wixproj",
-              "DocumentMoniker": "D:\\Naadgai\\Page-Navigation-using-MVVM-main\\Source Code\\Page Navigation App\\Sain games\\Naadgai install.wixproj",
-              "RelativeDocumentMoniker": "Sain games\\Naadgai install.wixproj",
-              "ToolTip": "D:\\Naadgai\\Page-Navigation-using-MVVM-main\\Source Code\\Page Navigation App\\Sain games\\Naadgai install.wixproj",
-              "RelativeToolTip": "Sain games\\Naadgai install.wixproj",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2024-02-28T03:30:02.692Z",
+              "WhenOpened": "2024-03-05T11:18:42.355Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 1,
               "Title": "Package.wxs",
               "DocumentMoniker": "D:\\Naadgai\\Page-Navigation-using-MVVM-main\\Source Code\\Page Navigation App\\Sain games\\Package.wxs",
               "RelativeDocumentMoniker": "Sain games\\Package.wxs",
               "ToolTip": "D:\\Naadgai\\Page-Navigation-using-MVVM-main\\Source Code\\Page Navigation App\\Sain games\\Package.wxs",
               "RelativeToolTip": "Sain games\\Package.wxs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAOAAAA",
               "Icon": "71fa8cad-8471-402b-834a-c68922df4385.000080|",
-              "WhenOpened": "2024-02-28T03:29:59.076Z"
+              "WhenOpened": "2024-03-05T11:12:54.563Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 2,
               "Title": "Package.en-us.wxl",
               "DocumentMoniker": "D:\\Naadgai\\Page-Navigation-using-MVVM-main\\Source Code\\Page Navigation App\\Sain games\\Package.en-us.wxl",
               "RelativeDocumentMoniker": "Sain games\\Package.en-us.wxl",
@@ -124,11 +87,12 @@
               "RelativeToolTip": "Sain games\\Package.en-us.wxl",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "71fa8cad-8471-402b-834a-c68922df4385.000070|",
-              "WhenOpened": "2024-02-28T03:29:58.162Z"
+              "WhenOpened": "2024-03-05T11:12:53.156Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 3,
               "Title": "Folders.wxs",
               "DocumentMoniker": "D:\\Naadgai\\Page-Navigation-using-MVVM-main\\Source Code\\Page Navigation App\\Sain games\\Folders.wxs",
               "RelativeDocumentMoniker": "Sain games\\Folders.wxs",
@@ -136,32 +100,90 @@
               "RelativeToolTip": "Sain games\\Folders.wxs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "71fa8cad-8471-402b-834a-c68922df4385.000080|",
-              "WhenOpened": "2024-02-28T03:29:57.343Z"
+              "WhenOpened": "2024-03-05T11:12:50.549Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 4,
               "Title": "ExampleComponents.wxs",
               "DocumentMoniker": "D:\\Naadgai\\Page-Navigation-using-MVVM-main\\Source Code\\Page Navigation App\\Sain games\\ExampleComponents.wxs",
               "RelativeDocumentMoniker": "Sain games\\ExampleComponents.wxs",
               "ToolTip": "D:\\Naadgai\\Page-Navigation-using-MVVM-main\\Source Code\\Page Navigation App\\Sain games\\ExampleComponents.wxs",
               "RelativeToolTip": "Sain games\\ExampleComponents.wxs",
-              "ViewState": "AQIAADkAAAAAAAAAAAAQwFAAAAAPAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "71fa8cad-8471-402b-834a-c68922df4385.000080|",
-              "WhenOpened": "2024-02-28T03:29:56.456Z",
+              "WhenOpened": "2024-03-05T11:12:49.592Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "MainWindow.xaml.cs",
-              "DocumentMoniker": "D:\\Naadgai\\Page-Navigation-using-MVVM-main\\Source Code\\Page Navigation App\\Page Navigation App\\MainWindow.xaml.cs",
-              "RelativeDocumentMoniker": "Page Navigation App\\MainWindow.xaml.cs",
-              "ToolTip": "D:\\Naadgai\\Page-Navigation-using-MVVM-main\\Source Code\\Page Navigation App\\Page Navigation App\\MainWindow.xaml.cs",
-              "RelativeToolTip": "Page Navigation App\\MainWindow.xaml.cs",
-              "ViewState": "AQIAAAwAAAAAAAAAAAASwCgAAABFAAAA",
+              "DocumentIndex": 6,
+              "Title": "loginscreen.xaml.cs",
+              "DocumentMoniker": "D:\\Naadgai\\Page-Navigation-using-MVVM-main\\Source Code\\Page Navigation App\\Page Navigation App\\loginscreen.xaml.cs",
+              "RelativeDocumentMoniker": "Page Navigation App\\loginscreen.xaml.cs",
+              "ToolTip": "D:\\Naadgai\\Page-Navigation-using-MVVM-main\\Source Code\\Page Navigation App\\Page Navigation App\\loginscreen.xaml.cs",
+              "RelativeToolTip": "Page Navigation App\\loginscreen.xaml.cs",
+              "ViewState": "AQIAAJcBAAAAAAAAAAAswKsBAABBAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-02-27T05:20:35.405Z"
+              "WhenOpened": "2024-03-05T11:12:34.61Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "loginscreen.xaml",
+              "DocumentMoniker": "D:\\Naadgai\\Page-Navigation-using-MVVM-main\\Source Code\\Page Navigation App\\Page Navigation App\\loginscreen.xaml",
+              "RelativeDocumentMoniker": "Page Navigation App\\loginscreen.xaml",
+              "ToolTip": "D:\\Naadgai\\Page-Navigation-using-MVVM-main\\Source Code\\Page Navigation App\\Page Navigation App\\loginscreen.xaml",
+              "RelativeToolTip": "Page Navigation App\\loginscreen.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-03-05T11:12:31.674Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Naadgai install",
+              "DocumentMoniker": "D:\\Naadgai\\Page-Navigation-using-MVVM-main\\Source Code\\Page Navigation App\\Sain games\\Naadgai install.wixproj",
+              "RelativeDocumentMoniker": "Sain games\\Naadgai install.wixproj",
+              "ToolTip": "D:\\Naadgai\\Page-Navigation-using-MVVM-main\\Source Code\\Page Navigation App\\Sain games\\Naadgai install.wixproj",
+              "RelativeToolTip": "Sain games\\Naadgai install.wixproj",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2024-03-05T11:12:27.564Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Transactions.xaml",
+              "DocumentMoniker": "D:\\Naadgai\\Page-Navigation-using-MVVM-main\\Source Code\\Page Navigation App\\Page Navigation App\\View\\Transactions.xaml",
+              "RelativeDocumentMoniker": "Page Navigation App\\View\\Transactions.xaml",
+              "ToolTip": "D:\\Naadgai\\Page-Navigation-using-MVVM-main\\Source Code\\Page Navigation App\\Page Navigation App\\View\\Transactions.xaml",
+              "RelativeToolTip": "Page Navigation App\\View\\Transactions.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-03-05T10:57:50.073Z",
+              "EditorCaption": ""
+            }
+          ]
+        },
+        {
+          "DockedWidth": 303,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Transactions.xaml",
+              "DocumentMoniker": "D:\\Naadgai\\Page-Navigation-using-MVVM-main\\Source Code\\Page Navigation App\\Page Navigation App\\View\\Transactions.xaml",
+              "RelativeDocumentMoniker": "Page Navigation App\\View\\Transactions.xaml",
+              "ToolTip": "D:\\Naadgai\\Page-Navigation-using-MVVM-main\\Source Code\\Page Navigation App\\Page Navigation App\\View\\Transactions.xaml",
+              "RelativeToolTip": "Page Navigation App\\View\\Transactions.xaml",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAABIAAAAYAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-03-05T10:57:51.9Z",
+              "EditorCaption": ""
             }
           ]
         }

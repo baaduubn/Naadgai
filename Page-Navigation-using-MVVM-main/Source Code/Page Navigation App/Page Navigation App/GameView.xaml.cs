@@ -207,8 +207,10 @@ namespace Page_Navigation_App
                     if (process.ExitCode == 0)
                     {
                         // Fetch was successful, now you can compare the local and remote branches as before.
-                        var localBranch = repo.Branches["master"]; // Change 'master' to your default branch name
+                        var localBranch = repo.Branches["main"]; // Change 'master' to your default branch name
                         var remoteBranch = repo.Branches[$"origin/{localBranch.FriendlyName}"];
+                        Debug.WriteLine(localBranch.FriendlyName);
+                        
                         return localBranch.Tip.Sha != remoteBranch.Tip.Sha;
                     }
                     else
@@ -224,7 +226,7 @@ namespace Page_Navigation_App
 
         private void HandleUpdate()
         {
-            myButton.Content = "Updating";
+           // myButton.Content = "Updating";
 
             try
             {

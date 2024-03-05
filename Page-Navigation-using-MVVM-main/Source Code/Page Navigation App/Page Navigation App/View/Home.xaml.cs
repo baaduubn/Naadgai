@@ -30,21 +30,21 @@ namespace Page_Navigation_App.View
             {
                 new GameInfo
                 {
-                    GameTitle = "Sleepy cat",
-                    AdditionalText = "Additional Text 1",
-                    ImagePaths = "https://img.itch.zone/aW1hZ2UvMjQyMjc3Ny8xNDMzOTAzMi5qcGc=/original/eBwtPp.jpg"
+                    GameTitle = "Микроны босс",
+                    AdditionalText = "Нэгэн цагт шугамд явж байсан нийтийн тээврийн жолоочийн аж амьдралыг өгүүлнэ",
+                    ImagePaths = "https://raw.githubusercontent.com/baaduubn/Micronii-boss/main/Screenshots/Screenshot%202024-03-05%20154832.png"
                 },
                 new GameInfo
                 {
-                    GameTitle = "Pixel war",
-                    AdditionalText = "Additional Text 2",
-                    ImagePaths = "https://img.itch.zone/aW1hZ2UvMjQ3MzYzNy8xNDY4NjYwNy5wbmc=/original/XpHoyP.png"
+                    GameTitle = "Мазаалай",
+                    AdditionalText = "Мазаалайг алс холоос ирсэн тусламжийн шуудан адал явдалтай аялалд мордуулна",
+                    ImagePaths = "https://raw.githubusercontent.com/baaduubn/baaduubn.github.io/main/Screenshot_2024-03-05_06-52-54.png"
                 },
                 new GameInfo
                 {
-                    GameTitle = "Card game",
-                    AdditionalText = "Additional Text 3",
-                    ImagePaths = "https://img.itch.zone/aW1hZ2UvMTkyNDM2Ny8xMjU0ODQwOC5wbmc=/original/I12FDf.png"
+                    GameTitle = "Ломбард",
+                    AdditionalText = "Мөнгөтэй болох болох амархан аргад ломбардын газар ажиллуулах орох уу? та баяжих болов уу",
+                    ImagePaths = "https://raw.githubusercontent.com/baaduubn/baaduubn.github.io/main/istockphoto-1496061010-612x612.jpg"
                 }
             };
 

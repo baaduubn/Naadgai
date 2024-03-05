@@ -21,15 +21,15 @@
 
         <!-- Split View -->
         <Grid>
-            <Grid.ColumnDefinitions>
+            <!--<Grid.ColumnDefinitions>
                 <ColumnDefinition Width="*"/>
                 <ColumnDefinition Width="*"/>
-            </Grid.ColumnDefinitions>
+            </Grid.ColumnDefinitions>-->
 
             <!-- Left Column (Free Features) -->
 
             <!-- Right Column (Premium Features) -->
-            <Border Background="White" Margin="14,137,14,159"  BorderThickness="1" CornerRadius="0" Grid.Column="1">
+            <Border  Margin="14,137,14,159"  BorderThickness="1" CornerRadius="20" Grid.Column="1">
                 <StackPanel HorizontalAlignment="Center" VerticalAlignment="Top" Margin="10,10,10,10">
                     <TextBlock Text="QPay." Foreground="Black" FontSize="18"/>
                     <TextBlock Text="Та банкны аппликейшнаар доорх&#x0a;QR кодыг уншуулан төлбөр төлнө үү." Foreground="Black"/>

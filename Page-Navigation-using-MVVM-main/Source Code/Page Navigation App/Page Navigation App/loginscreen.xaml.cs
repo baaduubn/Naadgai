@@ -55,17 +55,18 @@ namespace Page_Navigation_App
                 {
                     if (isOffline)
                     {
-                        MessageBox.Show("Failed to connect to the server.");
+                        MessageBox.Show("Сервертэй холбогдоход алдаа гарлаа.");
                     }
                     else
                     {
-                        MessageBox.Show("Incorrect username or password.");
+                        MessageBox.Show("Нэвтрэх нэр нууц үг буруу байна.");
                     }
                 }
             }
             catch (Exception ex)
             {
-                MessageBox.Show($"An error occurred: {ex.Message}", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
+                MessageBox.Show("Нэвтрэх нэр нууц үг буруу байна.");
+                Debug.WriteLine($"An error occurred: {ex.Message}", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
             }
         }
         private async Task<ApiResponse> CallApiAsync(string username, string password)
@@ -102,6 +103,7 @@ namespace Page_Navigation_App
         private UserData ParseUserData(string responseBody)
         {
             // Parse the JSON array string into a JArray
+            Debug.WriteLine(responseBody);
             JArray jsonArray = JArray.Parse(responseBody);
 
             // Ensure the array is not empty
@@ -199,7 +201,7 @@ namespace Page_Navigation_App
                 if (args.Error is WebException)
                 {
                     MessageBox.Show(
-                        @"Failed to connect to the update server. Please check your internet connection and try again later.",
+                        @"Сервертэй холбогдоход алдаа гарлаа. Та интернэт холболтоо шалгаад дахин оролдоно уу.",
                         @"Update Check Failed", MessageBoxButton.OK, MessageBoxImage.Error);
                 }
                 else
@@ -423,7 +425,7 @@ namespace Page_Navigation_App
                 AutoUpdater.ShowSkipButton = false;
                 AutoUpdater.ShowRemindLaterButton = false;
                 AutoUpdater.CheckForUpdateEvent += AutoUpdaterOnCheckForUpdateEvent;
-                AutoUpdater.InstalledVersion = new Version("0.0.7"); // Set your current application version
+                AutoUpdater.InstalledVersion = new Version("0.0.9"); // Set your current application version
             }
         }
 
